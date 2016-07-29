@@ -1,0 +1,72 @@
+Name	Age	Country
+Washington	57	US
+J Adams	61	US
+Jefferson	57	US
+Madison	57	US
+Monroe	58	US
+JQ Adams	57	US
+Jackson	61	US
+Van Buren	54	US
+WH Harrison	68	US
+Tyler	51	US
+Polk	49	US
+Taylor	64	US
+Fillmore	50	US
+Pierce	48	US
+Buchanan	65	US
+Lincoln	52	US
+A Johnson	56	US
+Grant	46	US
+Hayes	54	US
+Garfield	49	US
+Arthur	51	US
+Cleveland	47	US
+B Harrison	55	US
+Cleveland	55	US
+McKinley	54	US
+T Roosevelt	42	US
+Taft	51	US
+Wilson	56	US
+Harding	55	US
+Coolidge	51	US
+Hoover	54	US
+FD Roosevelt	51	US
+Truman	60	US
+Eisenhower	61	US
+Kennedy	43	US
+LB Johnson	55	US
+Nixon	56	US
+Ford	61	US
+Carter	52	US
+Reagan	69	US
+GHW Bush	64	US
+Clinton	46	US
+GW Bush	54	US
+B Obama	47	US
+Barton	51	Aust
+Deakin	47	Aust
+Watson	37	Aust
+Reid	59	Aust
+Fisher	46	Aust
+Cook	52	Aust
+Hughes	53	Aust
+Bruce	39	Aust
+Scullin	53	Aust
+Lyons	52	Aust
+Page	58	Aust
+Menzies	44	Aust
+Fadden	46	Aust
+Curtin	56	Aust
+Forde	54	Aust
+Chifley	59	Aust
+Holt	57	Aust
+McEwen	67	Aust
+Gorton	56	Aust
+McMahon	63	Aust
+Whitlam	56	Aust
+Fraser	45	Aust
+Hawke	53	Aust
+Keating	47	Aust
+Howard	56	Aust
+Rudd	52	Aust
+Gillard	48	Aust

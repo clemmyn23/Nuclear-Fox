@@ -1,0 +1,5 @@
+histogram([Year, Inflow])
+histogram([Year, log(Inflow)])
+xlabel('Year')
+ylabel('Inflow')
+title('Year v (log)Inflow')

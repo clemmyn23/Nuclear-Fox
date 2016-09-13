@@ -1,0 +1,10 @@
+{
+    "header": {
+        "src_port": "65535",
+        "dst_port": "65535",
+        "seq": "4294967295",
+        "ack": "4294967295",
+        "flags": "ACK,RST,SYN,FIN,PSH",
+        "window_size": "65535"
+    }
+}

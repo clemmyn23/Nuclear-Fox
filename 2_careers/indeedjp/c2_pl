@@ -1,0 +1,19 @@
+#!/usr/bin/perl -w
+
+@ops = <>;
+$requests = shift(@ops);
+
+@data = (1, 2, 3, 4, 5, 6, 7, 8);
+($numsets) = $requests =~ /\d+\s(\d+)/;
+
+for (0..($numsets-1)) {
+  for (@ops) {
+    my ($a, $b) = $_ =~ /(\d+)\s(\d+)/;
+    my $tmp = $data[$a-1];
+    $data[$a-1] = $data[$b-1];
+    $data[$b-1] = $tmp;
+    
+  }
+}
+
+print join " ", @data, "\n";

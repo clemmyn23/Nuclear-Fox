@@ -1,0 +1,18 @@
+#!/usr/bin/perl -w
+
+@inputs = <>;
+
+# sprint $inputs[1];
+# print "derp";
+@tmp = ( $inputs[1] =~ /\d+/g );
+
+# print @tmp;
+print "first num $inputs[0]";
+print "second num $tmp[0]\n";
+print "third num $tmp[1]\n";
+
+#$nums = 0;
+#$nums = $nums + chomp($inputs[0]);
+$nums = $inputs[0] + $tmp[0] + $tmp[1];
+ 
+print "$nums $inputs[2]"

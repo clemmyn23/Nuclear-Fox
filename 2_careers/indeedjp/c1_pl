@@ -1,0 +1,46 @@
+#!/usr/bin/perl -w
+
+@input = <>;
+
+$strlen = $input[0];
+$string = $input[1];
+chomp($string);
+
+$inputlen = $input[2] + 3;    # -1 for last element array
+@all_rotops = @input[3..$inputlen-1];
+
+for (@all_rotops) {
+  my @rot_args = $_ =~ /(\d+)\s(\d+)\s(\d+)/;
+  
+  for (my $i = 0; $i < $rot_args[2]; $i++) {
+    $string = rot($string, $rot_args[0], $rot_args[1]);
+  }
+}
+
+print "$string\n";
+
+
+# sub rot(inputstr, start_index, end_index)
+# return rotated_string
+sub rot {
+  my $part1 = "";
+  if ($_[1] != 1) {
+    $part1 = substr $_[0], 0, ($_[1]-1);
+  }
+  
+  my $part2 = substr $_[0], ($_[1]-1), ($_[2] - ($_[1]-1));
+  
+  my $part3 = "";
+  if ($strlen != $_[2]) {
+    $part3 = substr $_[0], ($_[2]);
+  }
+  
+  my @rotstr = split //, $part2;
+
+  my $element = pop @rotstr;
+  unshift @rotstr, $element;
+  
+  return join "", $part1, @rotstr, $part3;
+}
+
+

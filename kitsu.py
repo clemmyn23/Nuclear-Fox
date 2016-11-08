@@ -7,6 +7,9 @@ from cogs.utils.dataIO import dataIO
 from cogs.utils import checks
 from __main__ import send_cmd_help
 from urllib.parse import quote
+from .utils.chat_formatting import *
+
+
 try:
     from bs4 import BeautifulSoup
     isSoupAvail = True
@@ -42,7 +45,6 @@ class Kitsu:
     @checks.is_owner()
     async def kitsu_botservers(self, ctx):
         """detailed stats for all joined servers"""
-
         for server in list(self.bot.servers):
 
             # """Shows server's informations"""
@@ -70,6 +72,38 @@ class Kitsu:
             else:
                 data += "```"
             await self.bot.say(data)
+
+    @kitsu.command(name="servermems", pass_context=True)
+    @checks.is_owner()
+    async def kitsu_servermems(self, ctx):
+        """Lists members in server"""
+        owner = ctx.message.author
+        servers = list(self.bot.servers)
+        server_list = {}
+        msg = ""
+        for i in range(0, len(servers)):
+            server_list[str(i)] = servers[i]
+            msg += "{}: {}\n".format(str(i), servers[i].name)
+        msg += "\nListing server members for #: (timeout 10)"
+        for page in pagify(msg, ['\n']):
+            await self.bot.say(page)
+
+        # while msg != None:
+        msg = await self.bot.wait_for_message(author=owner, timeout=10)
+        if msg != None:
+            msg = msg.content.strip()
+            if msg in server_list.keys():
+
+                memlist = ""
+                for i in server_list[msg].members:
+                    memlist += "{} name={}             nick={}\n".format(i.id, i.name, i.nick)
+                for page in pagify(memlist, ['\n']):
+                    await self.bot.say("```" + page + "```")
+
+            # else:
+            #     break
+        # else:
+        #     break
 
 
     @kitsu.command(name="user")

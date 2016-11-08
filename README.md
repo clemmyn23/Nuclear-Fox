@@ -1,7 +1,10 @@
 # NuclearFox
 
-This repository contains all my miscellaneous notes
+#### This repository contains all my miscellaneous notes.
 
-housekeep/    - workstation setup scripts etc.  
-xx_notes/     - specific language-specific notes.  
+As a spaghetti attempt to not take the easy way out,  
+to dig deeper, not wider. 
+
+I hope I can fill it with wonderful knowledge, experience and memories, someday.
+
 

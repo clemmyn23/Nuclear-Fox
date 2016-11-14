@@ -8,7 +8,7 @@ from cogs.utils import checks
 from __main__ import send_cmd_help
 from urllib.parse import quote
 from .utils.chat_formatting import *
-
+# import copy
 
 try:
     from bs4 import BeautifulSoup
@@ -25,6 +25,7 @@ class Kitsu:
 
     # @commands.command()
     @commands.group(pass_context=True, hidden=True)
+    @checks.is_owner()
     async def kitsu(self, ctx):
         """Kitsu\'s BNS and bot dev utilities"""
         if ctx.invoked_subcommand is None:
@@ -104,6 +105,19 @@ class Kitsu:
             #     break
         # else:
         #     break
+
+    @kitsu.command(name="joinedvoice")
+    @checks.is_owner()
+    async def kitsu_joinedvoice(self):
+        count = 0
+        for server in list(self.bot.servers):
+            vc = self.bot.voice_client_in(server)
+            if vc == None:
+                await self.bot.say("bot not in voice in server {}".format(server.name))
+            else:
+                await self.bot.say(">>> {} joined voice in server {}".format(vc.user.name, server.name))
+                count += 1
+        await self.bot.say("### joined voice channels in {} servers".format(count))
 
 
     @kitsu.command(name="user")

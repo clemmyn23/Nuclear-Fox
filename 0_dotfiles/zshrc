@@ -1,0 +1,32 @@
+#
+# Executes commands at the start of an interactive session.
+
+#############################
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+#############################
+# Customize to your needs...
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+alias workoff='deactivate'
+
+# alias
+alias lla='ls -lA'
+alias cls='clear'
+alias sshcse='echo "change me alias"; ssh zzzzzzzz@cse.unsw.edu.au'
+alias sftpcse='echo "change me alias"; sftp zzzzzzzz@cse.unsw.edu.au'
+
+# git
+source /Users/ClemChowder/share/_system/git-flow-completion.zsh
+alias git='hub'
+
+# zsh
+unsetopt correct
+prompt damoekri
+unalias rm

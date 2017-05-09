@@ -1,7 +1,7 @@
 import socket
 import select
 
-# tests using select instead of building 
+# tests using select instead of building
 # a socket.recv() polling routine from ground-up
 
 

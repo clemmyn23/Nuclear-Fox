@@ -30,3 +30,4 @@ alias git='hub'
 unsetopt correct
 prompt damoekri
 unalias rm
+export EDITOR=`which vim`

@@ -45,43 +45,53 @@ Content-type: text/html
 
     <div class="container">
         <div id="header">
-
-eof
-printf '<h1><strong>Index of %s</strong></h1>' "${PWD##*/}"
-
-cat <<eof
-            <h4>Pretty directory listing page under construction</h4>
+            <h1><strong>CATS ARE VERY CUTE</strong></h1>
+            <h4>z5015618 -- <a href="http://clemm.me/">Clement Ng</a></h4>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
+                <img class="img-responsive" src="neko.jpg" alt="KAWAII IS JUSTICE" style="box-shadow: 5px 5px 5px #aaa">
+            </div>
+
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                         <h4><strong>MY STUFF (use http):</strong></h4>
                         <h5>
-
-                            <span class="glyphicon glyphicon-folder-close"></span> &nbsp;<a href="../">../</a><br>
 eof
 
+# # # # # #
+# echo "<span class=\"glyphicon glyphicon-folder-close\"></span>&nbsp;<a href=\"_careers\">_careers/</a><br>"
+
 for item in `ls | sort`; do
-if [ -d $item -a -x $item ]; then
-echo "<span class=\"glyphicon glyphicon-folder-close\"></span>&nbsp;<a href=\"$item\">$item/</a><br>"
-fi
+    if [ -d $item -a -x $item ]; then
+        if ! [[ $item =~ '_careers' ]]; then
+            echo "<span class=\"glyphicon glyphicon-folder-close\"></span>&nbsp;<a href=\"$item\">$item/</a><br>"
+        fi
+    fi
 done
 
 for item in `ls | sort`; do
-if [ -x $item -a ! -d $item ]; then
-if ! [[ $item =~ 'index.cgi' ]]; then
-echo "<span class=\"glyphicon glyphicon-file\"></span>&nbsp;<a href=\"$item\">$item</a><br>"
-fi
-fi
+    if [ -x $item -a ! -d $item ]; then
+        if ! [[ $item =~ 'index.cgi' ]]; then
+            echo "<span class=\"glyphicon glyphicon-file\"></span>&nbsp;<a href=\"$item\">$item</a><br>"
+        fi
+    fi
 done
 
 cat <<eof
                         </h5>
                     </div>
+                    <div class="col-lg-6">
+                        <h4><strong>MY&nbsp;OTHER&nbsp;COOL&nbsp;STUFF:</strong></h4>
+                        <h5>
+                            <span class="glyphicon glyphicon-star"></span>&nbsp;<a href="http://clemm.me">My other website</a><br>
+                            <span class="glyphicon glyphicon-star"></span>&nbsp;<a href="http://github.com/clemmyn23">My Github</a><br>
+                        </h5>
+                    </div>  <!-- end col-lg-6 -->
 
                 </div>  <!-- end row -->
             </div>  <!-- end col-md-6 -->
@@ -89,16 +99,27 @@ cat <<eof
         </div>  <!-- end row -->
     </div>  <!-- end container -->
 
+    <!-- FOOTER START -->
+    <footer class="docs-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p></p>
+                    BUILT WITH LOVE USING BOOTSTRAP AND LOTS OF COFFEE. 2016
+
+                </div> <!-- end col-md-12 -->
+            </div> <!-- end row -->
+        </div> <!-- end containter -->
+    </footer>
+    <!-- FOOTER END -->
 
     <!-- Scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
--->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>-->
 
 </body>
 </html>
 eof
-

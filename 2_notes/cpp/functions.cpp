@@ -2,7 +2,8 @@
 // #include <fstream>
 
 
-void printer(std::string str) {
+
+void printer(std::string str = "noparam printing") {
     std::cout << str << '\n';
 }
 
@@ -23,4 +24,6 @@ int main(int argc, char **argv) {
     const auto &pf2 = [](std::string x) { std::cout << x << '\n'; };
     pf2("hello world 4");
 
+    cout << "== no param\n";
+    printer();
 }

@@ -22,7 +22,7 @@ alias cls='clear'
 alias sshcse='echo "change me alias"; ssh zzzzzzzz@cse.unsw.edu.au'
 alias sftpcse='echo "change me alias"; sftp zzzzzzzz@cse.unsw.edu.au'
 
-# git
+# better git via https://github.com/github/hub
 source /Users/ClemChowder/share/_system/git-flow-completion.zsh
 alias git='hub'
 
@@ -31,3 +31,12 @@ unsetopt correct
 prompt damoekri
 unalias rm
 export EDITOR=`which vim`
+
+# gnu coreutils (replaces osx BSD builtins. call with 'g' prefix)
+unalias ls
+alias ls='gls --color --group-directories-first'
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+# c++ alias
+alias gpp='g++ -std=c++14 -Wall -Werror -O2'

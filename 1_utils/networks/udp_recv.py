@@ -16,8 +16,9 @@ while i < 5:
     readable, b, c = select.select([sock], [], [], 0)
     for s in readable:
         data = s.recv(300)
-        print("data {}".format(data.decode('utf-8')))
-        print("blocked {}".format(blocked))
+#         print("data {}".format(data.decode('utf-8')))
+        print("data {}".format(data))
+#         print("blocked {}".format(blocked))
         i += 1
 
         blocked = 0

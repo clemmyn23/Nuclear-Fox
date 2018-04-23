@@ -1,0 +1,91 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "editor.fontSize": 17,
+    "editor.autoIndent": false,
+
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.activityBar.visible": true,
+    "workbench.editor.showTabs": true,
+    "workbench.iconTheme": "material-icon-theme",
+
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "*.sass": "scss"
+    },
+
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+
+    "explorer.confirmDragAndDrop": false,
+
+    // "git.path":
+    //     "C:\\Users\\cleme\\share\\_sys\\wslgit.exe"
+
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.shell.windows":
+    // "C:\\Windows\\System32\\wsl.exe",
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+
+    "atomKeymap.promptV3Features": true,
+
+    "javascript.validate.enable": false,
+
+    "gitlens.codeLens.scopes": [
+        "containers"
+    ],
+
+    "markdownlint.config": {
+        "MD013": false,
+        "no-trailing-spaces": false
+    },
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": true,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+
+    "bookmarks.saveBookmarksInProject": true,
+
+    "todohighlight.keywords": [
+        "DEBUG:",
+        "REVIEW:",
+        {
+            "text": "NOTE:",
+            "color": "#ff0000",
+            "backgroundColor": "yellow",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "HACK:",
+            "color": "#000",
+            "isWholeLine": false,
+        },
+        {
+            "text": "TODO:",
+            "color": "red",
+            "border": "1px solid red",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,0,.2)",
+            //other styling properties goes here ...
+        }
+    ],
+    "git.confirmSync": false
+}

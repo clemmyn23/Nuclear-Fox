@@ -6,6 +6,9 @@
     "editor.fontSize": 17,
     "editor.autoIndent": false,
 
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "workbench.editor.labelFormat": "medium",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.activityBar.visible": true,
@@ -19,22 +22,22 @@
     "files.eol": "\n",
     "files.associations": {
         "*.js": "javascriptreact",
-        "*.sass": "scss"
+        // "*.sass": "scss"
     },
 
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
+    "[jade]": {
+        "files.trimTrailingWhitespace": false
+    },
 
     "explorer.confirmDragAndDrop": false,
 
-    // "git.path":
-    //     "C:\\Users\\cleme\\share\\_sys\\wslgit.exe"
-
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.shell.windows":
-    // "C:\\Windows\\System32\\wsl.exe",
-    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        // "C:\\Windows\\System32\\wsl.exe",
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,

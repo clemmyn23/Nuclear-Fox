@@ -1,9 +1,6 @@
 #
 # Executes commands at the start of an interactive session.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -47,7 +44,7 @@ fi
 export NODE_PATH=$NODE_PATH:`npm root -g`
 
 # WSL workarounds - do not add windows paths into wsl
-export PATH=$(/usr/bin/printenv PATH | /usr/bin/perl -ne 'print join(":", grep { !/\/mnt\/[a-z]/ } split(/:/));')
+# export PATH=$(/usr/bin/printenv PATH | /usr/bin/perl -ne 'print join(":", grep { !/\/mnt\/[a-z]/ } split(/:/));')
 # export ANDROID_HOME=$(/usr/bin/printenv ANDROID_HOME | /usr/bin/perl -ne 'print join(":", grep { !/\/mnt\/[a-z]/ } split(/:/));')
 # export ANDROID_HOME='/mnt/c/Users/cleme/AppData/Local/Android/Sdk'
 alias adb='/mnt/c/Users/cleme/AppData/Local/Android/Sdk/platform-tools/adb\.exe'

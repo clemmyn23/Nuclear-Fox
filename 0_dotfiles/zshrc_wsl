@@ -15,6 +15,7 @@ fi
 # alias
 alias lla='ls -lA'
 alias cls='clear'
+alias gits='git status'
 
 # zsh
 unsetopt correct
@@ -33,7 +34,7 @@ export EDITOR=`which vim`
 
 if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(whence -w __init_nvm)" = function ]; then
   export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+  # [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
   declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'gulp' 'grunt' 'webpack', 'coffee')
   function __init_nvm() {
     for i in "${__node_commands[@]}"; do unalias $i; done
@@ -43,7 +44,7 @@ if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(whence -w __init_nvm)" = function ]; the
   }
   for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
 fi
-
+export NODE_PATH=$NODE_PATH:`npm root -g`
 
 # WSL workarounds - do not add windows paths into wsl
 export PATH=$(/usr/bin/printenv PATH | /usr/bin/perl -ne 'print join(":", grep { !/\/mnt\/[a-z]/ } split(/:/));')
@@ -60,11 +61,15 @@ export ANDROID_HOME=/home/clement/android-sdk-linux
 
 
 # alias adb='/mnt/c/Users/cleme/AppData/Local/Android/Sdk/platform-tools/adb.exe'
-alias adbrev='echo "running adb reverse" && adb reverse '
+# alias adbrev='echo "running adb reverse" && adb reverse '
+alias cdshare='cd /mnt/c/Users/cleme/share'  # TODO: migrate to use wslpath
+alias cdsh='cdshare'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+
+# Python and Pip
 alias pip=pip3
 export VIRTUALENV_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
@@ -74,11 +79,14 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 
 
-# Workaround to enable 24-bit colour display in conemu etc.
-# "clear" command that "supports" 24bit colors
+# Workaround to enable 24-bit colour display in conemu etc. 
+# "clear" command that "supports" 24bit colors 
 alias clear='clear; echo -ne "\e[32766H\e[$((LINES - 1))A"'
 # Clear the screen, scroll beyond limits, and set cursor at the first visible line
 clear; echo -ne "\e[32766H\e[$((LINES - 1))A"
 # Bind Ctrl+L to alias (This is two lines)
 bindkey -s '^l' 'clear
 '
+# Run clear command
+clear
+

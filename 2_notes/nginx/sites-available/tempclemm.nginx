@@ -1,0 +1,33 @@
+# sites configuration for red.clemm.me
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name clemm.me www.clemm.me;
+	charset utf-8;
+	
+	root /home/clement/www/site/static;
+	
+	location / {
+		try_files $uri $uri/index.html;
+	}
+
+}
+
+server {
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+	server_name clemm.me www.clemm.me;
+	charset utf-8;
+	
+	
+	root /home/clement/www/site/static;
+	
+	location / {
+		try_files $uri $uri/index.html;
+	}
+	
+}
+

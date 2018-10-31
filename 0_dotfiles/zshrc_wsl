@@ -2,37 +2,43 @@
 # Executes commands at the start of an interactive session.
 #
 
-# Source Prezto.
+echo "=== Loading zpresto ==="
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
 
-# alias
+# Workaround to enable 24-bit colour display in conemu etc.
+echo "=== Making terminal colourful === "
+alias clear='clear; echo -ne "\e[32766H\e[$((LINES - 1))A"'       # "clear" command that "supports" 24bit colors
+# Clear the screen, scroll beyond limits, and set cursor at the first visible line
+clear; echo -ne "\e[32766H\e[$((LINES - 1))A"; clear
+bindkey -s '^l' "clear\n"   # Bind Ctrl+L to alias
+
+
+echo "=== Customizing zpresto ==="
+prompt damoekri             # Set theme
+unalias rm
+unsetopt correct
+
+
+echo "=== Customizing shell defaults ==="
+export EDITOR=`which vim`
+export LC_COLLATE=C         # sort by underscore first
+
+
+echo "=== Setting up alias ==="
 alias lla='ls -lA'
 alias cls='clear'
 alias gits='git status'
+alias cdshare='cd /mnt/c/Users/cleme/share'  # TODO: migrate to use wslpath
+alias cdsh='cdshare'
 
-# zsh
-unsetopt correct
-prompt damoekri
-unalias rm
-export EDITOR=`which vim`
 
-# gnome-shell workarounds
-# export SHELL=/bin/zsh
-
-# nvm
-# source ~/.zsh-nvm/zsh-nvm.plugin.zsh
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+echo "=== Binding nvm ==="
 if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(whence -w __init_nvm)" = function ]; then
   export NVM_DIR="$HOME/.nvm"
-  # [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-  declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'gulp' 'grunt' 'webpack', 'coffee')
+  declare -a __node_commands=('nvm' 'npm' 'node')
   function __init_nvm() {
     for i in "${__node_commands[@]}"; do unalias $i; done
     . "$NVM_DIR"/nvm.sh
@@ -41,32 +47,24 @@ if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(whence -w __init_nvm)" = function ]; the
   }
   for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
 fi
-export NODE_PATH=$NODE_PATH:`npm root -g`
+# export NODE_PATH=$NODE_PATH:`npm root -g`
 
-# WSL workarounds - do not add windows paths into wsl
-# export PATH=$(/usr/bin/printenv PATH | /usr/bin/perl -ne 'print join(":", grep { !/\/mnt\/[a-z]/ } split(/:/));')
-# export ANDROID_HOME=$(/usr/bin/printenv ANDROID_HOME | /usr/bin/perl -ne 'print join(":", grep { !/\/mnt\/[a-z]/ } split(/:/));')
-# export ANDROID_HOME='/mnt/c/Users/cleme/AppData/Local/Android/Sdk'
-alias adb='/mnt/c/Users/cleme/AppData/Local/Android/Sdk/platform-tools/adb\.exe'
+
+# WSL workarounds
+# No longer needed. See: https://blogs.msdn.microsoft.com/commandline/2018/02/07/automatically-configuring-wsl/
+# echo "=== Configuring WSL workarounds ==="
 
 
 # Android sdk
+echo "=== Binding Android SDK to path ==="
 export PATH=${PATH}:/home/clement/android-sdk-linux/tools/bin
 export PATH=${PATH}:/home/clement/android-sdk-linux/platform-tools
 export PATH=${PATH}":/home/clement/android-sdk-linux/build-tools/27.0.3"
 export ANDROID_HOME=/home/clement/android-sdk-linux
 
 
-# alias adb='/mnt/c/Users/cleme/AppData/Local/Android/Sdk/platform-tools/adb.exe'
-# alias adbrev='echo "running adb reverse" && adb reverse '
-alias cdshare='cd /mnt/c/Users/cleme/share'  # TODO: migrate to use wslpath
-alias cdsh='cdshare'
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-
 # Python and Pip
+echo "=== Configuring python pip virtualenv ==="
 alias pip=pip3
 export VIRTUALENV_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
@@ -75,15 +73,10 @@ mkdir -p $WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
 
 
+echo "=== Binding MongoDB rvm to path ==="
+export PATH=$PATH:/home/clement/_mongod/mongodb-linux-x86_64-ubuntu1604-3.6.8/bin
+export PATH="$PATH:$HOME/.rvm/bin"      # RVM Make sure this is the last PATH variable change.
 
-# Workaround to enable 24-bit colour display in conemu etc. 
-# "clear" command that "supports" 24bit colors 
-alias clear='clear; echo -ne "\e[32766H\e[$((LINES - 1))A"'
-# Clear the screen, scroll beyond limits, and set cursor at the first visible line
-clear; echo -ne "\e[32766H\e[$((LINES - 1))A"
-# Bind Ctrl+L to alias (This is two lines)
-bindkey -s '^l' 'clear
-'
-# Run clear command
+
+echo "=== zsh init complete ==="
 clear
-

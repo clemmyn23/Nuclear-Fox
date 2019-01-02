@@ -1,6 +1,9 @@
 {
     // ========== Frequently used ==========
     "files.trimTrailingWhitespace": true,
+    "jest.pathToJest": "wsl jest",
+    "jest.autoEnable": false,
+    "jest.runAllTestsFirst": false,
 
     // ========== VSCode customisations ==========
     "breadcrumbs.enabled": true,
@@ -15,9 +18,11 @@
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2,
     // "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+    "editor.cursorSmoothCaretAnimation": true,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
+    "extensions.autoUpdate": false,
     "files.eol": "\n",
     "git.confirmSync": false,
     "git.path": "C:\\Users\\cleme\\share\\_sys\\git.bat",
@@ -233,4 +238,6 @@
             "level": "warn"
         }
     },
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
 }

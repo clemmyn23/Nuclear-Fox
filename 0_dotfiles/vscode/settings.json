@@ -1,147 +1,124 @@
 {
-	// ========== Frequently used ==========
-	"javascript.implicitProjectConfig.checkJs": true,
-	"files.insertFinalNewline": false,
-	"files.trimTrailingWhitespace": true,
-	"files.eol": "auto",
-	"editor.formatOnSave": true,
-	"editor.formatOnSaveMode": "modifications",
-	"typescript.tsserver.log": "verbose",
-	// "sass.lint.enable": true,
-	// "sass.format.enabled": true,
+  "debug.toolBarLocation": "floating",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.accessibilitySupport": "off",
+  // "editor.cursorSmoothCaretAnimation": true, //
+  "editor.fontSize": 17,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnType": false,
+  "editor.insertSpaces": true,
+  "editor.overviewRulerBorder": false,
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  // "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_", //
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": true,
+  "javascript.validate.enable": true,
+  "search.collapseResults": "alwaysExpand",
+  "search.showLineNumbers": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.scrollback": 100000,
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "window.autoDetectHighContrast": false,
+  "window.menuBarVisibility": "classic",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
 
-	// ========== WiseTech uses tabs =============
-	"editor.insertSpaces": false,
-	"editor.tabSize": 2,
-	"code-eol.crlfCharacter": "←",
-	"code-eol.returnCharacter": "↵",
-	"code-eol.newlineCharacter": "¬",
+  // ========== Specific language handling ==========
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.Jenkinsfile": "groovy"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
-	// ========== VSCode customisations ==========
-	"breadcrumbs.enabled": true,
-	"debug.toolBarLocation": "floating",
-	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.accessibilitySupport": "off",
-	"editor.fontSize": 17,
-	"editor.formatOnPaste": false,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"editor.overviewRulerBorder": false,
-	"editor.renderWhitespace": "all",
-	"diffEditor.renderSideBySide": true,
-	// "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
-	// "editor.cursorSmoothCaretAnimation": true,
-	"explorer.confirmDragAndDrop": false,
-	"extensions.ignoreRecommendations": true,
-	"extensions.showRecommendationsOnlyOnDemand": true,
-	"extensions.autoUpdate": false,
-	"files.trimFinalNewlines": false,
-	"git.confirmSync": false,
-	"javascript.validate.enable": true,
-	"search.collapseResults": "alwaysExpand",
-	"search.showLineNumbers": true,
-	"terminal.integrated.fontSize": 16,
-	"terminal.integrated.scrollback": 100000,
-	"window.autoDetectHighContrast": false,
-	"window.menuBarVisibility": "default",
-	"window.zoomLevel": 0,
-	"workbench.colorTheme": "One Dark Pro",
-	"workbench.editor.labelFormat": "medium",
-	"workbench.editor.showTabs": true,
-	"workbench.editor.highlightModifiedTabs": true,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.settings.editor": "json",
-	"workbench.startupEditor": "none",
-	"workbench.tips.enabled": false,
-
-	// ========== Specific language handling ==========
-	"files.associations": {
-		"*.js": "javascriptreact",
-		"*.Jenkinsfile": "groovy"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	// "[markdown]": {
-	//     "files.trimTrailingWhitespace": false,
-	//     "editor.tabSize": 2
-	// },
-	// "[jade]": {
-	//     "files.trimTrailingWhitespace": false
-	// },
-	// "[python]": {
-	//     "editor.tabSize": 4
-	// },
-
-	// ========== Extension customisations ==========
-	"atomKeymap.promptV3Features": true,
-	"bookmarks.saveBookmarksInProject": true,
-	"gitlens.codeLens.scopes": [
-		/* "containers", "document" */
-	],
-	"gitlens.advanced.messages": {
-		"suppressCommitHasNoPreviousCommitWarning": false,
-		"suppressCommitNotFoundWarning": false,
-		"suppressFileNotUnderSourceControlWarning": false,
-		"suppressGitVersionWarning": false,
-		"suppressLineUncommittedWarning": true,
-		"suppressNoRepositoryWarning": false,
-		"suppressResultsExplorerNotice": false,
-		"suppressShowKeyBindingsNotice": true
-	},
-	"gitlens.views.fileHistory.enabled": false,
-	"gitlens.views.lineHistory.enabled": false,
-	"importSorter.sortConfiguration.importMembers.order": "lowercaseFirst",
-	"importSorter.sortConfiguration.importPaths.order": "lowercaseFirst",
-	"importSorter.importStringConfiguration.quoteMark": "double",
-	"editor.suggestSelection": "first",
-	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	"cSpell.userWords": [
-		"CESD",
-		"Initialisation",
-		"Interop",
-		"Kubernetes",
-		"MAWB",
-		"Nvector",
-		"Paginator",
-		"Pojo",
-		"Serilog",
-		"Startability",
-		"Submenus",
-		"Unmanaged",
-		"Utilised",
-		"behaviour",
-		"bemcn",
-		"cargowise",
-		"chunkhash",
-		"contenthash",
-		"deserialize",
-		"devtool",
-		"expando",
-		"hmmm",
-		"ifnot",
-		"infobox",
-		"initialise",
-		"luxon",
-		"middlewares",
-		"prefetch",
-		"retval",
-		"scrollbar",
-		"submenu",
-		"ungrouped",
-		"unloco",
-		"unmount",
-		"wisetech"
-	],
-	"vsintellicode.java.completionsEnabled": false,
-	"vsintellicode.python.completionsEnabled": false,
-	"editor.formatOnType": false,
+  // ========== Extension customisations ==========
+  "atomKeymap.promptV3Features": true,
+  "bookmarks.saveBookmarksInProject": true,
+  "code-eol.crlfCharacter": "←",
+  "code-eol.newlineCharacter": "¬",
+  "code-eol.returnCharacter": "↵",
+  "gitlens.codeLens.scopes": [
+    "containers", "document"
+  ],
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true,
+    "suppressLineUncommittedWarning": true,
+  },
+  "importSorter.sortConfiguration.importMembers.order": "lowercaseFirst",
+  "importSorter.sortConfiguration.importPaths.order": "lowercaseFirst",
+  "importSorter.importStringConfiguration.quoteMark": "double",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsintellicode.java.completionsEnabled": false,
+  "vsintellicode.python.completionsEnabled": false,
+  "cSpell.userWords": [
+    "CESD",
+    "Initialisation",
+    "Interop",
+    "Kubernetes",
+    "MAWB",
+    "Nvector",
+    "Paginator",
+    "Pojo",
+    "Serilog",
+    "Startability",
+    "Submenus",
+    "Unmanaged",
+    "Utilised",
+    "behaviour",
+    "bemcn",
+    "cargowise",
+    "chunkhash",
+    "contenthash",
+    "deserialize",
+    "devtool",
+    "expando",
+    "hmmm",
+    "ifnot",
+    "infobox",
+    "initialise",
+    "luxon",
+    "middlewares",
+    "personalizations",
+    "prefetch",
+    "retval",
+    "scrollbar",
+    "submenu",
+    "ungrouped",
+    "unloco",
+    "unmount",
+    "wisetech"
+  ],
 }

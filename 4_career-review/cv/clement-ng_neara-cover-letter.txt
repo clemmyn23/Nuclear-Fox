@@ -1,0 +1,10 @@
+Hello Neara hiring team
+
+Neara’s work appeals to me because I’d like to build software that has a tangible impact beyond helping a business grow.
+I have 8 years of software engineering experience across distributed systems, APIs, data-intensive workflows and cloud infrastructure.
+My experience at SMASH has also given me the opportunity to build and maintain systems that directly support a community, which aligns closely with what I’m looking for in my next role.
+I enjoy taking messy problems, figuring out what actually matters, and designing systems that hold up as they grow.
+I’d love the chance to bring that approach to Neara and contribute to software with a meaningful real-world impact.
+
+I'd love to talk. Thanks for your time.
+Clement

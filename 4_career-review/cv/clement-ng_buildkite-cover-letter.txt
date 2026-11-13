@@ -1,0 +1,10 @@
+Hello Buildkite hiring team,
+
+Buildkite appeals to me because I like building software that makes other engineers’ lives easier and helps them do better work.
+I’ve been working in software engineering for 8 years, across distributed systems, APIs, data-heavy workflows and cloud infrastructure, with a focus on building things that are reliable and easy to maintain.
+As part of my JavaScript engineering responsibilities, I’m also the person who maintains our build tooling and package ecosystem, making sure the foundations other engineers rely on keep working.
+I enjoy digging into messy problems, understanding how things actually work, and finding simple solutions that hold up as they grow.
+I’d love to bring that experience to Buildkite and work on tooling that engineers around the world rely on every day.
+
+I'd love to talk. Thanks for your time.
+Clement

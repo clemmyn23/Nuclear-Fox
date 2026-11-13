@@ -1,0 +1,15 @@
+At Lorikeet, AI is part of how we work every day. Tell us about a specific time you've used AI to do something better or faster — what did you prompt, what did you get, and what did you have to fix?
+
+At my current role my team is responsible for handling the journey ecosystem which consists of 15 microservices. 
+Sometimes the custom field services would have hiccups updating the subscriber data, we would follow the playbook and give the instance a little nudge to keep it going. And as part of this I usually document my entire debugging flow on a slack thread next to the Datadog alert. 
+
+I prompted Claude "what could I have missed?" and fed the slack thread url, the Confluence playbooks, the Datadog APM logs, and the github repo code. 
+
+What I got was a full analysis of the problem, log inspections with proper timestamps, code change required, and also a change proposal for another team's microservice that has been producing multiple rows in error when it should be returning a single entry, a bug that's been laying dormant for 2 years. 
+
+I did have to fix the formatting on several of my slack messages that Claude was using for context, which again shows having clean data going into the model is very important for getting clean results out. 
+I also had to nudge it to look for logs in the correct place. We had recently migrated our log sinks but we hadn't updated all the references in the Confluence playbooks. Claude spent way too long searching log entries in the void... Again showcasing the importance of "clean data in -> clean data out". 
+
+Thanks to AI we got one less bug in the system and I'm looking forward to getting woken up even less in the future. 
+
+

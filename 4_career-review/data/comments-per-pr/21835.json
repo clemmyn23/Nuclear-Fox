@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21835,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-1002 instrumentation",
+  "pr_created_at": "2026-01-08T23:34:15Z",
+  "comments": [
+    {
+      "created_at": "2026-01-12T03:31:46Z",
+      "path": "app/CampMon.Core/Metrics/Campaign/CampaignSendingAnalyticsService.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21835#discussion_r158175",
+      "body": "This is RSS series ID"
+    }
+  ]
+}

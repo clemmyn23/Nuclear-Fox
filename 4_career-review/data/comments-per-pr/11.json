@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Deprecated/bloom-app",
+  "pr_number": 11,
+  "pr_author": "lcallaway",
+  "pr_title": "BTB-18: Example usage of Amplify Cognito SDK",
+  "pr_created_at": "2024-09-16T02:08:57Z",
+  "comments": [
+    {
+      "created_at": "2024-09-16T02:13:39Z",
+      "path": "BloomApp/BloomApp.Client/package.json",
+      "html_url": "https://git.campmon.com/Deprecated/bloom-app/pull/11#discussion_r137970",
+      "body": "https://bundlephobia.com/package/aws-amplify@6.6.0\nI hope that \"tree shakable\" is actually tree shakable. "
+    }
+  ]
+}

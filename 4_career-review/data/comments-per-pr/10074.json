@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10074,
+  "pr_author": "clewis",
+  "pr_title": "UX1-520: Use reducer pattern for new Custom Fields app",
+  "pr_created_at": "2021-06-18T05:07:26Z",
+  "comments": [
+    {
+      "created_at": "2021-06-18T05:49:16Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFields.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10074#discussion_r84551",
+      "body": "I don't like the names `state` and `stateActionDispatch`. They are too generic. \r\nMaybe try like `customFieldsState` and `customFieldsDispatch`\r\n"
+    },
+    {
+      "created_at": "2021-06-18T05:53:23Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsState.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10074#discussion_r84552",
+      "body": "Can merge these two into one context. They are usually used together so less stuff to import export. "
+    }
+  ]
+}

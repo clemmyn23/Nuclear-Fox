@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 11425,
+  "pr_author": "samanthac",
+  "pr_title": "CA-1160-manage-sms-get-sms - set up skeleton, initial routes and display sms",
+  "pr_created_at": "2021-11-10T00:00:16Z",
+  "comments": [
+    {
+      "created_at": "2021-11-10T00:27:46Z",
+      "path": "srcfrontend/app/managesmscampaigns/components/CampaignsSidebar/index.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11425#discussion_r92030",
+      "body": "File name typo here breaks build"
+    },
+    {
+      "created_at": "2021-11-10T00:53:55Z",
+      "path": "srcfrontend/app/managesmscampaigns/managesmscampaigns.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11425#discussion_r92032",
+      "body": "Can move this above the scss import later"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 20391,
+  "pr_author": "fan-li",
+  "pr_title": "add log_to_aws_for_debugging variable to switch on AWS inbuilt logging ",
+  "pr_created_at": "2025-07-29T05:13:35Z",
+  "comments": [
+    {
+      "created_at": "2025-07-29T05:29:05Z",
+      "path": "extras/CampMon.ServiceAgents.NetCore/deployment/terraform/environments/dev/service_agents.tf",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20391#discussion_r147921",
+      "body": "https://git.campmon.com/Engineering/cm-terraform/blob/983f26f47c0da89ed5d7999ff1d8a67b91e63799/modules/fargate/task/main.tf#L8-L13\r\n\r\noh it's an actual thing. That name just abstracts so much haha"
+    }
+  ]
+}

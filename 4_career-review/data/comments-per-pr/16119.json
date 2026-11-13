@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16119,
+  "pr_author": "rashmita-pinto",
+  "pr_title": "Recipe section in ecommerce page behind AutomationRecipe",
+  "pr_created_at": "2023-09-01T04:16:09Z",
+  "comments": [
+    {
+      "created_at": "2023-09-01T05:52:15Z",
+      "path": "srcfrontend/app/automation/components/RecipeCatalog/CatalogView.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16119#discussion_r125269",
+      "body": "One day I'll put a `keepAlive: true` into the fetch call inside `trackAnalyticsEvent`......"
+    },
+    {
+      "created_at": "2023-09-01T05:55:17Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/CommerceStoreRegistration.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16119#discussion_r125270",
+      "body": "Strange we don't have a linter rule for this. \r\n```suggestion\r\n                    isDirect={member?.customerType === CustomerType.Direct}\r\n```\r\n\r\n---\r\nAhhh we do have a rule for this `eqeqeq` and it's set to `\"error\"`. \r\nJust didn't get to run because of css linter errors. "
+    }
+  ]
+}

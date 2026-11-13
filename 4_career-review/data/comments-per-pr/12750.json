@@ -1,0 +1,39 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12750,
+  "pr_author": "michael-yin",
+  "pr_title": "Sms 115 b delete sms",
+  "pr_created_at": "2022-04-27T08:01:38Z",
+  "comments": [
+    {
+      "created_at": "2022-04-29T06:03:32Z",
+      "path": "srcfrontend/app/managesmscampaigns/components/SmsContent/SmsContent.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12750#discussion_r100564",
+      "body": "Thanks for renaming this for consistency "
+    },
+    {
+      "created_at": "2022-04-29T06:05:54Z",
+      "path": "srcfrontend/app/managesmscampaigns/components/SmsDraftsPage/SmsDraftsPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12750#discussion_r100565",
+      "body": "Trailing space in copy.\r\nMaybe check punctuation too. Might not need the full stop \".\". "
+    },
+    {
+      "created_at": "2022-04-29T06:07:45Z",
+      "path": "srcfrontend/app/managesmscampaigns/components/SmsDraftsPage/SmsDraftsPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12750#discussion_r100566",
+      "body": "This is not used? "
+    },
+    {
+      "created_at": "2022-04-29T06:23:06Z",
+      "path": "srcfrontend/app/managesmscampaigns/components/SmsOverviewPage/SmsOverviewPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12750#discussion_r100567",
+      "body": "If `isDeletingCampaign` is not used then we can probably move the whole `onDeleteCampaigns` function inside the `DeleteDialog` and avoid the copy pasta code in DraftsPage and SmsOverviewPage"
+    },
+    {
+      "created_at": "2022-05-04T03:21:53Z",
+      "path": "srcfrontend/app/managesmscampaigns/components/SmsLists/SentList/SentListItem.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12750#discussion_r100756",
+      "body": "oops missed recipients count column here "
+    }
+  ]
+}

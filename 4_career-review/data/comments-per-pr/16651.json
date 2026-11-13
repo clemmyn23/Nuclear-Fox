@@ -1,0 +1,39 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16651,
+  "pr_author": "oliver-toon",
+  "pr_title": "EL-1454 Update direct sending domain experience to match agency",
+  "pr_created_at": "2023-11-28T03:38:49Z",
+  "comments": [
+    {
+      "created_at": "2023-11-29T03:41:29Z",
+      "path": "srcfrontend/app/accountsettings/components/TabularSendingDomainsPage/TabularSendingDomainsPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16651#discussion_r129475",
+      "body": "Suggest using `window.location.assign()` instead. \r\nOr you can use `location.replace()` from react router. \r\n"
+    },
+    {
+      "created_at": "2023-11-29T03:42:27Z",
+      "path": "srcfrontend/app/accountsettings/components/TabularSendingDomainsPage/TabularSendingDomainsPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16651#discussion_r129476",
+      "body": "This doesn't need to be wrapped inside `useEffect` "
+    },
+    {
+      "created_at": "2023-11-29T03:42:53Z",
+      "path": "srcfrontend/app/accountsettings/components/TabularSendingDomainsPage/TabularSendingDomainsPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16651#discussion_r129477",
+      "body": "Are these two supposed to be `''`?"
+    },
+    {
+      "created_at": "2023-11-29T03:45:33Z",
+      "path": "srcfrontend/app/components/SendingDomains/components/SendingDomainsSection/SendingDomainsSection.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16651#discussion_r129478",
+      "body": "This won't call `loadData`. \r\n```suggestion\r\n                onLoadingError(() => loadData());\r\n```\r\n\r\n```suggestion\r\n                onLoadingError(loadData);\r\n```"
+    },
+    {
+      "created_at": "2023-11-29T03:52:25Z",
+      "path": "srcfrontend/app/accountsettings/components/SendingDomainsPage/SendingDomains.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16651#discussion_r129479",
+      "body": "Maybe render a spinner here instead of blank?"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+Engineering|contentbuildercontext.staticresourceservice.core|838|niaw|2023-03-24T05:50:09Z|SE-762 Identify if a URL is pointing to a document
+Freshview|createsend.com|14950|james-dunlop|2023-03-25T00:48:41Z|PP-117 Braintree React component to show card type validations
+Freshview|campmon.hex|756|jari-talka|2023-03-27T05:00:55Z|Fix Back Url from client details page
+Freshview|createsend.com|15026|azissis|2023-04-05T02:54:41Z|MER-367 - Add feature flag for LegacyShopifyMigration and wire up endpoint
+Freshview|createsend.com|15092|oliver-toon|2023-04-19T05:56:27Z|EL-1080 Implement dialog on oAuth error page
+Deprecated|CommerceStoreManagement|32|azissis|2023-04-20T01:46:32Z|MER-328 - create list if not provided in request to map Shopify store
+Deprecated|ThirdPartyListImporter|58|azissis|2023-04-20T01:56:18Z|MER-328f - require a listId for Shopify imports
+Freshview|createsend.com|15157|michael-yin|2023-04-28T10:07:26Z|SMS-624-b In the buy SMS credits page, show purchase successful message
+Engineering|CmAPI.AccountManagement|156|azissis|2023-05-02T23:52:27Z|MER-410 - remove retry on create / upsert actions
+Freshview|createsend.com|15264|james-dunlop|2023-05-11T04:33:17Z|PP-323 Change Day - Upsell Design and Spam Tests from Checklist
+Freshview|createsend.com|15273|jowers|2023-05-12T13:14:44Z|MER-379 - Handle Retryable Shopify import status
+Freshview|createsend.com|15410|rashmita-pinto|2023-05-30T04:16:37Z|MER-495 show fields isObselete on migrated lists
+Freshview|createsend.com|15447|rashmita-pinto|2023-06-01T08:24:43Z|MER-519: Migration - fix tooltip issues and migration dialog popup dismissal iss
+Freshview|createsend.com|15509|ttruong|2023-06-08T11:47:11Z|SE-819 Copy Segment Functionality for refreshed Segment Builder
+Freshview|createsend.com|15514|jari-talka|2023-06-13T01:19:20Z|SMS-695: Use Country and Name from api in SMS Setup
+Freshview|createsend.com|15550|brian-luc|2023-06-16T02:16:24Z|[MER-391] Integration Request Dialog (Direct)
+Freshview|createsend.com|15559|brian-luc|2023-06-16T06:47:03Z|[MER-391a] Integration Request Dialog analytics + JS cleanup 
+Freshview|campmon.hex|803|jowers|2023-06-20T13:27:43Z|Update nexus npm dependencies to use https
+Freshview|createsend.com|15630|lcallaway|2023-06-29T00:56:27Z|JS - Remove redundant usages of ~app
+Freshview|createsend.com|15633|azissis|2023-06-29T02:40:15Z|alter in app copy for migration assistant and support different groups
+platform|cm.protobuf|680|jowers|2023-07-07T13:33:10Z|MER-505 - Add CHANGED_VIA_COMMERCE_BULK_IMPORT
+Freshview|createsend.com|15698|mattheww|2023-07-12T03:42:44Z|PP-414 - AddOn management from main billing page / settings - Engagement Segment
+Freshview|createsend.com|15732|lcallaway|2023-07-18T06:29:09Z|JS - Add new useDebounce hook
+Freshview|createsend.com|15741|oliver-toon|2023-07-19T13:43:01Z|EL-1242 Instrumentation for enforce two factor page load
+Freshview|createsend.com|15758|rashmita-pinto|2023-07-23T23:37:54Z|MER-514a cmApi endpoints for getting recipie metadata and createwrkflwFrmRecipe
+Freshview|createsend.com|15779|michael-yin|2023-07-25T05:10:33Z|CL-82-fix-notification add suppression success notification
+Freshview|createsend.com|15789|jbustamante|2023-07-26T00:57:38Z|CL-63 Implement new social share link customisation feature for customer sent ca
+Freshview|createsend.com|15841|james-dunlop|2023-07-31T22:01:01Z|PP-448 Resume plans with add-ons allows removal of add-ons
+Freshview|createsend.com|15893|rashmita-pinto|2023-08-07T11:41:32Z|Mer 514b: Workflow Creation page from Recipes
+Freshview|createsend.com|15907|anthony-alexis|2023-08-09T00:45:03Z|Added Welcome Journey Recipe Tile
+Freshview|createsend.com|15918|rashmita-pinto|2023-08-09T10:45:13Z|Mer 610: Fix agency status page when some clients are deleted
+Freshview|createsend.com|15929|brian-luc|2023-08-10T07:02:30Z|[MER-516] Add polling / notification when clone is complete
+Freshview|createsend.com|15934|jeromec|2023-08-10T21:41:52Z|EL-1275-b - automatic login following the two factor setup
+Freshview|createsend.com|15943|rashmita-pinto|2023-08-11T07:36:55Z|Mer 514c: Create Welcome journey from recipe page
+Freshview|createsend.com|15951|jbustamante|2023-08-14T03:07:11Z|SRE-1717 Add Instrumentation for new social share links feature
+Freshview|createsend.com|15968|eddie-zeng|2023-08-15T06:30:36Z|PLAT-3864 - Add use of feature gating service for new Machine Clicks GA Release
+Freshview|createsend.com|15981|brian-luc|2023-08-17T01:53:16Z|[MER-619] Add slugs to AR_Recipes table to help define each recipe by a type
+Freshview|createsend.com|16014|lcallaway|2023-08-21T04:44:25Z|JS -  Fix ada test warning
+Freshview|createsend.com|16025|anthony-alexis|2023-08-22T01:52:51Z|MER-557 Added Anchor to Make the Whole Store Integration Card Linked and Clic…
+Freshview|createsend.com|16033|rashmita-pinto|2023-08-22T05:54:21Z|Mer 614: Recipe Catalog page
+Freshview|createsend.com|16053|rashmita-pinto|2023-08-24T00:55:01Z|MER-640 Migration banner copy change and faq dialog change 
+Engineering|SegmentTrackingPlan|420|nazif-ahmed|2023-08-25T01:19:01Z|Changed name property value to reflect release product naming (Non-hu…
+Freshview|createsend.com|16064|nazif-ahmed|2023-08-25T01:26:32Z|Changed name property value to reflect release product naming (Non-hu…
+CMDS|cm-utils|99|lcallaway|2023-08-29T05:09:01Z|JS - Improve useLocalStorage types
+Freshview|createsend.com|16119|rashmita-pinto|2023-09-01T04:16:09Z|Recipe section in ecommerce page behind AutomationRecipe
+Freshview|createsend.com|16128|subrat-shrestha|2023-09-04T02:01:15Z|EL-1309-b InApp 2FA
+Freshview|createsend.com|16129|brian-luc|2023-09-04T02:15:14Z|[MER-615] Automations Overview component (direct only)
+Freshview|createsend.com|16130|mattheww|2023-09-04T05:53:18Z|PP-423 - Tell customer they will get the segments soon - Engagement Segments
+Freshview|createsend.com|16145|brian-luc|2023-09-05T05:57:51Z|[MER-540] Introduce Sentry logging to new commerce frontend apps
+Freshview|createsend.com|16177|rashmita-pinto|2023-09-11T00:16:16Z|Mer 639 b: RecipeTile tracking, automation redirection fixes, empty automation v
+Engineering|SegmentTrackingPlan|423|rashmita-pinto|2023-09-12T00:18:20Z|MER-639: Add tracking to recipe pages and on event viewed recipe overview
+Freshview|createsend.com|16230|brian-luc|2023-09-18T08:10:48Z|[MER-669] Enable Local Storage to manage new Prebuilt Journeys Banner
+Freshview|createsend.com|16256|rashmita-pinto|2023-09-21T03:07:21Z|MER:674 Segment rule coping fix on recipe
+Freshview|createsend.com|16258|subrat-shrestha|2023-09-21T08:44:11Z|EL-1265 InApp disable 2FA 
+Freshview|createsend.com|16275|lcallaway|2023-09-25T06:23:54Z|PP-607 - Extract manage campaigns sub navigation
+Freshview|createsend.com|16287|brian-luc|2023-09-27T09:19:29Z|[MER-698] Various Bug Fixes for Recipes
+Freshview|createsend.com|16317|lcallaway|2023-10-04T05:05:28Z|JS - Remove unnecessary ~app  imports
+Freshview|createsend.com|16383|chrisw|2023-10-16T00:32:39Z|Improve linting performance
+Freshview|createsend.com|16433|lcallaway|2023-10-23T02:57:31Z|JS - Remove the last of the ignored test warnings
+Freshview|createsend.com|16456|lcallaway|2023-10-25T03:06:55Z|JS - Upgrade to React 17
+Freshview|createsend.com|16534|lcallaway|2023-11-02T03:20:50Z|JS - Update Hex to React 17
+Freshview|createsend.com|16566|henrys|2023-11-08T12:02:06Z|AJ-158 - Prevent deleting custom field if its associated with customfield step
+Freshview|createsend.com|16576|anthony-alexis|2023-11-10T02:47:08Z|MER-718 Minor Bugs on Recipes
+Freshview|createsend.com|16615|james-dunlop|2023-11-19T01:55:35Z|PP-703 UI fixes for Client Overview
+Freshview|createsend.com|16644|lcallaway|2023-11-27T00:47:47Z|Skip Campaign Overview Cypress Tests
+Freshview|createsend.com|16651|oliver-toon|2023-11-28T03:38:49Z|EL-1454 Update direct sending domain experience to match agency
+Freshview|createsend.com|16665|oliver-toon|2023-12-01T02:01:54Z|EL-1455 Add DMARC column to sending domains table
+Freshview|createsend.com|16666|subrat-shrestha|2023-12-01T02:04:24Z|EL-1370 Fix member profile page for agencies
+Engineering|workflowcontext.updatecustomfield|21|henrys|2023-12-11T04:02:05Z|AJ-177 - Updating lambda service
+Freshview|createsend.com|16750|oliver-toon|2023-12-27T04:40:14Z|EL-1485 add DMARC and DKIM check to the domain wizard
+Freshview|createsend.com|16751|mattheww|2023-12-28T05:44:12Z|PP-754 - [Campaign checklist] Display rewritten from address along with tooltip 
+Freshview|createsend.com|16752|oliver-toon|2023-12-28T06:56:45Z|EL-1385b Make AddDomainModal callbacks more strict
+Engineering|contentbuildercontext.staticresourceservice.core|977|michael-yin|2024-01-01T21:43:11Z|CA-1437-b continue LiveContentUpsellDialog
+Freshview|createsend.com|16758|mattheww|2024-01-02T05:12:53Z|PP-754 - [Campaign checklist] Display rewritten from address along with tooltip 
+Freshview|createsend.com|16764|oliver-toon|2024-01-02T09:03:33Z|EL-1537 Add support for specifying domain to authenticate in query string
+Freshview|createsend.com|16781|oliver-toon|2024-01-04T08:39:21Z|EL-1550 Add copy domains support to sending domains wizard
+Freshview|createsend.com|16785|mattheww|2024-01-05T01:11:51Z|PP-754 - [Campaign checklist] Display rewritten from address along with tooltip 
+Freshview|createsend.com|16786|mattheww|2024-01-05T02:32:53Z|PP-747 - [Campaign checklist] Update assistant notifications
+Freshview|createsend.com|16788|subrat-shrestha|2024-01-05T03:40:11Z|EL-1551 Link the key length warning to correct FF
+Freshview|createsend.com|16803|james-dunlop|2024-01-09T04:42:35Z|PP-743 Campaign checklist assistant to show domain authentication warnings
+Freshview|createsend.com|16812|james-dunlop|2024-01-10T06:39:09Z|PP-743 Show From Address auth validation warning in Campaign Checklist
+Freshview|createsend.com|16813|oliver-toon|2024-01-10T08:28:11Z|EL-1564 Auto check domain status and share message copy changes
+Freshview|createsend.com|16825|subrat-shrestha|2024-01-11T06:50:22Z|EL-1540 Initial frontend for client sending domains audit
+Freshview|createsend.com|16827|james-dunlop|2024-01-11T08:56:05Z|PP-746 Prepare to send dialog to show domain auth warning
+Freshview|createsend.com|16828|oliver-toon|2024-01-11T09:13:16Z|EL-1561 Support using existing details to authenticate domain
+Engineering|contentbuildercontext.staticresourceservice.core|981|challowes|2024-01-15T00:56:43Z|ED-1443 - Fixing 2 inefficiencies in Live Content Dialog of Email Builder
+Freshview|createsend.com|16849|subrat-shrestha|2024-01-16T00:09:50Z|EL-1541 Client sending domain audit
+Freshview|createsend.com|17201|jeromec|2024-03-08T00:04:50Z|EL-1445-b - Tracking clicks on the reset setup link
+Freshview|createsend.com|17239|alexis-tzanos|2024-03-14T03:06:50Z|CA-1467 Fix Campaign Checklist A/B URL Reset Bug
+Freshview|createsend.com|17263|timl|2024-03-19T03:30:14Z|EL-1669.Add FF and hook up the clients check on admin overview sending domain ba
+Engineering|workflowbuildercontext.uiservice.core|195|david-vanlaarveth|2024-03-25T03:25:03Z|AJ-254 Remove UpdateCustomField and Referential FFs
+Engineering|contentbuildercontext.staticresourceservice.core|1003|mattheww|2024-03-26T22:07:44Z|PP-853 - Upsell inside the builder for LiveContent
+Engineering|contentbuildercontext.staticresourceservice.core|1004|james-dunlop|2024-03-27T21:49:56Z|PP-848 Activation of LiveContent
+Freshview|createsend.com|17342|rashmita-pinto|2024-04-02T06:44:40Z|AJ-264 Fix Error message displayed to client users when creating prebuilt Shopif
+Freshview|createsend.com|17350|david-vanlaarveth|2024-04-03T05:30:05Z|AJ-275 Add condition to prebuilt banner to dismiss after 3 calendar day visits t
+Freshview|createsend.com|17352|oliver-toon|2024-04-03T11:51:35Z|EL-1654 Add partitioned cookie support
+Freshview|createsend.com|17361|brian-luc|2024-04-05T06:40:34Z|[EL-1703] Cannot reset 2fa setup on a person
+Freshview|createsend.com|17376|subrat-shrestha|2024-04-10T03:07:53Z|EL-1688 Disable the disable
+Freshview|createsend.com|17377|brian-luc|2024-04-10T03:48:53Z|[EL-1683] Revert /resetsal call to return a 200 OK with an Error in response
+Freshview|createsend.com|17401|lcallaway|2024-04-15T04:10:44Z|JS - Provide a way to use the CmAgencyAccountHeader in srcfrontend

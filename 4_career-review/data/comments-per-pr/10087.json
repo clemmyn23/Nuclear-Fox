@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10087,
+  "pr_author": "lcallaway",
+  "pr_title": "UX1-523 - Update sidebar custom field count",
+  "pr_created_at": "2021-06-21T05:11:58Z",
+  "comments": [
+    {
+      "created_at": "2021-06-21T06:03:18Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTable.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10087#discussion_r84642",
+      "body": "Maybe move this to `handleDeleteCustomField` inside `CustomFields.tsx` so you won't have to change this file, and so this component is abstracted away from having to know about / refresh the sidebar. "
+    },
+    {
+      "created_at": "2021-06-22T00:46:16Z",
+      "path": "srcfrontend/app/audience/components/ListLayout/ListLayout.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10087#discussion_r84681",
+      "body": "nit: can rename the method to `reloadListDetails` to use object property shorthand :p"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "pr_repo": "Engineering/workflowcontext.updatecustomfield",
+  "pr_number": 21,
+  "pr_author": "henrys",
+  "pr_title": "AJ-177 - Updating lambda service",
+  "pr_created_at": "2023-12-11T04:02:05Z",
+  "comments": [
+    {
+      "created_at": "2023-12-13T06:30:25Z",
+      "path": "lambda/index.js",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.updatecustomfield/pull/21#discussion_r129936",
+      "body": "Maybe.\r\n```suggestion\r\n\t\tconst ssmParameterInfo = await ssm.getParameter(options);\r\n```"
+    },
+    {
+      "created_at": "2023-12-13T06:31:15Z",
+      "path": "lambda/index.js",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.updatecustomfield/pull/21#discussion_r129937",
+      "body": "Can you avoid using `var` please. "
+    },
+    {
+      "created_at": "2023-12-13T06:42:42Z",
+      "path": "lambda/index.js",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.updatecustomfield/pull/21#discussion_r129938",
+      "body": "Note to self: https://redis.js.org/#node-redis-usage-auto-pipelining\r\nAwaiting here is optional since we don't need/depend on the data afterwards. "
+    },
+    {
+      "created_at": "2023-12-13T06:46:33Z",
+      "path": "lambda/index.js",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.updatecustomfield/pull/21#discussion_r129939",
+      "body": "```suggestion\r\n\t\t} while(cursor !== 0);\r\n```"
+    },
+    {
+      "created_at": "2023-12-13T06:51:13Z",
+      "path": "lambda/index.js",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.updatecustomfield/pull/21#discussion_r129940",
+      "body": "Questions because I am not too familiar with lambda and node-redis: \r\n- Suppose `ELASTICACHE_SSL` is set to false, will the client still work if `socket.tls` is hardcoded to true? \r\n"
+    },
+    {
+      "created_at": "2023-12-13T06:55:15Z",
+      "path": "lambda/index.js",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.updatecustomfield/pull/21#discussion_r129941",
+      "body": "Consider `await` this to be safe, but I think it'll work as is as the call will get batched and executed at the `await client.scan` call below."
+    },
+    {
+      "created_at": "2023-12-17T23:19:58Z",
+      "path": "lambda/index.js",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.updatecustomfield/pull/21#discussion_r130010",
+      "body": "Ahhh `Array.prototype.forEach` doesn't support async, you can blame javascript for this 😔 \r\n\r\nYou can use the `await Promise.all` and `.map()` instead. \r\nhttps://stackoverflow.com/a/37576787"
+    }
+  ]
+}

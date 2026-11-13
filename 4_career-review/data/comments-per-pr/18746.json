@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 18746,
+  "pr_author": "sha",
+  "pr_title": "ZUSE-86 Add recommendation banners and \"Campaign Performance\" section to Client ",
+  "pr_created_at": "2025-01-30T04:39:28Z",
+  "comments": [
+    {
+      "created_at": "2025-02-05T23:01:01Z",
+      "path": "srcfrontend/app/clientoverview/components/CampaignPerformanceSection/CampaignPerformanceSection.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18746#discussion_r141377",
+      "body": "Can you pass in `randomBanner.text` as React.Node content instead of string text? \nDon't really see the need for `dangerouslySetInnerHTML` "
+    }
+  ]
+}

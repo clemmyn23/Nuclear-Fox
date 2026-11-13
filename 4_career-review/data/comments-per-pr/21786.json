@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21786,
+  "pr_author": "samanthac",
+  "pr_title": "AJ-1007 - Add in feedback widget to CRM Lite pages",
+  "pr_created_at": "2026-01-05T05:46:35Z",
+  "comments": [
+    {
+      "created_at": "2026-01-05T22:44:54Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmScv.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21786#discussion_r157876",
+      "body": "Nit: I don't like this Scv abbreviation in code "
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+Freshview|createsend.com|19970|david-vanlaarveth|2025-05-28T01:28:26Z|AJ-627 HEX - Fix prebuilt related prebuilts not showing inactive
+Freshview|createsend.com|19991|david-vanlaarveth|2025-05-30T06:34:18Z|AJ-668 Fix the preview image resolution
+Freshview|createsend.com|20025|samanthac|2025-06-10T02:10:09Z|AJ-643 - Add option to create a list based on a prebuilt journey
+Freshview|createsend.com|20034|chrisw|2025-06-10T06:16:47Z|React 18 -  smscampaigncreationchecklist.tsx
+Engineering|contentbuildercontext.staticresourceservice.core|1096|tai-woodley|2025-06-13T06:54:54Z|ZUSE-194: Allow bullet point colours to be changed
+Freshview|createsend.com|20061|genevieve-bruno|2025-06-13T07:07:45Z|AJ-655 - Campaign Success - Add compare campaigns option
+Engineering|workflowcontext.updatecustomfield|62|david-vanlaarveth|2025-06-16T07:16:23Z|AJ-670 Handle deleted workflow step in the updatecustomfield service
+Engineering|workflowbuildercontext.uiservice.core|308|fan-li|2025-06-20T02:48:29Z|AJ-676: Fix or prevent analytics tracking errors in the Journey Builder
+Freshview|createsend.com|20127|david-vanlaarveth|2025-06-24T02:33:49Z|AJ-682 increase json MaxDepth to 512
+Freshview|createsend.com|20147|lcallaway|2025-06-25T05:44:55Z|JS - Fix cypress tests for deleted campaigns under React 18
+Freshview|createsend.com|20150|lcallaway|2025-06-26T00:07:16Z|JS - Fix cypress tests for draft and sent campaigns under React 18
+Engineering|workflowbuildercontext.uiservice.core|309|david-vanlaarveth|2025-06-26T07:53:55Z|AJ-686 Fix condition steps taking up 3 of the max number of steps instead of 1
+operations|aws.stack.build|95|chrisw|2025-07-15T00:47:28Z|Update Node to 18.20.8 (Hydrogen) as our Node LTS attempt failed
+Freshview|createsend.com|20287|chrisw|2025-07-15T02:46:25Z|Node 18 - Prep app build
+Freshview|createsend.com|20292|fan-li|2025-07-16T01:13:40Z|AJ-700 flip experiment A and B
+Engineering|workflowcontext.triggerservice.core|53|masoudc|2025-07-19T00:03:06Z|SRE-2586 Monolith couchbase removal - added redis in front of couchbase
+Freshview|createsend.com|20391|fan-li|2025-07-29T05:13:35Z|add log_to_aws_for_debugging variable to switch on AWS inbuilt logging 
+Freshview|createsend.com|20428|david-vanlaarveth|2025-08-01T01:33:57Z|AJ-725 Fix xss in unsubscribe page from send a test email
+Engineering|workflowcontext.runnerservice.core|141|oliver-toon|2025-08-06T07:57:07Z|PLAT-4466 Produce RawContactListSubscriptionStateSet via monolith gRPC
+Freshview|createsend.com|20532|fan-li|2025-08-14T07:48:32Z|CD-4: Let customers know when their list permissions are about to expire
+Freshview|createsend.com|20651|russella|2025-08-29T01:14:29Z|COM-749-a: Introduce Sentry logging for new admin overview v2
+Freshview|createsend.com|20675|jianjun-chen|2025-09-01T08:20:34Z|COM-803: Overview bug bash fix - 01
+Engineering|SegmentTrackingPlan|552|samanthac|2025-09-03T02:50:08Z|AJ-751 - Add agency status page and section to tracking plan
+Freshview|createsend.com|20691|samanthac|2025-09-03T02:53:28Z|AJ-751 - Add tracking to agency status section and page
+Freshview|createsend.com|20694|david-vanlaarveth|2025-09-03T03:56:05Z|AJ-770 Agency Partner overview UI alignment
+Engineering|localdev-tools|70|henry-bai|2025-09-03T09:33:29Z|update target path for workflow builder
+Freshview|createsend.com|20700|henry-bai|2025-09-04T00:43:31Z|HOP-342: add fields to workflowbuilder config endpoint
+Freshview|createsend.com|20722|david-vanlaarveth|2025-09-05T12:11:18Z|AJ-754 Agency partner page - Top 1% badge
+Freshview|createsend.com|20731|fan-li|2025-09-09T01:38:57Z|AJ-779: Change "Preview, then save" to "Preview, then save draft" for journey em
+Freshview|createsend.com|20741|david-vanlaarveth|2025-09-09T23:47:54Z|AJ-792 Agency Status Program - Fix all the words
+Engineering|CmMarketingIntegrations|26|oliver-toon|2025-09-10T05:13:12Z|PLAT-4466-a Upgrade Protobuf and CmLibs
+Engineering|CmMarketingIntegrations|27|oliver-toon|2025-09-11T05:13:06Z|PLAT-4466-b Publish RawContactDefined via gRPC to the monolith
+Freshview|createsend.com|20763|james-dunlop|2025-09-11T22:37:56Z|SHARE-4861 Insights version watermark for testing
+Engineering|TestAutomation|496|samanthac|2025-09-12T07:04:46Z|AJ-646 - Update from CTOR to actual click rate so we can turn JourneyReportingUI
+platform|kafka-acls|197|david-vanlaarveth|2025-09-16T05:57:28Z|AJ-70 Remove spark workflow event catalog indexer from consumer groups
+Freshview|createsend.com|20794|genevieve-bruno|2025-09-16T23:46:13Z|AJ-750 - Implement amplitude reporting in CRON JOB (buckets)
+Freshview|createsend.com|20806|james-dunlop|2025-09-18T00:56:29Z|SHARE-4905 Fix some Insights UI Bugs
+Freshview|createsend.com|20850|fan-li|2025-09-24T04:38:06Z|AJ-789: Update empty tab message to reflect the status
+Freshview|createsend.com|20859|fan-li|2025-09-25T01:41:16Z|AJ-788: Add journey/workflow link to the paused toast
+Freshview|createsend.com|20882|genevieve-bruno|2025-09-29T02:37:20Z|AJ-750 - Turn on AWS logging to investigate agencyperformancereportagent cron ta
+Freshview|createsend.com|20894|dmitry-antonov|2025-09-30T06:24:40Z|LSK-596, LSK-597 Handling of declined payment
+Freshview|createsend.com|20896|david-connell|2025-09-30T08:21:21Z|COM-842 Add administrator information to campaign reports page when shown from a
+Freshview|createsend.com|20903|fan-li|2025-10-01T00:19:23Z|AJ-769: Add 'Rename' menu to journeys in Automation Overview table
+Freshview|createsend.com|20908|lcallaway|2025-10-01T05:42:50Z|JS - Upgrade ESLint to a version that supports TS 5.5
+Freshview|createsend.com|20909|fan-li|2025-10-01T05:49:37Z|AJ-833:  flip feature flag to turn off Campaign Guidance experiment
+Freshview|createsend.com|20922|fan-li|2025-10-03T00:28:31Z|AJ-860: Clean up campaign success
+Freshview|createsend.com|20926|fan-li|2025-10-03T04:22:08Z|AJ-858 Feature flag for Notes
+Freshview|createsend.com|20938|genevieve-bruno|2025-10-07T03:23:05Z|AJ-827 - Feature Flag - Foundation
+Engineering|workflowcontext.dr2service|33|francois-naude|2025-10-14T05:39:19Z|SRE-2732 Update build scripts to use IAM roles instead of keys
+Engineering|SegmentTrackingPlan|563|genevieve-bruno|2025-10-14T23:25:14Z|AJ-880 - Subscriber notes tracking
+Engineering|workflowbuildercontext.uiservice.core|313|francois-naude|2025-10-15T01:27:16Z|SRE-2735 Update build scripts to use IAM roles instead of keys
+Engineering|workflowcontext.runnerservice.core|143|francois-naude|2025-10-15T01:58:54Z|SRE-2737 Update build scripts to use IAM roles instead of keys
+Engineering|workflowcontext.triggereventdatastoreservice|48|francois-naude|2025-10-15T03:37:49Z|SRE-2738 Update build scripts to use IAM roles instead of keys
+Engineering|workflowcontext.updatecustomfield|64|francois-naude|2025-10-15T04:57:19Z|SRE-2739 Update build scripts to use IAM roles instead of keys
+Freshview|createsend.com|21001|genevieve-bruno|2025-10-15T05:06:26Z|AJ-880 - Subscriber notes tracking implementation
+Engineering|onboardingcontext.setupguideservice|355|genevieve-bruno|2025-10-21T23:46:29Z|AJ-845 - Add new GPRC endpoints and repository class for foundational steps
+Freshview|createsend.com|21066|fan-li|2025-10-27T00:07:05Z|AJ-840: Create foundational steps section and adjust layout based on designs
+Freshview|createsend.com|21081|alexis-tzanos|2025-10-27T23:14:56Z|COM-890 Bring In Monolith CMHeader For AccSettings Page
+Freshview|createsend.com|21098|genevieve-bruno|2025-10-28T23:04:39Z|AJ-838 - Fixed failed test in SetupGuideServiceTests
+Freshview|createsend.com|21128|fan-li|2025-10-30T06:19:16Z|AJ-890 Create new routes for drip campaign pages
+Freshview|createsend.com|21179|brian-luc|2025-11-05T07:27:41Z|[LSK-657] Cleverbridge - Notify user that they will lose addons/features when ch
+Freshview|createsend.com|21184|steven-li|2025-11-05T22:06:55Z|SHARE-5006 - Updated Copy, adding Tracking and Feedback Survery
+Freshview|createsend.com|21222|genevieve-bruno|2025-11-11T04:56:39Z|AJ-894 - Create series button in the create UI and a new page to create the seri
+Engineering|contentbuildercontext.staticresourceservice.core|1131|tai-woodley|2025-11-11T06:00:58Z|STRK-26: Jump-to and highlight AI changes
+Freshview|createsend.com|21233|sam-henry|2025-11-12T03:31:36Z|HOP-433 - Signupform Reporting UI fast follows, add UIEvent Tracking
+Freshview|createsend.com|21239|sherry-lotfi|2025-11-12T22:35:03Z|AJ-898 Hiding AB Test from when in a series
+Freshview|createsend.com|21249|genevieve-bruno|2025-11-13T06:13:38Z|AJ-902 - Return whether it is a series campaign when returning campaigns to the 
+Freshview|createsend.com|21255|genevieve-bruno|2025-11-13T23:57:20Z|Add execute permission to CS_GetCampaignSequenceSummary stored proc
+Freshview|createsend.com|21276|fan-li|2025-11-17T04:43:26Z|AJ-899: Schedule in main checklist area when it is a series
+Engineering|contentbuildercontext.staticresourceservice.core|1135|tai-woodley|2025-11-18T04:28:48Z|STRK-26: Add scroll and highlight support for add operations and spacers
+Freshview|createsend.com|21284|fan-li|2025-11-18T05:06:02Z|AJ-910: GDPR delete for campaign series
+Freshview|createsend.com|21295|genevieve-bruno|2025-11-19T04:46:10Z|AJ-932 - Show campaign series name at topbar panel after creating series
+Freshview|createsend.com|21409|fan-li|2025-11-27T22:45:40Z|return actual deleted campaign count in sequence
+Engineering|SegmentTrackingPlan|579|genevieve-bruno|2025-11-30T23:53:41Z|AJ-936 - Campaign series tracking plan part 1
+Freshview|createsend.com|21467|genevieve-bruno|2025-12-05T03:32:36Z|AJ-930 - Hide Create button in FocusBar when series is empty
+Freshview|createsend.com|21557|fan-li|2025-12-11T23:21:42Z|AJ-952: New campaign takes back to series
+Freshview|createsend.com|21608|fan-li|2025-12-15T23:54:18Z|AJ-989: fix long series name layout issue in the focus bar of series page
+Freshview|createsend.com|21609|chris-luong|2025-12-15T23:56:20Z|AJ-958 campaign series page UI updates
+Freshview|createsend.com|21643|lcallaway|2025-12-16T23:30:16Z|JS - Update prettier
+Engineering|contentbuildercontext.staticresourceservice.core|1157|tai-woodley|2025-12-17T05:24:41Z|STRK-66: Update rate limiting error messages and show upgrade dialog for lite pl
+Freshview|createsend.com|21663|samanthac|2025-12-17T07:29:13Z|AJ-911-b-fix - no async for shared method with api
+Freshview|createsend.com|21666|sherry-lotfi|2025-12-17T08:31:29Z|AJ-994 Series report updates
+Freshview|createsend.com|21690|sherry-lotfi|2025-12-18T05:33:36Z|AJ-XXXX Series page Date range should only include scheduled campaigns
+Freshview|createsend.com|21709|fan-li|2025-12-19T04:03:13Z|AJ-924: Add CAL entries for series activity
+Engineering|RightToBeForgotten|98|fan-li|2025-12-19T04:17:28Z|AJ-924: add CAL category for sequence (series) campaign
+Freshview|createsend.com|21733|chris-luong|2025-12-22T04:53:05Z|AJ-888: Apply formatting when displaying note content
+Engineering|contentbuildercontext.staticresourceservice.core|1158|sha|2025-12-22T22:25:51Z|STRK-27 🐟 Flakiness Check—Post Patch Validation
+Freshview|createsend.com|21786|samanthac|2026-01-05T05:46:35Z|AJ-1007 - Add in feedback widget to CRM Lite pages
+Engineering|SegmentTrackingPlan|590|samanthac|2026-01-05T05:47:25Z|AJ-1007 - Add CRM Lite feature to usefulness survey
+Freshview|createsend.com|21835|chris-luong|2026-01-08T23:34:15Z|AJ-1002 instrumentation
+Freshview|createsend.com|21913|lcallaway|2026-01-14T07:03:27Z|TUR-38 - Fix for when the website builder add-on is not available
+Freshview|createsend.com|21938|chris-luong|2026-01-16T00:44:44Z|AJ-1026: create CM-API endpoint to get count of CRM Lite customers
+Freshview|createsend.com|22013|genevieve-bruno|2026-01-21T23:28:10Z|AJ-1040 - Add columns to CL_ClientCRM table
+platform|cm.protobuf|958|genevieve-bruno|2026-01-27T23:23:09Z|AJ-1038 - Setup protobuf
+Freshview|createsend.com|22063|fan-li|2026-01-28T00:56:05Z|Aj-1015 Link up backend and frontend for CRM Lite - fix route issue
+Freshview|createsend.com|22065|genevieve-bruno|2026-01-28T01:27:12Z|AJ-1038 - Setup SQS queues using terraform for CRM data population
+Freshview|createsend.com|22070|chris-luong|2026-01-28T03:37:11Z|AJ-1056: return the oldest original date scv
+Freshview|createsend.com|22088|fan-li|2026-01-29T04:39:21Z|AJ-1041 Bootstrap CrmLiteService service agent
+Freshview|createsend.com|22103|fan-li|2026-01-30T04:53:01Z|AJ-1057-b: give campaign series feature to agency/multi-team if CampaignSequence
+Engineering|workflowcontext.runnerservice.core|146|james-dunlop|2026-01-30T10:02:24Z|AML-140 Fixing double trace header trace-bin

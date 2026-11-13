@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 18022,
+  "pr_author": "david-connell",
+  "pr_title": "Com-246 Ensure that when campaign checklist preview loaded with live images drop",
+  "pr_created_at": "2024-08-15T10:25:06Z",
+  "comments": [
+    {
+      "created_at": "2024-08-20T01:22:50Z",
+      "path": "srcfrontend/app/components/EmailPreviewDialog/EmailPreviewDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18022#discussion_r137207",
+      "body": "This reads like it's always passed in so don't need to be optional `?` "
+    }
+  ]
+}

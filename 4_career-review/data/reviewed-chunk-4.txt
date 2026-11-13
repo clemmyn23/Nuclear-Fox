@@ -1,0 +1,100 @@
+Engineering|workflowbuildercontext.uiservice.core|199|samanthac|2024-04-17T04:24:30Z|AJ-287 - Update custom field using event data UI
+Engineering|workflowbuildercontext.uiservice.core|202|samanthac|2024-04-19T02:15:04Z|Missed Linting
+Engineering|contentbuildercontext.staticresourceservice.core|1024|lcallaway|2024-04-22T04:54:07Z|PP-884 - Fix broken tracking for viewed upsell widget
+Freshview|createsend.com|17440|david-vanlaarveth|2024-04-23T05:13:47Z|AJ-298 Remove LegacyShopifyAppMigration FFs and add LegacyShopifyAppMigrationFin
+Engineering|workflowcontext.updatecustomfield|53|zhartmann|2024-05-02T04:29:15Z|AJ-286-c: Make message types constant
+Freshview|createsend.com|17475|jeromec|2024-05-02T23:36:46Z|EL-1747 - Removing DMARCSendingDomainUI Feature flag
+Freshview|createsend.com|17498|oliver-toon|2024-05-10T04:14:09Z|EL-1730 Connect generate new keys to backend
+Engineering|workflowbuildercontext.uiservice.core|228|rashmita-pinto|2024-05-24T07:23:26Z|AJ-345 Don't show trigger event data option in UCF step for CM.Commerce journeys
+Freshview|createsend.com|17605|brian-luc|2024-05-30T05:32:41Z|[EL-1765] Setup frontend for Dormant Client Sending Status
+Engineering|workflowbuildercontext.uiservice.core|233|david-vanlaarveth|2024-06-03T01:17:54Z|AJ-344 Limit advanced expressions to Essentials and Premier plan
+Freshview|createsend.com|17618|oliver-toon|2024-06-03T03:17:44Z|EL-1771-b Add grace period to bulk delete people
+Engineering|workflowcontext.updatecustomfield|56|markg|2024-06-04T00:06:48Z|Have teamcity run linters, tests etc. Import test results to teamcity UI
+Freshview|createsend.com|17629|brian-luc|2024-06-04T07:31:17Z|[EL-1766] Filtering Dormant Client Sending status in Clients List
+Freshview|createsend.com|17646|oliver-toon|2024-06-06T10:33:32Z|EL-1783 Show manage features link for client pays clients
+Engineering|workflowbuildercontext.uiservice.core|237|zhartmann|2024-06-07T01:48:36Z|Allow e for Text
+Engineering|workflowbuildercontext.uiservice.core|241|david-vanlaarveth|2024-06-20T06:26:45Z|AJ-327 Show the expression in shorthand "mathy syntax" format in the step name a
+Engineering|workflowbuildercontext.uiservice.core|246|david-vanlaarveth|2024-06-27T05:34:22Z|AJ-327 Math minus − instead of dash -
+Engineering|workflowbuildercontext.uiservice.core|250|david-vanlaarveth|2024-07-05T05:34:00Z|AJ-405-a Fix popup viewport detection not working
+Engineering|workflowbuildercontext.uiservice.core|254|rashmita-pinto|2024-07-09T07:33:47Z|AJ-403 Handle deletion of email when used in conditions
+Engineering|workflowbuildercontext.uiservice.core|257|rashmita-pinto|2024-07-10T06:46:28Z|AJ-403 cleaning and handling multiple email in conditon error
+Engineering|workflowbuildercontext.uiservice.core|260|rashmita-pinto|2024-07-16T02:02:49Z|fix emailInConditionErrors undefined
+Freshview|createsend.com|17871|daniel-keith|2024-07-18T04:27:58Z|Settings box prop naming
+Freshview|createsend.com|17888|lcallaway|2024-07-23T01:24:33Z|JC-393 - CustomerType shouldn't be optional on CmMemberLite
+Engineering|SegmentTrackingPlan|488|zhartmann|2024-07-24T00:39:29Z|AJ-417: Add information around excluded segments
+Freshview|createsend.com|17919|steven-li|2024-07-26T07:21:45Z|PP 951 Track UI interactions when choosing brand style in my Branded Templates
+Freshview|createsend.com|17934|samanthac|2024-07-30T05:23:49Z|AJ-410 - Fix: multi-select and date overlay with sticky footer, loading
+Freshview|createsend.com|17937|daniel-keith|2024-07-30T06:42:55Z|EL-1870 (2/2) - Cleaned up MultiLanguageUnsubscribe FF
+Engineering|workflowbuildercontext.uiservice.core|264|david-vanlaarveth|2024-07-30T07:55:25Z|AJ-378  Add sidebar options to Wait Until Step
+Freshview|createsend.com|17940|challowes|2024-07-30T23:55:37Z|COM-197 - Skeleton of GrowExress into AppSwitcher Front End
+Freshview|createsend.com|18022|david-connell|2024-08-15T10:25:06Z|Com-246 Ensure that when campaign checklist preview loaded with live images drop
+Freshview|createsend.com|18035|brian-luc|2024-08-20T05:50:04Z|[EL-1904] Extract the existing my template tab front end code and Integrate into
+Engineering|workflowbuildercontext.uiservice.core|268|zhartmann|2024-08-22T02:06:28Z|AJ-436: Allow 00:00 EndTime in UI
+Freshview|createsend.com|18046|david-connell|2024-08-22T02:53:45Z|COM-259 fix loading screen of live image variants dropdown
+Freshview|createsend.com|18059|rashmita-pinto|2024-08-26T23:50:10Z|Aj 398- Add how many subscriber are waiting at Wait Until Step on datebased jour
+Freshview|createsend.com|18081|brian-luc|2024-08-29T07:36:08Z|[EL-1910] Create new CMAPI endpoint to rename templates & UI
+Deprecated|bloom-terraform-modules|1|ishworg|2024-09-10T06:09:26Z|update readme.
+Engineering|workflowbuildercontext.uiservice.core|274|steven-li|2024-09-16T01:48:55Z|AJ-451 Show Client Current time in wait until side bar
+Deprecated|bloom-app|11|lcallaway|2024-09-16T02:08:57Z|BTB-18: Example usage of Amplify Cognito SDK
+Freshview|createsend.com|18178|brian-luc|2024-09-16T23:29:59Z|[EL-1962] Hide "Choose from your recent emails" if there have not been any recen
+Deprecated|bloom-app|14|lcallaway|2024-09-17T05:38:53Z|BTB-19 - Setup Prettier and add import sorting through eslint
+Deprecated|bloom-app|16|ishworg|2024-09-18T03:42:54Z|fix(BTB-24): remove moved block.
+Deprecated|bloom-app|17|lcallaway|2024-09-18T05:56:21Z|BTB-20 - Initial Signup Flow
+Freshview|createsend.com|18191|daniel-keith|2024-09-19T04:46:38Z|EL-1892 - Cleaned up FFs: ClientLevelSendingDomainWarning, ClientLevelSendingDom
+Deprecated|bloom-app|22|sha|2024-09-20T08:43:36Z|BTB-11: Cognito setup for React auth
+Deprecated|bloom-app|23|lcallaway|2024-09-23T04:57:06Z|Clean-up authentication routing
+Freshview|createsend.com|18205|lcallaway|2024-09-25T03:39:18Z|JS - Deprecate ClientSettingsDetails context
+Freshview|createsend.com|18249|daniel-keith|2024-10-04T06:18:39Z|EL-1985 - Account Settings Refresh: gave functionality to administrator links, r
+Engineering|contentbuildercontext.staticresourceservice.core|1078|sha|2024-10-17T23:02:32Z|ZUSE-30: add padding to text block panel
+Freshview|createsend.com|18337|steven-li|2024-10-28T22:23:59Z|AJ-24 Clean up Segment Builder UI Refresh Feature Flag
+Engineering|workflowcontext.runnerservice.core|126|david-vanlaarveth|2024-10-29T06:12:11Z|AJ-470 Swap grpc to dotnetcorelibs with feature flag
+Engineering|contentbuildercontext.staticresourceservice.core|1081|rashmita-pinto|2024-11-01T04:57:24Z|ZUSE-41: Add padding feature on text block for the whole block not selection
+Engineering|workflowcontext.runnerservice.core|127|david-vanlaarveth|2024-11-11T03:12:47Z|AJ 472 adjust cache timeouts
+Freshview|createsend.com|18417|david-vanlaarveth|2024-11-12T22:23:14Z|AJ-496 back button from segment to campaign report
+Freshview|createsend.com|18441|lcallaway|2024-11-18T05:31:41Z|JS, remove some redundant ~app imports
+Freshview|createsend.com|18481|david-vanlaarveth|2024-11-25T23:13:07Z|AJ-520 Hide "Create segment" button when campaign is sending
+Freshview|createsend.com|18488|michael-yin|2024-11-26T05:37:35Z|fail-test-duct-tape fix flaky tests
+Freshview|createsend.com|18501|david-vanlaarveth|2024-11-28T04:38:04Z|AJ 521 Prevent creating segment when list is deleted
+Freshview|createsend.com|18517|david-vanlaarveth|2024-12-02T23:14:17Z|AJ 518 Create new CmApi endpoint(s) for Send a Test
+Freshview|createsend.com|18526|david-vanlaarveth|2024-12-04T00:17:18Z|AJ 489 Add FF for Send a test from Journey Email Step
+Freshview|createsend.com|18632|samanthac|2024-12-30T05:49:34Z|AJ-488 - Swap condition paths endpoint and pass feature flag to journey config
+Freshview|createsend.com|18706|brian-luc|2025-01-22T02:39:59Z|[LSK-157] Fixes to session url and plan selection loading/disabled states
+Freshview|createsend.com|18707|david-vanlaarveth|2025-01-22T03:12:31Z|AJ 540 - POC for Essentials 30 day 90% discount
+Engineering|workflowbuildercontext.uiservice.core|283|genevieve-bruno|2025-01-28T05:49:17Z|AJ-566 - Dismiss sent a test banner when switching steps
+Freshview|createsend.com|18738|david-vanlaarveth|2025-01-29T05:28:07Z|AJ-562 Refactor NetFramework code to NetStandard for Essentials 90% Discount POC
+Freshview|createsend.com|18746|sha|2025-01-30T04:39:28Z|ZUSE-86 Add recommendation banners and "Campaign Performance" section to Client 
+Engineering|workflowbuildercontext.uiservice.core|285|genevieve-bruno|2025-02-03T05:33:57Z|AJ-564 - Add send a test to Plain Text and HTML imported
+Freshview|createsend.com|18763|david-vanlaarveth|2025-02-04T04:06:43Z|AJ-540 cache Prevent urgency type discounts from being applied for 32 days after
+Freshview|createsend.com|18767|david-vanlaarveth|2025-02-04T06:02:37Z|AJ-547 Add crossed out original price to the payment page
+Engineering|contentbuildercontext.staticresourceservice.core|1089|tai-woodley|2025-02-05T03:16:04Z|ZUSE-99: Add bluesky social link
+Freshview|createsend.com|18808|david-vanlaarveth|2025-02-07T04:32:33Z|AJ-573 DRC feedback for essentials 90% discount copy
+Freshview|createsend.com|18831|brian-luc|2025-02-11T05:04:36Z|[LSK-193] Invoice History UI Updates
+Freshview|createsend.com|19088|chrisw|2025-03-11T03:50:58Z|JC-406 - Prepare the repository for `createRoot` and React 18 out of compatibili
+Freshview|createsend.com|19148|samanthac|2025-03-18T06:04:29Z|AJ-552-b - Add UI tracking for template and copy buttons
+Freshview|createsend.com|19224|david-vanlaarveth|2025-03-25T05:06:39Z|AJ-515 Improve segment OR condition when selecting engagement segment rules
+Engineering|workflowbuildercontext.uiservice.core|287|david-vanlaarveth|2025-03-26T02:58:55Z|Add feature flag for remove subscribers step
+Freshview|createsend.com|19268|chrisw|2025-03-27T23:41:31Z|Jc 406 - Migrate multiple bundles to React 18
+Engineering|workflowbuildercontext.uiservice.core|288|genevieve-bruno|2025-03-28T03:09:50Z|AJ-598 - Implement Remove Subscriber step in the "add" tooltip
+Freshview|createsend.com|19363|chrisw|2025-04-07T23:14:20Z|HOP-116 - url loading / css problem
+Freshview|createsend.com|19366|chrisw|2025-04-08T00:41:07Z|JC-406 - Migrate multiple bundles to React 18
+Engineering|workflowbuildercontext.uiservice.core|293|genevieve-bruno|2025-04-16T05:11:02Z|AJ-632 - Add validation for Remove Subscribers step
+Freshview|createsend.com|19527|genevieve-bruno|2025-04-16T05:14:51Z|AJ-632 - Add validation for Remove Subscribers step
+Freshview|createsend.com|19565|lcallaway|2025-04-22T00:07:03Z|HOP-148 - Add a Give Feedback link to launch the feedback dialog
+Freshview|createsend.com|19576|lcallaway|2025-04-22T06:43:35Z|JS - Convert price change pages to React 18 concurrent mode
+Engineering|workflowbuildercontext.uiservice.core|297|david-vanlaarveth|2025-04-24T01:27:03Z|lint
+Engineering|workflowbuildercontext.uiservice.core|299|david-vanlaarveth|2025-04-28T06:40:11Z|AJ-639 Make disabled Remove Subscribers tooltip accessible
+Engineering|workflowcontext.runnerservice.core|131|david-vanlaarveth|2025-04-29T04:44:39Z|AJ-473 Cleanup grpc changeover from cm.remoteservicewrapper to dotnetcorelibs
+Freshview|createsend.com|19633|genevieve-bruno|2025-04-29T05:21:40Z|AJ-621 - Clean up the tags for prebuilt journeys
+Freshview|createsend.com|19679|genevieve-bruno|2025-04-30T07:06:29Z|AJ-633 - Make Copy Journey Work
+Engineering|workflowbuildercontext.uiservice.core|305|david-vanlaarveth|2025-05-01T23:43:28Z|Fix remove subscribers step orange border when not defined
+Freshview|createsend.com|19753|chrisw|2025-05-06T01:02:55Z|React 18 - smscreditpurchases.tsx
+Freshview|createsend.com|19772|lcallaway|2025-05-06T07:09:31Z|React 18 - EmbeddedAgencySendingDomainBanner
+Freshview|createsend.com|19773|lcallaway|2025-05-06T07:14:32Z|React 18 - EmbeddedSendingDomainsBanner
+Freshview|createsend.com|19828|david-vanlaarveth|2025-05-12T05:36:22Z|Fix workflow builder erroring (add CommandType.StoredProcedure)
+Freshview|createsend.com|19862|david-vanlaarveth|2025-05-14T07:24:19Z|AJ-642 Hex improvements for the Prebuilt Journeys (formerly Recipes) page
+Freshview|createsend.com|19897|samanthac|2025-05-20T00:13:07Z|AJ-627-b - Design changes to recipe overview
+Freshview|createsend.com|19898|lcallaway|2025-05-20T00:13:23Z|React 18 - Audience
+Freshview|createsend.com|19932|samanthac|2025-05-22T00:08:57Z|AJ-627-sql-2 - More accurate column name for AR_Recipes
+Freshview|createsend.com|19953|david-vanlaarveth|2025-05-26T05:21:11Z|AJ-627 HEX - Fix prebuilt journey dialog breaking on empty usage/howitworks
+Freshview|createsend.com|19962|david-vanlaarveth|2025-05-27T02:04:56Z|AJ-627 HEX - Fix usage/howitworks being set to null
+Engineering|workflowcontext.runnerservice.core|136|genevieve-bruno|2025-05-27T23:52:44Z|AJ-659 - Handle null Client Id in anniversary and Get ListId by SubscriberId

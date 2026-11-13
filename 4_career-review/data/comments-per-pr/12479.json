@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12479,
+  "pr_author": "michael-yin",
+  "pr_title": "Sms 59 b Estimation of delivery time",
+  "pr_created_at": "2022-03-24T06:32:05Z",
+  "comments": [
+    {
+      "created_at": "2022-03-28T00:25:42Z",
+      "path": "app/CampMon.CmAPI/Endpoints/Sms/SmsMessage/SmsMessageSegmentCalculator.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12479#discussion_r98931",
+      "body": "May I recommend using HashSet? "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21233,
+  "pr_author": "sam-henry",
+  "pr_title": "HOP-433 - Signupform Reporting UI fast follows, add UIEvent Tracking",
+  "pr_created_at": "2025-11-12T03:31:36Z",
+  "comments": [
+    {
+      "created_at": "2025-11-13T01:33:07Z",
+      "path": "shared/cm-api/utils/analyticsUtils.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21233#discussion_r154108",
+      "body": "oh this is nice "
+    }
+  ]
+}

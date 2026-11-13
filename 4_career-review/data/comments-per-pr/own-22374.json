@@ -1,0 +1,18 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22374,
+  "pr_title": "AJ-1063-c - CRM Subscriber profile page frontend - part 3",
+  "pr_created_at": "2026-02-25T00:42:23Z",
+  "own_comments": [
+    {
+      "created_at": "2026-03-02T23:13:23Z",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22374#issuecomment-26512",
+      "body": "Yes show `-` for empty. \nNo we aren't showing most \"segments\" data. That's another piece of future work that will need a bunch of backend investigation and implementation. "
+    },
+    {
+      "created_at": "2026-03-08T23:58:23Z",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22374#issuecomment-26559",
+      "body": "TODOs migrated from part 2: \n* nit: I'm not a big fan of the Subsection naming, every component is a subsection of something else\n* BEM: Please don't reuse the c-crm-subscriber-profile-section class, that's for a different component. If it has layout things in it, you can extract them to a shared l-something class, but c- is for component specific."
+    }
+  ]
+}

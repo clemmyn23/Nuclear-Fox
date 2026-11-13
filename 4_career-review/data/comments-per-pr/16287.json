@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16287,
+  "pr_author": "brian-luc",
+  "pr_title": "[MER-698] Various Bug Fixes for Recipes",
+  "pr_created_at": "2023-09-27T09:19:29Z",
+  "comments": [
+    {
+      "created_at": "2023-09-28T05:36:07Z",
+      "path": "srcfrontend/app/automation/components/EmptyAutomationRecipeOverview/EmptyAutomationRecipeOverview.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16287#discussion_r126559",
+      "body": "```suggestion\r\n                <AutomationEmptyState origin=\"automations\" />\r\n```"
+    }
+  ]
+}

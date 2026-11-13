@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13906,
+  "pr_author": "david-connell",
+  "pr_title": "SMS-242 fixes as per requests.",
+  "pr_created_at": "2022-10-21T15:28:38Z",
+  "comments": [
+    {
+      "created_at": "2022-10-23T22:40:02Z",
+      "path": "srcfrontend/app/utils/sms/smsMessageUtil/smsMessageTransformation.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13906#discussion_r109608",
+      "body": "unused. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15841,
+  "pr_author": "james-dunlop",
+  "pr_title": "PP-448 Resume plans with add-ons allows removal of add-ons",
+  "pr_created_at": "2023-07-31T22:01:01Z",
+  "comments": [
+    {
+      "created_at": "2023-08-01T03:30:57Z",
+      "path": "app/js/src/app/account/chooseplan/AddOns/AddOnPaymentSummary.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15841#discussion_r123188",
+      "body": "`key` prop for elements in lists please. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13617,
+  "pr_author": "david-connell",
+  "pr_title": "Sms 188 a add a verified flag when the user is verified. ",
+  "pr_created_at": "2022-09-08T08:53:05Z",
+  "comments": [
+    {
+      "created_at": "2022-09-09T05:38:14Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsFromStep/SmsFromStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13617#discussion_r107481",
+      "body": "JS functions start with lower case "
+    }
+  ]
+}

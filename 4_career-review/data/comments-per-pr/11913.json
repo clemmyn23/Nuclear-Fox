@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 11913,
+  "pr_author": "zhartmann",
+  "pr_title": "CA-1216-b: Move SMS data handling from Couchbase to SQL Server",
+  "pr_created_at": "2022-01-31T07:17:06Z",
+  "comments": [
+    {
+      "created_at": "2022-02-03T04:43:18Z",
+      "path": "srcfrontend/app/cm-api/models/CmSMSMailing.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11913#discussion_r95579",
+      "body": "`recipientCount` is `totalRecipientCount` now. "
+    }
+  ]
+}

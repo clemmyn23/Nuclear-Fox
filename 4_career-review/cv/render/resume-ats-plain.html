@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Ng — Résumé (ATS)</title>
+<style>
+  /* ATS-SAFE: single column, standard headings, real text, no icons/graphics/columns.
+     Use THIS one for online application portals (Workday, Greenhouse, LinkedIn Easy Apply). A4 default. */
+  @page{ size:A4; margin:16mm 16mm; }
+  *{box-sizing:border-box}
+  body{max-width:200mm;margin:0 auto;padding:10mm 8mm;background:#fff;color:#111;
+    font-family:Arial,Helvetica,'Segoe UI',sans-serif;font-size:11pt;line-height:1.4}
+  .hint{font:600 12px Arial;color:#555;background:#f4f5f7;border:1px solid #dcdfe4;border-radius:8px;padding:10px 14px;margin-bottom:16px}
+  h1{font-size:22pt;margin:0 0 2px}
+  .role{font-size:12pt;font-weight:bold;margin:0 0 4px}
+  .contact{font-size:10.5pt;margin:0 0 12px}
+  a{color:#0a58ca}
+  h2{font-size:12pt;text-transform:uppercase;letter-spacing:1px;border-bottom:1.5px solid #111;
+    padding-bottom:2px;margin:16px 0 8px}
+  h3{font-size:11pt;margin:10px 0 1px}
+  .meta{font-size:10pt;color:#333;margin:0 0 4px}
+  ul{margin:4px 0 0;padding-left:20px} li{margin:3px 0}
+  .tech{font-size:10pt;color:#333;margin-top:4px}
+  p{margin:0 0 8px}
+  @media print{ .hint{display:none} body{padding:0} }
+</style>
+</head>
+<body>
+<div class="hint">📄 ATS-SAFE VERSION — use this for online application forms. Export with ⌘/Ctrl+P → Save as PDF (or upload the .docx if a portal demands Word). For emailing a human, use the editorial or sidebar version instead.</div>
+
+<h1>Clement Ng</h1>
+<p class="role">Senior Software Engineer · Director of IT</p>
+<p class="contact">Sydney, Australia | +61 413-424-888 | clementng23@gmail.com | linkedin.com/in/clemchowder</p>
+
+<h2>Summary</h2>
+<p>Full-stack software engineer with 8+ years across SaaS platforms, real-time systems, and event-scale IT infrastructure. Owns features end-to-end through React/TypeScript front ends, .NET/C# services, and gRPC/Kafka messaging — and the design docs that get them through architecture review. For 7+ years has helped build and now leads the IT function for one of Australia's largest pop-culture conventions — from founding engineer to Director of IT (45,000+ attendees, 25-person team). Known for translating messy real-world constraints into reliable systems and for being the engineer teams defer to across a large codebase.</p>
+
+<h2>Experience</h2>
+
+<h3>Software Engineer — Campaign Monitor (Marigold)</h3>
+<p class="meta">Apr 2021 – Present | Sydney | Email-marketing SaaS — createsend.com monolith and microservice mesh; six product domains.</p>
+<ul>
+  <li>Feature tech lead for CRM Lite (single-customer-view): authored the design (LDR reviewed by the architecture function), brokered schema decisions with DBAs and privacy-by-design decisions with the platform team, then delivered end-to-end — protobuf contracts, a paged SQS/Kafka backfill pipeline sized for 20-million-contact client lists, the subscriber-profile UI, and the production rollout.</li>
+  <li>Built the SMS product as a vertical slice through the entire stack — React UI, CmAPI endpoints, gRPC services, and the link-tracking topic taxonomy spanning protobuf, Kafka ACLs, and shared messaging libraries; geo expansion, hosted sign-up forms, and preference-center consent.</li>
+  <li>Led front-end build/toolchain modernisation for the org as a JavaScript Crew member — yarn workspaces, Vite/esbuild dev builds, Node LTS upgrades, TypeScript 4 to 5, Prettier/ESLint rollouts, React 18 concurrent-mode migration, and Webpack 5. Reviewed JS merges and maintained shared libraries across the front-end engineering org.</li>
+  <li>Drove multi-repo, contract-first changes — permission-checking and failure-handling features landing across 3–4 repositories (monolith, protobuf, microservices, datastores) in a single coordinated set.</li>
+  <li>Migrated a workflow-lookup service from the .NET-Framework monolith to a standalone .NET Core gRPC service, persisting through multiple production-load iterations to land it cleanly.</li>
+  <li>Delivered the Journeys/Automation step library — advanced custom-field expressions, a Wait-Until step (schema, persistence, cross-DB clone, GDPR-audited activity logging), send-a-test, and condition-path swapping — each feature-flag-gated across monolith and microservice.</li>
+  <li>Shipped Commerce / Shopify — the migration assistant, Commerce Management pages, and automation recipes, coordinating contract changes across the monolith, protobuf, the third-party importer service, and the admin tool.</li>
+  <li>Authored 20+ architecture and reference docs (still used to onboard engineers); organised pre-release bug-bash sessions; screened mid-level engineering candidates and mentored junior engineers. Across the tenure: authored 530+ and reviewed 550+ pull requests across the entire engineering department.</li>
+</ul>
+<p class="tech">Tech: C#/.NET (Framework to Core to 9), TypeScript/React (16 to 18), gRPC and protobuf, Kafka, MSSQL, DynamoDB, Terraform, AWS.</p>
+
+<h3>Associate Software Developer — WiseTech Global</h3>
+<p class="meta">May 2019 – Mar 2021 | Sydney | Global logistics-software platform (CargoWise).</p>
+<ul>
+  <li>Sole owner of the AIS ship-tracking system (React, TypeScript, Google Maps) delivering real-time cargo visibility to all CargoWise customers — responsibility above the title.</li>
+  <li>Maintained and extended the MAWB air-cargo automation system, ingesting airline/carrier data for near-real-time cargo visibility (C#, MSSQL).</li>
+  <li>Delivered UI enhancements to PAVE, WiseTech's in-house task-management platform.</li>
+</ul>
+<p class="tech">Tech: C#, MSSQL, React, JavaScript/TypeScript.</p>
+
+<h3>Software Engineer — EdApp LMS (formerly Creative Licence Digital)</h3>
+<p class="meta">Feb 2018 – May 2019 | Sydney | Mobile-first learning-management platform.</p>
+<ul>
+  <li>Built peer-authoring templates and mobile features across React Native, Backbone.js, and Cordova.</li>
+  <li>Implemented logging and audit trails for the push-notification system.</li>
+  <li>Participated in 24/7 on-call support, CI/CD pipelines, and automated testing.</li>
+</ul>
+<p class="tech">Tech: CoffeeScript/JavaScript, MongoDB, React, C#, PostgreSQL, Jenkins, React Native.</p>
+
+<h2>Engineering Leadership (Volunteer) — Sydney Manga and Anime Show (SMASH!) Inc.</h2>
+
+<h3>Director of IT</h3>
+<p class="meta">Nov 2025 – Present | One of Australia's largest pop-culture conventions.</p>
+<ul>
+  <li>Lead IT across Engineering, Systems, and Support — 25 volunteers and 3 leads.</li>
+  <li>Partner with the Board and Executive to set IT strategy aligned with growth, risk, and live-event constraints.</li>
+  <li>Accountable for ticketing, access control, networking, and on-site incident response for 45,000+ attendees.</li>
+  <li>Leading a multi-year IT strategy and roadmap — cost monitoring, infrastructure scaling, internal systems, and volunteer engineering operations.</li>
+</ul>
+
+<h3>Assistant IT Director</h3>
+<p class="meta">Jan 2020 – Nov 2025</p>
+<ul>
+  <li>Coordinated cross-team delivery across IT, Ticketing, and Operations; managed ticket allocations for all exhibitors and guest performers.</li>
+  <li>Planned, delegated, and reviewed work for a team of engineers building and maintaining event systems; grew the team from 5 engineers.</li>
+  <li>Delivered 5 consecutive conventions with zero critical IT failures; ran on-site technical setup and live operations under peak load.</li>
+</ul>
+
+<h3>Software Developer</h3>
+<p class="meta">Nov 2018 – Jan 2020</p>
+<ul>
+  <li>Designed and built an integrated ticketing and mobile-scanning system supporting 40,000+ attendees and vendors, as one of a founding team of 5 engineers.</li>
+  <li>Managed on-site technical setup and live operations under peak load.</li>
+</ul>
+
+<h2>Education</h2>
+<p>B.Sc. (Computer Science) — University of New South Wales | 2014 – 2017</p>
+
+<h2>Speaking</h2>
+<p>"Preparing IT Infrastructure for an Anime Convention" — engineering-wide company-retreat talk (Campaign Monitor), Jun 2025. youtube.com/watch?v=bBZFJ9uXrbU</p>
+
+<h2>Technical Skills</h2>
+<ul>
+  <li>Languages: JavaScript, TypeScript, C#, Java</li>
+  <li>Frameworks: React, .NET, Express.js, Jest, NUnit</li>
+  <li>Data: MSSQL, MySQL, PostgreSQL, Redis, DynamoDB</li>
+  <li>Messaging / Infra: gRPC, Kafka, AWS, Azure, Terraform</li>
+  <li>CI/CD & Tooling: TeamCity, GitHub Actions, Git, Jira, Vite, Webpack</li>
+</ul>
+</body>
+</html>

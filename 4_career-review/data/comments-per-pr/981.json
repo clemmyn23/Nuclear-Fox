@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Engineering/contentbuildercontext.staticresourceservice.core",
+  "pr_number": 981,
+  "pr_author": "challowes",
+  "pr_title": "ED-1443 - Fixing 2 inefficiencies in Live Content Dialog of Email Builder",
+  "pr_created_at": "2024-01-15T00:56:43Z",
+  "comments": [
+    {
+      "created_at": "2024-01-15T05:28:56Z",
+      "path": "react/apps/livecontentdialog/src/LiveContentDialog/LiveDialog.tsx",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/981#discussion_r130695",
+      "body": "Check formatting. Indent looks off. "
+    },
+    {
+      "created_at": "2024-01-15T05:30:27Z",
+      "path": "react/apps/livecontentdialog/src/LiveContentDialog/LiveDialog.tsx",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/981#discussion_r130696",
+      "body": "Optional: Strange to see js function name capitalized.\r\nExisting code so I won't block. "
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 17401,
+  "pr_author": "lcallaway",
+  "pr_title": "JS - Provide a way to use the CmAgencyAccountHeader in srcfrontend",
+  "pr_created_at": "2024-04-15T04:10:44Z",
+  "comments": [
+    {
+      "created_at": "2024-04-17T04:40:47Z",
+      "path": ".vscode/settings.json",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/17401#discussion_r133701",
+      "body": "nice"
+    },
+    {
+      "created_at": "2024-04-17T06:38:29Z",
+      "path": "srcfrontend/app/components/HeaderDataProvider/AgencyAdminHeaderDataProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/17401#discussion_r133704",
+      "body": "❤️ "
+    },
+    {
+      "created_at": "2024-04-17T06:53:52Z",
+      "path": "srcfrontend/app/components/HeaderDataProvider/AgencyAdminHeaderDataProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/17401#discussion_r133705",
+      "body": "With so many chained `.then()` calls would it be more readable to use async await? \r\nWe can address this in follow-up work. "
+    },
+    {
+      "created_at": "2024-04-17T06:57:10Z",
+      "path": "srcfrontend/app/components/HeaderDataProvider/AgencyAdminHeaderDataProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/17401#discussion_r133707",
+      "body": "😔 \r\nNot very related to this PR but this entire method is chaotic. "
+    },
+    {
+      "created_at": "2024-04-17T06:59:56Z",
+      "path": "srcfrontend/app/components/HeaderDataProvider/headerDataTypes.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/17401#discussion_r133708",
+      "body": "Me dislike single character variable/type names. \r\n"
+    }
+  ]
+}

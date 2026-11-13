@@ -1,0 +1,27 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 14096,
+  "pr_author": "oliver-toon",
+  "pr_title": "EL-862 ClientSettingsForPersons TaxInformation page",
+  "pr_created_at": "2022-11-17T08:57:54Z",
+  "comments": [
+    {
+      "created_at": "2022-11-24T05:42:21Z",
+      "path": "srcfrontend/app/clientsettingsforpersons/TaxDetailsPage/TaxDetailsPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14096#discussion_r111198",
+      "body": "```suggestion\r\n                    <BackLink to=\"/billing\" text=\"Tax details\" isExternalLink={true} />\r\n```"
+    },
+    {
+      "created_at": "2022-11-24T05:44:05Z",
+      "path": "srcfrontend/app/components/TaxDetailsBanner/types.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14096#discussion_r111199",
+      "body": "```suggestion\r\nexport const BANNER_VERSION_TO_URL: Record<TaxDetailsBannerVersionType, string> ={\r\n```"
+    },
+    {
+      "created_at": "2022-11-24T05:44:42Z",
+      "path": "srcfrontend/app/clientsettingsforpersons/clientsettingsforpersons.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14096#discussion_r111201",
+      "body": "This part looks like you are reimplementing [CampaignMonitorAppShell](https://git.campmon.com/Freshview/createsend.com/blob/master/srcfrontend/app/components/CampaignMonitorAppShell/CampaignMonitorAppShell.tsx)"
+    }
+  ]
+}

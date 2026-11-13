@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12522,
+  "pr_author": "michael-yin",
+  "pr_title": "SMS message focus state",
+  "pr_created_at": "2022-03-29T01:10:19Z",
+  "comments": [
+    {
+      "created_at": "2022-03-29T01:57:24Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsMessageArea.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12522#discussion_r99035",
+      "body": "Check whitespace "
+    }
+  ]
+}

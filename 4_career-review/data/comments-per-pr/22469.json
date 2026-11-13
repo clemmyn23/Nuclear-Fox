@@ -1,0 +1,27 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22469,
+  "pr_author": "sherry-lotfi",
+  "pr_title": "AJ-1032:  Get engagement score for subscriber profile",
+  "pr_created_at": "2026-03-10T00:42:37Z",
+  "comments": [
+    {
+      "created_at": "2026-03-10T04:49:45Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteController.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22469#discussion_r161806",
+      "body": "> `[FromQuery] long subscriberId` \n\nThis one should be using the idor class `CampMon.CmAPI.Authentication.ContactId`. \nDon't expose raw IDs to and from frontend."
+    },
+    {
+      "created_at": "2026-03-10T04:50:49Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteService.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22469#discussion_r161807",
+      "body": "Can you make this configurable and grab this from \n`app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteServiceSettings.cs` please. \n\nWe would like to keep this flexible, and may adjust how many days (default to 60) in the future for performance or product reasons. "
+    },
+    {
+      "created_at": "2026-03-10T05:35:45Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteServiceSettings.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22469#discussion_r161816",
+      "body": "Suggestion: `EngagementScoreThreaholdInDays`"
+    }
+  ]
+}

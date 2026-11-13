@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 20903,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-769: Add 'Rename' menu to journeys in Automation Overview table",
+  "pr_created_at": "2025-10-01T00:19:23Z",
+  "comments": [
+    {
+      "created_at": "2025-10-01T04:08:05Z",
+      "path": "srcfrontend/app/automation/components/AutomationsTable/AutomationsTable.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20903#discussion_r151830",
+      "body": "We really should break this mega component up into more manageable smaller components. \r\n\r\nCreate a tech debt card for this. "
+    },
+    {
+      "created_at": "2025-10-01T04:11:29Z",
+      "path": "srcfrontend/app/automation/components/RenameDialog/RenameDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20903#discussion_r151831",
+      "body": "👿 "
+    },
+    {
+      "created_at": "2025-10-01T04:14:01Z",
+      "path": "srcfrontend/app/automation/components/RenameDialog/RenameDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20903#discussion_r151832",
+      "body": "This is going to look weird. \r\nStray spinner at the bottom of the table on the page"
+    },
+    {
+      "created_at": "2025-10-01T04:16:12Z",
+      "path": "srcfrontend/app/automation/components/RenameDialog/RenameDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20903#discussion_r151833",
+      "body": "Maybe \"Rename\" or \"Confirm\". \r\n\r\nAlso consider passing `isLoading: isRenaming` in there. I think this supports it. "
+    }
+  ]
+}

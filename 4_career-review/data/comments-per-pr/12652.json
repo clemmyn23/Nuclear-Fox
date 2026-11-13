@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12652,
+  "pr_author": "ttruong",
+  "pr_title": "SE-348 - Add feature feedback widget to the 'Latest Subject Line'",
+  "pr_created_at": "2022-04-12T05:55:49Z",
+  "comments": [
+    {
+      "created_at": "2022-04-13T00:24:12Z",
+      "path": "srcfrontend/app/components/FeatureFeedbackWidget/FeatureFeedbackWidget.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12652#discussion_r99865",
+      "body": "There's a new constant `$cmds-g-space-micro` for `4` now. "
+    }
+  ]
+}

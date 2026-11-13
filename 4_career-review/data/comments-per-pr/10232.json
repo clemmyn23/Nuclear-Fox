@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10232,
+  "pr_author": "clewis",
+  "pr_title": "UX1-533: Implement new single/double column layout for client overview",
+  "pr_created_at": "2021-07-05T04:26:52Z",
+  "comments": [
+    {
+      "created_at": "2021-07-06T01:18:41Z",
+      "path": "srcfrontend/app/clientoverview/ClientOverview.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10232#discussion_r85363",
+      "body": "Strange extra line here. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 20150,
+  "pr_author": "lcallaway",
+  "pr_title": "JS - Fix cypress tests for draft and sent campaigns under React 18",
+  "pr_created_at": "2025-06-26T00:07:16Z",
+  "comments": [
+    {
+      "created_at": "2025-06-26T03:37:55Z",
+      "path": "srcfrontend/regressiontests/cypress/e2e/campaigns_drafts.cy.js",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20150#discussion_r146393",
+      "body": "No more weird whitespaces in code 🎉 "
+    }
+  ]
+}

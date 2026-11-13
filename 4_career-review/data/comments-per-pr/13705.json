@@ -1,0 +1,27 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13705,
+  "pr_author": "lcallaway",
+  "pr_title": "SE-595 - Add Ada support to Feature Feedback Widget",
+  "pr_created_at": "2022-09-20T02:17:01Z",
+  "comments": [
+    {
+      "created_at": "2022-09-23T05:22:55Z",
+      "path": "shared/components/Ada/adaContextProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13705#discussion_r108297",
+      "body": "Capitalise file name"
+    },
+    {
+      "created_at": "2022-09-23T05:24:19Z",
+      "path": "shared/components/Ada/adaUtils.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13705#discussion_r108298",
+      "body": "Do these props need to be capitalised? "
+    },
+    {
+      "created_at": "2022-09-23T05:52:38Z",
+      "path": "srcfrontend/app/automation/automation.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13705#discussion_r108302",
+      "body": "🙃 \r\nThis JS trinary logic (`true` `false` `undefined`) on top of a double negative (`!` \"hide\") took me a while to parse.\r\nReckon you can put it into a helper function with ample description please? "
+    }
+  ]
+}

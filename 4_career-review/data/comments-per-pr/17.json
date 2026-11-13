@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Deprecated/bloom-app",
+  "pr_number": 17,
+  "pr_author": "lcallaway",
+  "pr_title": "BTB-20 - Initial Signup Flow",
+  "pr_created_at": "2024-09-18T05:56:21Z",
+  "comments": [
+    {
+      "created_at": "2024-09-18T06:07:37Z",
+      "path": "BloomApp/BloomApp.Client/src/routeTree.gen.ts",
+      "html_url": "https://git.campmon.com/Deprecated/bloom-app/pull/17#discussion_r138105",
+      "body": "ahhh gotta start reminding myself this is generated code. "
+    },
+    {
+      "created_at": "2024-09-18T06:10:53Z",
+      "path": "BloomApp/BloomApp.Client/src/routes/signup.tsx",
+      "html_url": "https://git.campmon.com/Deprecated/bloom-app/pull/17#discussion_r138106",
+      "body": "this is neat"
+    }
+  ]
+}

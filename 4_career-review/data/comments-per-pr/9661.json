@@ -1,0 +1,51 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 9661,
+  "pr_author": "lcallaway",
+  "pr_title": "UX1-436 - Create the modal to delete multiple lists",
+  "pr_created_at": "2021-05-06T07:11:31Z",
+  "comments": [
+    {
+      "created_at": "2021-05-06T07:23:09Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9661#discussion_r81905",
+      "body": "dialogue headers use `cmds-typography-subtitle`"
+    },
+    {
+      "created_at": "2021-05-06T07:26:14Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9661#discussion_r81907",
+      "body": "`footerSlot` is an override for `actionSlot` prop, for when we want to have custom stuff instead of relying on the cmds dialogue component to generate the confirm/cancel buttons. \r\n\r\nPersonally prefer using `actionSlot` and leave the spacing and styling to be handled by cmds. "
+    },
+    {
+      "created_at": "2021-05-06T07:27:53Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9661#discussion_r81909",
+      "body": "Unnecessary squiggly brackets `{}`. \r\nProbably copy pasted from the other modal code? "
+    },
+    {
+      "created_at": "2021-05-06T07:28:58Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9661#discussion_r81910",
+      "body": "We are gonna go with `appearance: 'link'` for consistency with the other two modals. "
+    },
+    {
+      "created_at": "2021-05-06T07:48:19Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9661#discussion_r81914",
+      "body": "Don't think this has worked since they renamed `modal` to `dialog`. "
+    },
+    {
+      "created_at": "2021-05-07T03:39:10Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9661#discussion_r81964",
+      "body": "Copy pasta be weird. \r\nActually don't need the cast here. `getElementById` returns `HTMLElement | null`, and then we do a null check on the next line..\r\nDoesn't affect performance or anything so 🤷‍♂️ "
+    },
+    {
+      "created_at": "2021-05-10T01:04:10Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9661#discussion_r82023",
+      "body": "It does get passed all the way down to `@cmds/button` component. \r\nAnd then it gets sniped by `react-focus-lock` we are using in the dialog component. "
+    }
+  ]
+}

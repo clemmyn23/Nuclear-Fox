@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 23242,
+  "pr_author": "samanthac",
+  "pr_title": "AJ-1145-frontend - Add sequence activity panel, add react query to campaigns",
+  "pr_created_at": "2026-05-20T06:54:36Z",
+  "comments": [
+    {
+      "created_at": "2026-05-21T04:27:38Z",
+      "path": "srcfrontend/app/campaigns/components/EditSequence/AdvancedSequence/Sidebar/SequenceActivityPanel.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/23242#discussion_r167246",
+      "body": "The contract/typing is wrong here. \n\n`campaignCompareDetails` can be undefined when the sequence has campaigns but none of them has been sent. (E.g. seq with only a draft root node) "
+    }
+  ]
+}

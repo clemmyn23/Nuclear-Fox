@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 17919,
+  "pr_author": "steven-li",
+  "pr_title": "PP 951 Track UI interactions when choosing brand style in my Branded Templates",
+  "pr_created_at": "2024-07-26T07:21:45Z",
+  "comments": [
+    {
+      "created_at": "2024-07-30T04:33:49Z",
+      "path": "srcfrontend/app/brandedtemplates/brandedTemplateAnalytics.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/17919#discussion_r136745",
+      "body": "This doesn't really do anything"
+    }
+  ]
+}

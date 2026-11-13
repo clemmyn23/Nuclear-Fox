@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16781,
+  "pr_author": "oliver-toon",
+  "pr_title": "EL-1550 Add copy domains support to sending domains wizard",
+  "pr_created_at": "2024-01-04T08:39:21Z",
+  "comments": [
+    {
+      "created_at": "2024-01-12T02:24:05Z",
+      "path": "srcfrontend/app/components/SendingDomains/components/AddDomainModal/AddDomainModal.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16781#discussion_r130659",
+      "body": "`response.data` is `CmSendingDomain[]` (IReadOnlyList), not object right? \r\n\r\n```suggestion\r\n                                const [sendingDomain] = response.data;\r\n```"
+    }
+  ]
+}

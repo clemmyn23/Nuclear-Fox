@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 20292,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-700 flip experiment A and B",
+  "pr_created_at": "2025-07-16T01:13:40Z",
+  "comments": [
+    {
+      "created_at": "2025-07-16T23:47:14Z",
+      "path": "srcfrontend/app/campaigncreationchecklist/campaigncreationchecklist.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20292#discussion_r147329",
+      "body": "Remove comments please. \r\nIn this case it's not very useful. "
+    },
+    {
+      "created_at": "2025-07-16T23:47:29Z",
+      "path": "srcfrontend/app/campaigncreationchecklist/components/Send/PrepareToSendDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20292#discussion_r147330",
+      "body": "Likewise no comments. "
+    }
+  ]
+}

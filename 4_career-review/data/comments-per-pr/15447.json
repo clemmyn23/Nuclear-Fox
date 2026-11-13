@@ -1,0 +1,39 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15447,
+  "pr_author": "rashmita-pinto",
+  "pr_title": "MER-519: Migration - fix tooltip issues and migration dialog popup dismissal iss",
+  "pr_created_at": "2023-06-01T08:24:43Z",
+  "comments": [
+    {
+      "created_at": "2023-06-02T00:41:25Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTable.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15447#discussion_r120024",
+      "body": "I think it's double `__` underscore for BEM naming so `c-drag-drop-table__th-field-name-obselete`. \r\nAlso typo \"obsolete\" "
+    },
+    {
+      "created_at": "2023-06-02T00:32:19Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsDraggableTableRow.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15447#discussion_r120020",
+      "body": "nit: don't have to default false."
+    },
+    {
+      "created_at": "2023-06-02T00:38:25Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTable.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15447#discussion_r120023",
+      "body": "```suggestion\r\n            setShowObsoleteBanner(!hasSeenObseleteBanner() && customFields.some((field) => field.isObsolete));\r\n            setHasObseleteFields(customFields.some((field) => field.isObsolete));\r\n```"
+    },
+    {
+      "created_at": "2023-06-02T00:42:18Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFields.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15447#discussion_r120025",
+      "body": "typo \"obselete\" -> \"obsolete\" for every reference in this PR (do a big find and replace)  "
+    },
+    {
+      "created_at": "2023-06-02T00:44:39Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTable.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15447#discussion_r120026",
+      "body": "Do you mean to add an entry to the blob, or overwrite it entirely? "
+    }
+  ]
+}

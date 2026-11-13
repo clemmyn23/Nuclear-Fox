@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Ng — Résumé (2026-11)</title>
+<style>
+  /* ===== PAGE: A4 by default. For US Letter, change `size: A4` to `size: letter`. ===== */
+  @page { size: A4; margin: 14mm 15mm; }
+  :root{
+    --ink:#16202c; --body:#2b3543; --muted:#6b7787; --line:#d7dce3;
+    --accent:#1f3a5f;      /* deep navy. swap for #7b2d26 (brick) or #b15a1e (forge amber) */
+    --accent-soft:#eef2f7;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#eceef1;color:var(--body)}
+  body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:10.4pt; line-height:1.42; -webkit-font-smoothing:antialiased}
+  .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif}
+  /* on-screen page frame (hidden when printing) */
+  .page{max-width:210mm; margin:18px auto; background:#fff; padding:16mm 16mm;
+    box-shadow:0 10px 40px rgba(20,30,50,.18)}
+  .hint{max-width:210mm;margin:14px auto 0;font:600 12px system-ui;color:#55606e;
+    background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+  .hint b{color:var(--accent)}
+  a{color:var(--accent);text-decoration:none}
+
+  header{border-bottom:2px solid var(--accent);padding-bottom:10px;margin-bottom:14px}
+  h1{font-size:27pt;line-height:1;margin:0;color:var(--ink);letter-spacing:.3px}
+  .role{font-size:11.5pt;color:var(--accent);font-weight:700;margin-top:5px;letter-spacing:.4px}
+  .contact{font-size:9.4pt;color:var(--muted);margin-top:6px}
+  .contact a{color:var(--muted)}
+  .summary{margin:12px 0 2px;color:var(--body)}
+  .summary strong{color:var(--ink)}
+
+  h2{font-size:11pt;text-transform:uppercase;letter-spacing:2px;color:var(--accent);
+    margin:18px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--line)}
+  .job{margin-bottom:11px; break-inside:avoid; page-break-inside:avoid}
+  .job .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .job .title{font-weight:700;color:var(--ink);font-size:10.8pt}
+  .job .title .co{color:var(--accent)}
+  .job .when{color:var(--muted);font-size:9.2pt;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .job .desc{color:var(--muted);font-style:italic;margin:2px 0 4px}
+  ul{margin:4px 0 0;padding-left:16px}
+  li{margin:2.5px 0}
+  li strong{color:var(--ink)}
+  .tech{font-style:italic;color:var(--muted);font-size:9.3pt;margin-top:5px}
+  .skills{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;margin-top:4px}
+  .skills dt{font-weight:700;color:var(--ink)}
+  .skills dd{margin:0;color:var(--body)}
+  .compact li{margin:2px 0}
+
+  @media print{
+    html,body{background:#fff}
+    .page{box-shadow:none;margin:0;max-width:none;padding:0}
+    .hint{display:none}
+    a{color:var(--accent)}
+    /* ensure rules/accent print */
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+<style>
+  .fill{background:#fff3b0;border-radius:3px;padding:0 3px;color:#5a4a00}
+  @media print{ .fill{background:none;color:inherit;padding:0} }
+</style>
+</head>
+<body>
+<div class="hint">📄 Export: <b>⌘/Ctrl + P → Save as PDF</b> with “Background graphics” on. <b>Highlighted text</b> = a number to fill in (see <code>interview/impact-metrics-playbook.md</code>) or delete before sending. 2026-11 edition. Edit the content in <code>cv/clement-ng-resume-2026-11.md</code> first.</div>
+
+<div class="page">
+  <header>
+    <h1 class="serif">Clement Ng</h1>
+    <div class="role">Senior Software Engineer · Director of IT</div>
+    <div class="contact">Sydney, Australia &nbsp;·&nbsp; +61 413-424-888 &nbsp;·&nbsp; clementng23@gmail.com &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/clemchowder/">linkedin.com/in/clemchowder</a></div>
+  </header>
+
+  <p class="summary">Senior full-stack engineer (<strong>8+ years</strong>) who leads customer-facing features from discovery through delivery at a global email-marketing SaaS. I scope the work, drive the architecture and rollout decisions, bring product, design and partner teams with me, and own launch readiness. Hands-on across React/TypeScript, C#/.NET, gRPC/Kafka and SQL. I also run IT for one of Australia's largest pop-culture conventions as <strong>Director of IT</strong>, leading a 25-person team for 45,000+ attendees.</p>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">Campaign Monitor (Marigold)</span> — Software Engineer</span><span class="when">Apr 2021 – Present · Sydney</span></div>
+    <div class="desc">Global email-marketing SaaS; .NET monolith plus a gRPC/Kafka microservice mesh.</div>
+    <ul>
+      <li><strong>Led SMS onboarding (technical lead in practice)</strong>, one of Product's highest priorities: replaced a manual, support-run registration process with an in-app Twilio flow. Wrote the plan the PM adopted, staged the rollout because carrier registrations can't be undone, built an <strong>idempotent provisioning API</strong> so retries never buy a duplicate number, and merged three provisioning code paths into one. Dev-complete in 2 months; testing with real customers since Nov 2026. <span class="fill">⟨N customers registered⟩</span></li>
+      <li><strong>Owned the builder canvas and launch readiness for Drip Campaigns</strong> (branching email sequences), shipped to <strong>every plan</strong> in Oct 2026. Defended the send-pipeline schema change with an impact audit (7 files vs ~20–30) and wrote the launch runbook the outgoing tech lead named as the template. <span class="fill">⟨N accounts / M campaigns⟩</span></li>
+      <li><strong>Feature tech lead, CRM Lite (single customer view):</strong> took the design through architecture review, settled schema and GDPR-deletion decisions with DBAs and the platform team, and delivered a SQS→Kafka backfill pipeline sized for 20-million-contact lists.</li>
+      <li><strong>Also shipped:</strong> Brand Hub V2 colour editing (sole frontend owner; the most common customer request), and earlier SMS sending (React → gRPC → Kafka), Shopify migration tooling, Journeys automation steps, and a .NET Core gRPC service extracted from the monolith under production load.</li>
+      <li><strong>Production and platform:</strong> resolved four production incidents end-to-end in 2026, including a customer's broken RSS campaign (root cause in under 2 hours, automation paused, fixed send verified) and a cross-team dead-letter-queue regression. Initiated the Docker migration of frontend CI (<strong>~70% less compute per pull request</strong>, deploy package build ~40% faster); earlier modernised the frontend toolchain (Vite/esbuild, TypeScript 5, React 18).</li>
+      <li><strong>Multiplier:</strong> authored ~590 and reviewed ~620 pull requests across 120+ engineers; mentor and technical interviewer. Ran the build phase of an AI-assisted service migration whose evidence led leadership <em>not</em> to adopt it (~2× the code, ~3× the maintenance).</li>
+    </ul>
+    <div class="tech">Tech: C#/.NET (Framework → .NET 9), TypeScript/React 18, React Query, gRPC + protobuf, Kafka, SQS, MSSQL, Redis, DynamoDB, Docker, Terraform, AWS, Datadog, TeamCity; AI-assisted development (Claude Code).</div>
+  </div>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">WiseTech Global</span> — Associate Software Developer</span><span class="when">May 2019 – Mar 2021 · Sydney</span></div>
+    <div class="desc">Global logistics-software platform (CargoWise).</div>
+    <ul class="compact">
+      <li><strong>Sole owner of the AIS ship-tracking system</strong> (React, TypeScript, Google Maps) delivering real-time vessel visibility to all CargoWise customers, a responsibility above my title.</li>
+      <li>Maintained and extended the <strong>MAWB air-cargo automation system</strong> ingesting airline/carrier data (C#, MSSQL); UI enhancements to the in-house PAVE task platform.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">EdApp LMS</span> — Software Engineer <span style="font-weight:400;color:var(--muted)">(Creative Licence Digital)</span></span><span class="when">Feb 2018 – May 2019 · Sydney</span></div>
+    <ul class="compact">
+      <li>Built peer-authoring templates and mobile features (React Native, Backbone.js, Cordova); audit logging for push notifications; 24/7 on-call, CI/CD, automated testing.</li>
+    </ul>
+  </div>
+
+  <h2>Engineering Leadership (Volunteer)</h2>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">SMASH! Inc.</span> — Director of IT</span><span class="when">Nov 2025 – Present</span></div>
+    <div class="desc">Sydney Manga and Anime Show, one of Australia's largest pop-culture conventions.</div>
+    <ul class="compact">
+      <li><strong>Lead IT across Engineering, Systems and Support: 25 volunteers, 3 leads.</strong> Set IT strategy with the Board and Executive; own a multi-year roadmap (cost, infrastructure scaling, internal systems, volunteer engineering operations).</li>
+      <li>Accountable for <strong>ticketing, access control, networking and on-site incident response for 45,000+ attendees</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">SMASH! Inc.</span> — Assistant IT Director · Software Developer</span><span class="when">Nov 2018 – Nov 2025</span></div>
+    <ul class="compact">
+      <li><strong>Founding engineer (team of 5):</strong> designed and built the integrated ticketing and mobile-scanning system for 40,000+ attendees and vendors.</li>
+      <li>Grew the team from 5 engineers; planned, delegated and reviewed work; <strong>delivered 5 consecutive conventions with zero critical IT failures</strong>.</li>
+    </ul>
+  </div>
+
+  <h2>Education · Speaking · Skills</h2>
+  <p style="margin:4px 0"><strong>B.Sc. Computer Science</strong>, University of New South Wales (2014–2017)</p>
+  <p style="margin:4px 0"><strong>Talk:</strong> “Preparing IT Infrastructure for an Anime Convention”, Campaign Monitor engineering-wide retreat, Jun 2025 · <a href="https://www.youtube.com/watch?v=bBZFJ9uXrbU">youtube.com/watch?v=bBZFJ9uXrbU</a></p>
+  <dl class="skills">
+    <dt>Languages</dt><dd>TypeScript, JavaScript, C#, Java, SQL</dd>
+    <dt>Frontend</dt><dd>React, React Query, Vite, Webpack, Jest</dd>
+    <dt>Backend &amp; data</dt><dd>.NET, gRPC, Kafka, SQS, MSSQL, PostgreSQL, Redis, DynamoDB</dd>
+    <dt>Infra &amp; delivery</dt><dd>AWS, Docker, Terraform, TeamCity, GitHub Actions, Datadog, feature-flagged staged rollouts</dd>
+  </dl>
+</div>
+</body>
+</html>

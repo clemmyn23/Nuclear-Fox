@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 11968,
+  "pr_author": "michael-yin",
+  "pr_title": "Ca 1248 b sms insert personalization button",
+  "pr_created_at": "2022-02-07T01:21:14Z",
+  "comments": [
+    {
+      "created_at": "2022-02-08T04:28:32Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/MessageStep/MessageStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11968#discussion_r95782",
+      "body": "Should probably initialize this as empty string if `message` is undefined. \r\nIt breaks when I try to insert personalization into a fresh empty textbox. \r\n\r\n![image](https://git.campmon.com/storage/user/367/files/f80c6dd6-adde-42db-9aab-f6accaa452a1)\r\n"
+    },
+    {
+      "created_at": "2022-02-08T04:43:40Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/hooks/useMessageAreaPersonalization.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11968#discussion_r95784",
+      "body": "Would prefer not having commented out code unless it's gonna get addressed in an immediate follow-up PR. \r\nThat or create a ticket for it. "
+    },
+    {
+      "created_at": "2022-02-08T04:45:48Z",
+      "path": "srcfrontend/app/components/TextEnhancerDialogs/TrackCodeCustomisation.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11968#discussion_r95785",
+      "body": "Comment? "
+    },
+    {
+      "created_at": "2022-02-08T04:48:14Z",
+      "path": "srcfrontend/app/components/TextEnhancerDialogs/InfoTipButton.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11968#discussion_r95786",
+      "body": "Interesting way of disabling tooltip hmm"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13864,
+  "pr_author": "brian-luc",
+  "pr_title": "[CONV-1023] Client Overview Setup Guide - im not sure the \"hasCompletedSetupGuid",
+  "pr_created_at": "2022-10-17T04:04:41Z",
+  "comments": [
+    {
+      "created_at": "2022-10-17T08:53:19Z",
+      "path": "srcfrontend/app/setupguide/utils/indexedDb.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13864#discussion_r109410",
+      "body": "Prettier woes will be gone very sooon :) "
+    }
+  ]
+}

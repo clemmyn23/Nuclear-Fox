@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22489,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-1017: Subscriber profile Instrumentation",
+  "pr_created_at": "2026-03-11T02:57:12Z",
+  "comments": [
+    {
+      "created_at": "2026-03-11T05:51:20Z",
+      "path": "srcfrontend/app/audience/components/SubscriberProfile/SubscriberEmailActions.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22489#discussion_r161914",
+      "body": "Can you pass in `pageContext` here like you are doing with SubscriberNotes component?\nSame with clientId. \nIt's much more annoying to write tests for components that interacts with location. (if we do end up writing tests for this in the future)  "
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13543,
+  "pr_author": "jbustamante",
+  "pr_title": "PLAT-3316 Implement machine clicks info banner on campaign snapshot page",
+  "pr_created_at": "2022-08-29T02:36:43Z",
+  "comments": [
+    {
+      "created_at": "2022-09-02T01:40:45Z",
+      "path": "srcfrontend/app/campaignreport/components/Snapshot/MachineClicksBanner/MachineClicksBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13543#discussion_r107084",
+      "body": "```suggestion\r\n    if (summaryContext) {\r\n```"
+    },
+    {
+      "created_at": "2022-09-02T01:42:04Z",
+      "path": "srcfrontend/app/campaignreport/components/Snapshot/MachineClicksBanner/MachineClicksBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13543#discussion_r107085",
+      "body": "Probably don't need the space here. "
+    },
+    {
+      "created_at": "2022-09-02T01:42:25Z",
+      "path": "srcfrontend/app/campaignreport/components/Snapshot/MachineClicksBanner/MachineClicksBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13543#discussion_r107086",
+      "body": "Maybe avoid the \"render\" prefix on methods that don't return JSX components, it can get confusing. "
+    },
+    {
+      "created_at": "2022-09-02T01:43:05Z",
+      "path": "srcfrontend/app/campaignreport/components/Snapshot/MachineClicksBanner/MachineClicksBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13543#discussion_r107087",
+      "body": "Use [pluralize ](https://git.campmon.com/CMDS/cm-utils/blob/main/packages/pluralize/README.md)on \"recipients\""
+    },
+    {
+      "created_at": "2022-09-02T01:45:41Z",
+      "path": "srcfrontend/app/campaignreport/components/Snapshot/MachineClicksBanner/MachineClicksBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13543#discussion_r107088",
+      "body": "Also use `.toLocaleString()` so we get commas on big numbers. "
+    },
+    {
+      "created_at": "2022-09-02T01:48:39Z",
+      "path": "srcfrontend/app/campaignreport/components/Snapshot/MachineClicksBanner/MachineClicksBannerContext.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13543#discussion_r107089",
+      "body": "`boolean` or `boolean?` type here?\r\n\r\n\r\n```suggestion\r\n    isSentBeforeMachineClicksPocFlag?: boolean;\r\n```\r\n\r\n```suggestion\r\n    isSentBeforeMachineClicksPocFlag: boolean;\r\n```"
+    },
+    {
+      "created_at": "2022-09-05T00:32:52Z",
+      "path": "srcfrontend/app/campaignreport/components/Snapshot/MachineClicksBanner/MachineClicksBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13543#discussion_r107169",
+      "body": "I don't mind. \r\nUsually there's something upstream to catch this and display a toast or some error state. \r\nGuess it doesn't hurt to not rethrow either at this stage. "
+    }
+  ]
+}

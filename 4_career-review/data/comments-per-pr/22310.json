@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22310,
+  "pr_author": "hbrink",
+  "pr_title": "AJ-1044: Update ClientCrm status to completed when stale",
+  "pr_created_at": "2026-02-18T21:01:01Z",
+  "comments": [
+    {
+      "created_at": "2026-02-19T01:23:48Z",
+      "path": "app/CampMon.Data.NetStandard/Crm/CrmLiteRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22310#discussion_r160686",
+      "body": "```suggestion\n                  AND PopulateStatusDateUTC < @StaleThresholdUtc\n```\n\n`DateUpdateUTC` is set when the client opts in/out the crm feature and other row modifications, except for the list init population work. \n\n`PopulateStatusDateUTC` is set by the sqs consumer when the last batch of work (RawContactDefined events) is submitted to the kafka topic contact pipeline. \nHence no more work will be created and the job will eventually become \"stale\". \nRename suggestions welcome we have changed it twice already I still find the name confusing sometimes. "
+    }
+  ]
+}

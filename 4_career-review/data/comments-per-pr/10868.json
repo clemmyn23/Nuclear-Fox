@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10868,
+  "pr_author": "leoc",
+  "pr_title": "CA-1080 Add config to allow disabling of text formatting tracking in email build",
+  "pr_created_at": "2021-09-08T12:52:43Z",
+  "comments": [
+    {
+      "created_at": "2021-09-10T05:29:36Z",
+      "path": "app/Pronto.Util/Configuration/ConfigSettings.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10868#discussion_r88920",
+      "body": "offtopic: This file is huge. "
+    }
+  ]
+}

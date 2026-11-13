@@ -1,0 +1,100 @@
+Freshview|createsend.com|12750|michael-yin|2022-04-27T08:01:38Z|Sms 115 b delete sms
+Freshview|createsend.com|12782|hbrink|2022-04-29T21:52:04Z|PLAT-3051: Adjusted export on campaign snapshot.
+Freshview|createsend.com|12791|jflood|2022-05-02T23:58:55Z|PLAT-3051 Add option to exclude machine clicks as checkbox
+Freshview|createsend.com|12825|michael-yin|2022-05-06T05:59:53Z|SMS-125-c show SMS credits in checklist below preview
+Engineering|contentbuildercontext.staticresourceservice.core|764|mattheww|2022-05-09T04:57:48Z|CONV-974 - Implement unsplash alternative
+Freshview|createsend.com|12846|lcallaway|2022-05-10T23:32:49Z|SE-402 - Use polyfill for ResizeObserver
+Freshview|createsend.com|12876|michael-yin|2022-05-17T04:42:21Z|SMS-115-e fix delete dialog title plural
+Freshview|createsend.com|12900|zhartmann|2022-05-20T03:56:47Z|CA-1302: Show preview on iOS
+Freshview|createsend.com|12912|azissis|2022-05-23T01:54:06Z|MER-16 - add page to install shopify app from
+Freshview|createsend.com|12925|michael-yin|2022-05-24T02:22:12Z|Ca 1311 b emoji picker for subject line
+Engineering|contentbuildercontext.staticresourceservice.core|767|clewis|2022-05-31T00:02:36Z|MER-26: Add product list content type
+Freshview|createsend.com|13015|russella|2022-06-06T00:24:58Z|SMS-132: Update README.md
+Freshview|createsend.com|13021|michael-yin|2022-06-06T05:39:46Z|Sms 148 link trailing slash
+Freshview|createsend.com|13048|michael-yin|2022-06-09T01:08:35Z|SMS-bug-bash-fix-estimated-delivery-time
+Freshview|createsend.com|13127|michael-yin|2022-06-21T08:49:24Z|Sms 38 a refactor sms message parser
+Freshview|createsend.com|13161|lcallaway|2022-06-24T06:24:54Z|JS - Update yarn lock
+Freshview|createsend.com|13166|lcallaway|2022-06-27T02:12:35Z|JS - Update testing library
+Freshview|createsend.com|13168|michael-yin|2022-06-27T05:15:47Z|SMS-171 sms failed to delete
+Freshview|createsend.com|13192|russella|2022-06-29T04:33:44Z|Checklist: Minor follow up, removed an empty div
+Freshview|createsend.com|13194|ttruong|2022-06-29T05:24:40Z|SE-458 Reduce flicker of pill and form.
+Freshview|createsend.com|13224|david-vanlaarveth|2022-07-05T04:36:34Z|SE-474 Remove open rate; remove "Create a campaign" button for cross-sell
+platform|kafka-acls|89|russella|2022-07-05T04:54:33Z|SMS-158: Allow InsightsKafkaConsumer to consume ContactClickedLinkInSmsMailing
+Freshview|createsend.com|13232|timl|2022-07-05T23:39:47Z|EL-713.Client setting dropdown menu changes, refresh cm header and and new api a
+Freshview|createsend.com|13243|ttruong|2022-07-07T06:31:24Z|SE-462 Simplify SMS Cross Sell endpoint calls
+data-tribe|insights-web-api|55|zhartmann|2022-07-11T23:40:53Z|SMS-159-2-a: Update README for local development
+Freshview|createsend.com|13272|jowers|2022-07-13T10:31:53Z|MER-43b - Show success/error banner based on querystring
+Freshview|createsend.com|13289|brian-luc|2022-07-15T05:33:44Z|[CONV-924] Remove ClickMetrics endpoints and calls - they don't do anything
+Freshview|createsend.com|13336|michael-yin|2022-07-25T04:56:52Z|SMS-162-snapshot-cm-api Util for calling CM API for clicks over time,…
+Engineering|TestAutomation|231|russella|2022-07-27T06:30:51Z|CA-1327-m: Convert SendCampaignWithDynamicContentEmailBuilderSections to use che
+Freshview|createsend.com|13367|zhartmann|2022-07-28T23:01:01Z|SMS-161-b: Links Details and Contact Clicks endpoints
+Freshview|createsend.com|13384|zhartmann|2022-08-01T23:22:20Z|SMS-161-c: Add in encrypted ContactId to Contact-Clicks
+Freshview|createsend.com|13389|michael-yin|2022-08-02T15:41:56Z|Sms 162 report snapshot polishing
+Freshview|createsend.com|13398|oliver-toon|2022-08-05T06:22:59Z|EL-749 Client settings custom access bug fixes
+Freshview|createsend.com|13402|michael-yin|2022-08-08T00:47:03Z|SMS-162-chart-tooltip-style use custom tooltip for SMS report
+Freshview|createsend.com|13403|michael-yin|2022-08-08T01:11:06Z|SMS-162-remove-dup-fetch-link Keep only one util for SMS links
+Freshview|createsend.com|13406|oliver-toon|2022-08-08T05:41:25Z|EL-746-b Client settings miscellaneous bug fixes
+Freshview|createsend.com|13417|amy-diaz|2022-08-09T02:31:52Z|EL-753 Text related updates
+Freshview|createsend.com|13420|russella|2022-08-09T03:59:29Z|SMS-208-a: Make it so that we have a feature flagged version of the SmsToStep
+Freshview|createsend.com|13424|david-vanlaarveth|2022-08-09T05:27:00Z|SE-432 ClickOutside not working for subject recommendations when clicking outsid
+Freshview|createsend.com|13430|russella|2022-08-09T12:36:22Z|SMS-208-c: Display segments
+Freshview|createsend.com|13472|brian-luc|2022-08-17T02:36:05Z|[CONV-925] New plan selection page - more jank than previously
+Freshview|createsend.com|13503|challowes|2022-08-22T00:40:33Z|SMS-239 - SMS Adding feature flag for UI for geographical expansion
+CMDS|cmds|2375|chrisw|2022-08-29T00:15:47Z|CSS-Internal: separate out utilities from tokens to reduce build noise in monoli
+Freshview|createsend.com|13543|jbustamante|2022-08-29T02:36:43Z|PLAT-3316 Implement machine clicks info banner on campaign snapshot page
+Freshview|createsend.com|13549|lcallaway|2022-08-30T01:32:35Z|JS - Remove the now deleted yarn lock from docker config
+Freshview|createsend.com|13563|lcallaway|2022-08-31T22:57:57Z|JS - Update yarn lock
+Freshview|createsend.com|13570|david-connell|2022-09-02T01:38:19Z|Sms 187 b javascript changes to prevent sending and display tooltips and unverif
+Freshview|createsend.com|13586|lcallaway|2022-09-06T06:26:04Z|JS - Fail tests on console errors 
+Freshview|createsend.com|13617|david-connell|2022-09-08T08:53:05Z|Sms 188 a add a verified flag when the user is verified. 
+Engineering|SmsSendingServices|43|michael-yin|2022-09-09T04:46:13Z|Update README.md
+Freshview|createsend.com|13690|russella|2022-09-18T04:42:48Z|SMS-251-ra-b: Use config to get cut off date by country
+Freshview|createsend.com|13693|russella|2022-09-19T04:37:47Z|SMS-251: Make sms cross sell work off UTC time instead of (what could be) Sydney
+Freshview|createsend.com|13694|russella|2022-09-19T04:38:29Z|SMS-251: Remove this keyword from unit test
+Freshview|createsend.com|13697|michael-yin|2022-09-19T05:54:43Z|SMS-278-a refactor personalization util
+Freshview|createsend.com|13705|lcallaway|2022-09-20T02:17:01Z|SE-595 - Add Ada support to Feature Feedback Widget
+Freshview|createsend.com|13719|georgiel|2022-09-21T02:10:12Z|Update CMDS Toggle to version 7
+Engineering|integrationstorecontext.managerservice.core|64|mattheww|2022-09-21T02:37:03Z|MER-110 - Hide abandoned cart from those pesky app reviewers
+Freshview|createsend.com|13730|amy-diaz|2022-09-26T02:30:26Z|EL-683 Change div to fix issue with regression tests
+platform|cm.protobuf|605|michael-yin|2022-09-27T06:18:51Z|SMS-305 add bounce type MESSAGE_BOUNCE_TYPE_UNSUPPORTED_REGION
+Freshview|createsend.com|13751|david-connell|2022-09-27T15:18:22Z|Sms 240-a Server changes to separate client properties from CmSmsMailing into Cm
+Freshview|createsend.com|13752|david-connell|2022-09-27T15:33:04Z|SMS-240 frontend changes to to separate out CmSmsMailing into two separate class
+Freshview|createsend.com|13767|oliver-toon|2022-09-29T09:30:22Z|EL-868 Dynamically populate country field
+Freshview|createsend.com|13796|david-connell|2022-10-06T02:00:19Z|Sms 241 b frontend changes for toggles, updating saving toggle info to database
+Freshview|createsend.com|13809|azissis|2022-10-09T00:45:09Z|MER-135 - change Shopify OAuth flow to meet requirements
+Freshview|createsend.com|13846|oliver-toon|2022-10-13T06:00:56Z|EL-875 Add confirmation dialog for rotating API key
+Freshview|createsend.com|13864|brian-luc|2022-10-17T04:04:41Z|[CONV-1023] Client Overview Setup Guide - im not sure the "hasCompletedSetupGuid
+Freshview|createsend.com|13867|david-connell|2022-10-17T06:39:48Z|Sms 242-b apply frontend changes to preview and report, sync back end to send me
+Freshview|createsend.com|13882|jari-talka|2022-10-19T01:27:48Z|SMS-311: SMS campaign search front end changes
+Freshview|createsend.com|13890|david-connell|2022-10-19T08:16:45Z|Sms 242 b fixed spelling mistakes which ruined character count
+Freshview|createsend.com|13893|jari-talka|2022-10-20T03:49:51Z|SMS-355: Add new app alias to front end
+Engineering|integrationstorecontext.managerservice.core|67|brian-luc|2022-10-21T05:21:30Z|[MER-148] Link Shopify integration tile to Shopify settings page
+Freshview|createsend.com|13906|david-connell|2022-10-21T15:28:38Z|SMS-242 fixes as per requests.
+Freshview|createsend.com|13908|jari-talka|2022-10-24T04:33:59Z|SMS-311: Fix for sms search term on show all links
+Freshview|createsend.com|14013|amy-diaz|2022-11-07T02:13:00Z|EL-798 Instrumentation - Tax information pages
+Freshview|createsend.com|14035|michael-yin|2022-11-10T02:39:35Z|sms-fix-use-recipient-data make sure fetch recursively works
+Freshview|createsend.com|14051|michael-yin|2022-11-11T04:11:56Z|SMS-394-a remove the use of feature flag SmsSegments to reduce clutter
+Freshview|createsend.com|14055|michael-yin|2022-11-11T04:59:03Z|SMS-394-b Use real SMS send throughput
+Freshview|createsend.com|14096|oliver-toon|2022-11-17T08:57:54Z|EL-862 ClientSettingsForPersons TaxInformation page
+Engineering|SegmentTrackingPlan|337|jari-talka|2022-11-25T05:08:37Z|SMS-425: Add segment copy page event
+Freshview|createsend.com|14361|subrat-shrestha|2022-12-20T05:13:46Z|El 975 - Client Person bug bash
+Freshview|createsend.com|14365|james-dunlop|2022-12-20T23:55:07Z|PP-41 Surfacing a visual indicator for SMS campaigns denied sending due to billi
+Freshview|createsend.com|14375|russella|2022-12-21T06:38:22Z|SMS-452: Removed unused feature flag reference to SmsSelfServiceCrossSell
+Freshview|createsend.com|14381|henrys|2022-12-22T00:08:49Z|EL-977b - Fixed merged conflict in srcfrontend
+Freshview|createsend.com|14402|michael-yin|2022-12-30T05:28:05Z|SMS-469 use ContactId for SmsSubscriberDeliveryResult
+Freshview|campmon.hex|729|james-dunlop|2023-01-16T02:29:45Z|PP-40 Upgrading CampMon packages plus fixing issues with subscribe form abuse an
+Freshview|createsend.com|14480|russella|2023-01-18T07:19:13Z|SMS-491: Attempt to join feature flag check on SmsSignupFormOptions with SmsAcce
+Freshview|createsend.com|14503|michael-yin|2023-01-23T02:51:43Z|Sms report rename case
+Freshview|createsend.com|14509|michael-yin|2023-01-23T04:57:12Z|SMS-report-rename-case-2 rename css imports
+Freshview|createsend.com|14578|russella|2023-01-31T23:22:45Z|SMS-500-c: Allow no mobile when mobile number is optional on the back end
+Freshview|createsend.com|14586|david-connell|2023-02-01T03:02:55Z|Sms 513 Fix cursor skipping to end of line when editing the mobile number
+Freshview|createsend.com|14745|david-connell|2023-02-22T13:01:57Z|SMS-538 add javascript to attach events to format mobile in pattern based on cou
+Freshview|createsend.com|14788|david-connell|2023-02-27T09:41:37Z|SMS-538 add wobble for invalid mobile number and/or consent not selected…
+Freshview|createsend.com|14789|james-dunlop|2023-02-27T09:42:33Z|PP-155 New component for Braintree card authorisation with hosted fields
+Freshview|createsend.com|14809|russella|2023-03-01T06:00:32Z|SMS-417-c: Bring language translations to the UI
+Freshview|createsend.com|14841|rashmita-pinto|2023-03-05T09:35:30Z|MER-336 signup form ui fix: styled form, close btn, scroll to published
+Freshview|campmon.hex|745|mattheww|2023-03-06T22:45:29Z|PP-124 - Tooling for data migration import
+Freshview|createsend.com|14873|jari-talka|2023-03-14T06:31:39Z|SMS-552: Sms Self Service Data Provider and link refactor
+Engineering|workflowbuildercontext.uiservice.core|156|brian-luc|2023-03-15T05:09:34Z|[MER-335a] Time Filter Select Component refinements
+Freshview|createsend.com|14912|subrat-shrestha|2023-03-21T00:33:43Z|EL-1064 linting
+Freshview|createsend.com|14927|david-connell|2023-03-22T03:47:42Z|SMS-558 apply geolocation to get default Country Code

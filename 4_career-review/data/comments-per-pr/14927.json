@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 14927,
+  "pr_author": "david-connell",
+  "pr_title": "SMS-558 apply geolocation to get default Country Code",
+  "pr_created_at": "2023-03-22T03:47:42Z",
+  "comments": [
+    {
+      "created_at": "2023-03-24T05:13:51Z",
+      "path": "app/Pronto.SubscriberPreferences/Controllers/DefaultController.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14927#discussion_r116818",
+      "body": "![image](https://git.campmon.com/storage/user/367/files/db743a00-5c9a-4755-9da3-2d89635b42dc)\r\nLooks like this triggered an actual \"web back end\" test failure. \r\nEither make this a private method (probably not possible since you are using it directly in unit tests), \r\nor stick a `[NonAction]` attribute in. "
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+2026-11-09	createsend.com	25597	open		COM-1794: Select, delete and save Brand Hub logos and images behind BrandHubV2
+2026-11-09	createsend.com	25596	open		COM-1794: Always show the Brand Hub logos and images sections behind BrandHubV2
+2026-11-09	createsend.com	25595	open		COM-1794: Prepare the Brand Hub edit components for logo and image delete
+2026-11-09	createsend.com	25593	open		feat(JC-414): switch a chain's frontend package to Docker with a flag
+2026-11-09	createsend.com	25577	closed	2026-11-10	COM-1793: Send hex and stored role in the Brand Hub colour Save request
+2026-11-05	createsend.com	25539	closed	2026-11-09	COM-1793: Edit, add, delete and save Brand Hub colours behind BrandHubV2
+2026-11-05	createsend.com	25537	closed	2026-11-09	COM-1793: Brand Hub colour edit mode layout behind BrandHubV2
+2026-11-05	createsend.com	25526	closed	2026-11-05	COM-1793: Add BrandHubV2 feature flag
+2026-11-04	createsend.com	25501	closed	2026-11-06	feat(JC-413): run the Docker frontend build in each deploy chain's own project
+2026-11-04	createsend.com	25500	closed	2026-11-05	chore: remove node-notifier (and bundled terminal-notifier) from frontend builds
+2026-11-03	createsend.com	25460	closed	2026-11-04	COM-1792: Brand Hub 1A data layer for colour edits and asset deletes
+2026-10-19	createsend.com	25163	closed	2026-10-22	COM-1733 SMS compliance embed Alphanumeric support
+2026-10-12	createsend.com	25080	closed	2026-10-20	COM-1701: Set up the CM client after Toll-free provisioning
+2026-10-12	createsend.com	25079	closed	2026-10-20	COM-1699: Add Enabled status to SMS compliance embed gating
+2026-10-09	createsend.com	25051	open		feat(JC-413): pack and push the createsend.com.fe package in Docker
+2026-10-09	createsend.com	25046	closed	2026-10-14	COM-1700: Provision Toll-free numbers for the SMS compliance embed
+2026-10-09	GitHubTeamManagement	8	closed	2026-10-09	Bump cm-terraform fargate modules to 0.88
+2026-10-09	GitHubTeamManagement	7	closed	2026-10-09	Escape user content in Slack notifications
+2026-10-09	createsend.com	25031	closed	2026-10-11	COM-1648 Move new SMS endpoints to cmapi.netcore 
+2026-10-08	createsend.com	25020	closed	2026-10-12	feat(JC-412): build the app/ frontend in Docker
+2026-10-07	createsend.com	24999	closed	2026-10-12	COM-1648: CmAPI endpoint to initialize Twilio Toll-free compliance inquiry
+2026-09-30	createsend.com	24882	closed	2026-10-02	COM-1646-frontend SMS Compliance Embed - Initial set up
+2026-09-30	createsend.com	24875	closed	2026-10-02	COM-1646-backend SMS twilio embed - Initial FF and routing
+2026-09-25	createsend.com	24805	closed		COM-1646-a Setup FF and pass through sms eligibility flag
+2026-09-25	BrandHubServices	86	closed		update all 6 units because stuff doesn't build
+2026-09-23	BrandHubServices	85	closed		AIDLC-A-5 Unit 6 code gen
+2026-09-23	BrandHubServices	84	closed		AIDLC-A-4 Unit 5 code gen
+2026-09-23	BrandHubServices	83	closed		AIDLC-A-3 Unit 4 code gen
+2026-09-23	BrandHubServices	82	closed		AIDLC-A-2 Unit 3 code gen
+2026-09-23	BrandHubServices	81	closed		AIDLC-A-1 Migrate backend to c# (unit 1, unit 2)
+2026-09-11	workflowcontext.updatecustomfield	75	closed	2026-09-14	AJ-1292-b Use MemoisingConfigFactory, bump jvm-libs
+2026-09-09	workflowcontext.updatecustomfield	74	closed	2026-09-14	AJ-1292 DD logger impl consistency
+2026-09-07	workflowcontext.metricservice.core	20	closed	2026-09-07	AJ-980 remove Graylog
+2026-09-04	workflowcontext.updatecustomfield	73	closed	2026-09-08	COM-1625-a Handle contact attribute service returning multiple values
+2026-09-03	createsend.com	24499	open		[Hex] UpdateCustomFieldFromWorkflow proto decoder
+2026-09-02	createsend.com	24483	closed	2026-09-08	[Hex] Get resource ownership from ID
+2026-08-24	createsend.com	24355	closed	2026-08-28	AJ-1161-b Simple sequence - Implement new design
+2026-08-20	createsend.com	24309	closed	2026-08-21	AJ-1161-a Simple sequence - Prep work for UI refresh. 
+2026-08-05	createsend.com	24142	closed	2026-08-06	AJ-1262-a | Drip campaigns - Fix fetching campaign thumbnails
+2026-07-30	createsend.com	24078	closed	2026-07-31	AJ-1265-a Drip campaigns - Adjust initial fit view
+2026-07-16	createsend.com	23946	closed	2026-07-16	AJ-1257-a - Drip campaigns - Prevent node overlaps
+2026-07-16	createsend.com	23932	closed	2026-07-17	AJ-1254-a Drip campaigns - Help doc update
+2026-07-16	createsend.com	23931	closed	2026-07-16	AJ-1190-c Drip campaigns - adjust capitalization on back button
+2026-07-14	createsend.com	23903	closed	2026-07-15	AJ-1190-b Drip campaigns - frontend changes 2
+2026-07-08	createsend.com	23838	closed	2026-07-14	AJ-1190-a Campaign series - frontend design alignment A
+2026-06-26	createsend.com	23711	closed	2026-07-06	AJ-1149-d Complex sequence - Display scheduled date
+2026-06-24	createsend.com	23682	closed	2026-06-29	AJ-1149-c2 Campaing sequence - prep work for design changes
+2026-06-24	createsend.com	23680	closed		AJ-1149-c Campaing sequence - code refactor, cleanups, react query. 
+2026-06-24	createsend.com	23666	closed		AJ-1149-b2 Complex sequence - scheduled date display etc. 
+2026-06-22	localdev-tools	76	closed	2026-06-23	Add local proxy profiles
+2026-06-17	createsend.com	23585	closed		AJ-1149-a Complex sequence - Implement timeline gutter
+2026-06-16	workflowcontext.triggerservice.core	66	closed	2026-06-24	Fix healthcheck
+2026-06-12	createsend.com	23545	closed	2026-06-19	AJ-1186-a Set agent type for complex sequence campaigns
+2026-06-09	workflowbuildercontext.uiservice.core	321	closed	2026-06-09	AJ-1213 realistic mocks 2
+2026-06-04	workflowbuildercontext.uiservice.core	319	closed	2026-06-04	AJ-1213 realistic mocks
+2026-06-02	workflowbuildercontext.uiservice.core	317	closed	2026-06-04	AJ-1195-a Subscriber activity view
+2026-05-28	createsend.com	23356	closed	2026-06-01	AJ-1196-d Pass IsJourneyReportingEnabled feature flag to workflow ui
+2026-05-28	createsend.com	23354	closed	2026-05-29	Upgrade webpack 5 - part 2
+2026-05-28	workflowcontext.runnerservice.core	153	open		AJ-1206-a Migrate to GrpcClient v2

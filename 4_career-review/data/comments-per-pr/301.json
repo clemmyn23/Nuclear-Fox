@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Engineering/SegmentTrackingPlan",
+  "pr_number": 301,
+  "pr_author": "zhartmann",
+  "pr_title": "SMS-111: Add \"Created Sms Campaign\" event",
+  "pr_created_at": "2022-04-12T02:29:32Z",
+  "comments": [
+    {
+      "created_at": "2022-04-12T02:32:52Z",
+      "path": "TrackingPlan/events.yaml",
+      "html_url": "https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/301#discussion_r99801",
+      "body": "`Sms` -> `SMS` \r\n"
+    },
+    {
+      "created_at": "2022-04-12T02:38:01Z",
+      "path": "TrackingPlan/events.yaml",
+      "html_url": "https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/301#discussion_r99803",
+      "body": "Tracking plan is instrumentation crew stuff they want SMS and Title Case here. \r\n\r\nSo best follow things on the wiki page to the exact."
+    }
+  ]
+}

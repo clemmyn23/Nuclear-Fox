@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 14788,
+  "pr_author": "david-connell",
+  "pr_title": "SMS-538 add wobble for invalid mobile number and/or consent not selected…",
+  "pr_created_at": "2023-02-27T09:41:37Z",
+  "comments": [
+    {
+      "created_at": "2023-03-01T05:26:57Z",
+      "path": "app/Pronto.SubscriberPreferences/Views/Shared/Default.Master",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14788#discussion_r115719",
+      "body": "Can you assign the `$('#mobile')` queries to a local variable please, and try to only do the queries once per dom element. \r\n\r\n`jQuery()` selector calls can get very expensive and slow (especially in older browsers). \r\n\r\nThis [particular case is probably fine](https://learn.jquery.com/performance/optimize-selectors/) but it's better to minimise the selector queries in general. "
+    }
+  ]
+}

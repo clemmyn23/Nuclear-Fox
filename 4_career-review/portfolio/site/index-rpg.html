@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Ng — Full-Stack Blacksmith</title>
+<meta name="description" content="Clement Ng — senior software engineer & convention IT director. Forging systems that survive 45,000 people.">
+<style>
+  :root{
+    --bg:#13110f; --bg2:#1c1916; --ink:#f0e6d2; --muted:#b8a98c;
+    --ember:#ff7a18; --ember2:#e25822; --gold:#e8c372; --line:#3a322a;
+    --panel:rgba(38,32,26,.7);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:
+      radial-gradient(1200px 600px at 70% -10%, rgba(255,122,24,.12), transparent 60%),
+      radial-gradient(800px 500px at 10% 110%, rgba(232,195,114,.08), transparent 60%),
+      var(--bg);
+    color:var(--ink); font-family:Georgia,'Times New Roman',serif; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:clamp(24px,5vw,64px)}
+  h1,h2,h3{font-weight:700; letter-spacing:.5px; line-height:1.15}
+  h1{font-size:clamp(2.2rem,7vw,4rem); margin:.1em 0}
+  h2{font-size:1.5rem; color:var(--gold); border-bottom:1px solid var(--line); padding-bottom:.3em; margin-top:2.4em}
+  a{color:var(--ember); text-decoration:none; border-bottom:1px dotted var(--ember2)}
+  a:hover{color:var(--gold); border-color:var(--gold)}
+  .lv{display:inline-block; font-size:.8rem; letter-spacing:3px; text-transform:uppercase; color:var(--ember);
+      border:1px solid var(--ember2); border-radius:999px; padding:4px 14px; margin-bottom:1em}
+  .tagline{min-height:1.6em; font-size:clamp(1rem,3.4vw,1.4rem); color:var(--muted); font-style:italic}
+  .tagline .caret{color:var(--ember); animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .sheet{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:1.5em}
+  @media(max-width:640px){.sheet{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px;
+        backdrop-filter:blur(4px)}
+  .card h3{margin:0 0 .6em; color:var(--gold); font-size:1.05rem; letter-spacing:1px}
+  .stat{margin:.55em 0}
+  .stat .row{display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:3px}
+  .bar{height:8px; background:#2a241d; border-radius:6px; overflow:hidden}
+  .bar > i{display:block; height:100%; width:0;
+    background:linear-gradient(90deg,var(--ember2),var(--ember),var(--gold));
+    border-radius:6px; transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+  ul.clean{list-style:none; padding:0; margin:0}
+  ul.clean li{padding:5px 0; border-bottom:1px dashed var(--line)}
+  ul.clean li:last-child{border:0}
+  .ability{color:var(--ink)} .ability b{color:var(--ember)}
+  .trophies{display:flex; flex-wrap:wrap; gap:10px; margin-top:1em}
+  .trophy{background:var(--bg2); border:1px solid var(--line); border-radius:10px; padding:10px 14px; font-size:.92rem}
+  .trophy b{color:var(--gold)}
+  .numbers{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:1em}
+  @media(max-width:640px){.numbers{grid-template-columns:repeat(2,1fr)}}
+  .num{text-align:center; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 8px}
+  .num b{display:block; font-size:clamp(1.3rem,5vw,2rem); color:var(--ember)}
+  .num span{font-size:.78rem; color:var(--muted)}
+  .lore p{color:#e7dcc6}
+  .contact a{display:inline-block; margin:6px 14px 6px 0; font-size:1.05rem}
+  footer{margin-top:3.5em; padding-top:1.4em; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; text-align:center}
+  .spark{position:fixed; pointer-events:none; width:6px; height:6px; border-radius:50%;
+    background:var(--ember); box-shadow:0 0 8px var(--ember); z-index:9}
+  @media (prefers-reduced-motion: reduce){ *{animation:none!important; transition:none!important} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="lv">Lv.8 · Class: Full-Stack Blacksmith</span>
+    <h1>Clement&nbsp;Ng <span title="(a.k.a. blacksmith)" style="cursor:help">🔨</span></h1>
+    <p class="tagline"><span id="tag"></span><span class="caret">▋</span></p>
+  </header>
+
+  <section>
+    <h2>⚔️ Character Sheet</h2>
+    <div class="numbers">
+      <div class="num"><b>8</b><span>years forging software</span></div>
+      <div class="num"><b>45,000+</b><span>humans kept online</span></div>
+      <div class="num"><b>5 / 5</b><span>events · zero critical failures</span></div>
+      <div class="num"><b>5→25</b><span>founding engineers → the guild</span></div>
+    </div>
+    <div class="sheet">
+      <div class="card">
+        <h3>Stats</h3>
+        <div class="stat"><div class="row"><span>C# / .NET</span><span>⚔️</span></div><div class="bar"><i data-w="95"></i></div></div>
+        <div class="stat"><div class="row"><span>TypeScript / React</span><span>🛡️</span></div><div class="bar"><i data-w="92"></i></div></div>
+        <div class="stat"><div class="row"><span>gRPC / Kafka</span><span>🔮</span></div><div class="bar"><i data-w="85"></i></div></div>
+        <div class="stat"><div class="row"><span>MSSQL / data</span><span>📜</span></div><div class="bar"><i data-w="82"></i></div></div>
+        <div class="stat"><div class="row"><span>AWS / Terraform</span><span>☁️</span></div><div class="bar"><i data-w="78"></i></div></div>
+        <div class="stat"><div class="row"><span>Reliability under chaos</span><span>🔥</span></div><div class="bar"><i data-w="99"></i></div></div>
+      </div>
+      <div class="card">
+        <h3>Passive Abilities</h3>
+        <ul class="clean">
+          <li class="ability"><b>Third-Try Resolve</b> — failed migrations may be re-attempted; persists through reverts.</li>
+          <li class="ability"><b>Offline-First</b> — full capacity when the venue WiFi betrays you.</li>
+          <li class="ability"><b>LDR Scribe</b> — summons a design doc the council will actually approve.</li>
+          <li class="ability"><b>Reviewer of Record</b> — sees all merges. <i>All of them.</i></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Equipment</h3>
+        <ul class="clean">
+          <li>☕ Enchanted Coffee Mug <i>(+2 Focus)</i></li>
+          <li>⌨️ Mechanical Keyboard <i>(mild annoyance aura)</i></li>
+          <li>🐱 A Cat <i>(party morale buff)</i></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Weaknesses</h3>
+        <ul class="clean">
+          <li>📜 un-reviewed pull requests</li>
+          <li>📅 meetings that should've been emails</li>
+          <li>🪑 the fifth reorg</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🏆 Trophy Hall</h2>
+    <div class="trophies">
+      <div class="trophy"><b>Zero-Critical-Failures ×5</b> — Legendary</div>
+      <div class="trophy"><b>Drew the Rest of the Owl</b> 🦉</div>
+      <div class="trophy"><b>Survived 5 C-suites</b> 😅</div>
+      <div class="trophy"><b>Founding Five → Guild of 25</b></div>
+      <div class="trophy"><b>20M-Contact Backfill</b> — CRM Lite</div>
+      <div class="trophy"><b>530+ / 550+ PRs</b> — authored / reviewed</div>
+      <div class="trophy"><b>Emoji Grandmaster</b> 🐱</div>
+    </div>
+  </section>
+
+  <section class="lore">
+    <h2>📖 Lore</h2>
+    <p>Clement hails from Sydney. He forges software by day — C#/.NET, TypeScript, React, gRPC and Kafka at Campaign Monitor — and commands the IT garrison of one of Australia's largest anime conventions by night-and-also-day. Began as one of <b>five founding engineers</b> building the convention's ticketing and door-scanning systems; now <b>Director of IT</b>, leading a 25-person team and keeping 45,000+ attendees online with a five-year zero-critical-failure streak.</p>
+    <p>Known across the realm for systems that survive the doors-open stampede, design docs that pass the council, and migrations that land on the third try. Reads fantasy faster than he clears his review queue. 加油. 🐱</p>
+  </section>
+
+  <section>
+    <h2>🎤 The Bard's Tale</h2>
+    <p>“Preparing IT Infrastructure for an Anime Convention” — how to keep tech alive for 45,000 people. <a href="https://www.youtube.com/watch?v=bBZFJ9uXrbU" target="_blank" rel="noopener">Watch the recording ▶</a></p>
+  </section>
+
+  <section class="contact">
+    <h2>✉️ Summon Me</h2>
+    <p>
+      <a href="mailto:clementng23@gmail.com">Send a raven</a>
+      <a href="https://www.linkedin.com/in/clemchowder/" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- TODO: replace with your real GitHub -->
+      <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+    </p>
+    <p style="color:var(--muted);font-size:.95rem">Open to: senior / staff / lead quests · fantasy book recs · ride buddies.</p>
+  </section>
+
+  <footer>
+    Built with HTML, spite, and an enchanted coffee mug. No critical failures were harmed in the making of this site.<br>
+    © Clement Ng · forged in Sydney · 加油 🐱 · <span style="cursor:help" title="↑↑↓↓←→←→ B A">psst</span>
+  </footer>
+</div>
+
+<script>
+/* ---- typewriter hero ---- */
+(function(){
+  const lines=[
+    "I forge software that survives 45,000 people.",
+    "Full-stack blacksmith. Reliability class.",
+    "0 critical failures. The streak continues."
+  ];
+  const el=document.getElementById('tag'); let l=0,c=0,del=false;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){ el.textContent=lines[0]; return; }
+  (function type(){
+    const s=lines[l];
+    el.textContent = del ? s.slice(0,c--) : s.slice(0,c++);
+    if(!del && c>s.length){ del=true; return setTimeout(type,1600); }
+    if(del && c<0){ del=false; c=0; l=(l+1)%lines.length; return setTimeout(type,250); }
+    setTimeout(type, del?28:48);
+  })();
+})();
+
+/* ---- skill bars fill on scroll ---- */
+(function(){
+  const bars=document.querySelectorAll('.bar > i');
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{
+    if(e.isIntersecting){ e.target.style.width=e.target.dataset.w+'%'; io.unobserve(e.target);} });},{threshold:.4});
+  bars.forEach(b=>io.observe(b));
+})();
+
+/* ---- forge-spark cursor trail (desktop, motion-ok) ---- */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(!matchMedia('(pointer:fine)').matches) return;
+  let last=0;
+  addEventListener('mousemove',e=>{
+    const now=Date.now(); if(now-last<40) return; last=now;
+    const s=document.createElement('div'); s.className='spark';
+    s.style.left=e.clientX+'px'; s.style.top=e.clientY+'px';
+    document.body.appendChild(s);
+    const dx=(Math.random()-.5)*30, dy=20+Math.random()*30;
+    s.animate([{transform:'translate(0,0)',opacity:1},
+      {transform:`translate(${dx}px,${dy}px)`,opacity:0}],
+      {duration:600,easing:'ease-out'}).onfinish=()=>s.remove();
+  });
+})();
+
+/* ---- Konami: ember rain ---- */
+(function(){
+  const seq=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+  let i=0;
+  addEventListener('keydown',e=>{
+    i=(e.key===seq[i])?i+1:0;
+    if(i===seq.length){ i=0; rain(); }
+  });
+  function rain(){
+    for(let n=0;n<60;n++){
+      const c=document.createElement('div'); c.textContent='🔥';
+      c.style.cssText='position:fixed;top:-40px;font-size:'+(14+Math.random()*22)+'px;z-index:99;pointer-events:none;left:'+(Math.random()*100)+'vw';
+      document.body.appendChild(c);
+      c.animate([{transform:'translateY(0) rotate(0)'},{transform:`translateY(110vh) rotate(${Math.random()*360}deg)`}],
+        {duration:2200+Math.random()*1500,easing:'linear'}).onfinish=()=>c.remove();
+    }
+  }
+})();
+
+/* ---- console easter egg ---- */
+console.log("%c🔨 hey, fellow dev — you found the forge.","font-size:16px;font-weight:bold;color:#ff7a18");
+console.log("%cI build things that survive 45,000 people. let's talk → clementng23@gmail.com","color:#b8a98c");
+console.log("%ctry the Konami code. ↑↑↓↓←→←→ B A","color:#e8c372");
+</script>
+</body>
+</html>

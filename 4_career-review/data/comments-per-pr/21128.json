@@ -1,0 +1,81 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21128,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-890 Create new routes for drip campaign pages",
+  "pr_created_at": "2025-10-30T06:19:16Z",
+  "comments": [
+    {
+      "created_at": "2025-10-31T03:28:21Z",
+      "path": "srcfrontend/app/campaigns/components/NewSequence/NewSequence.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153246",
+      "body": "```suggestion\r\n```"
+    },
+    {
+      "created_at": "2025-10-31T03:29:56Z",
+      "path": "srcfrontend/app/campaigns/components/NewSequence/NewSequence.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153247",
+      "body": "You will need a segment tracking plan change to go with this. "
+    },
+    {
+      "created_at": "2025-10-31T03:34:23Z",
+      "path": "srcfrontend/app/campaigns/components/NewSequence/NewSequence.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153248",
+      "body": "Remove all the unused please"
+    },
+    {
+      "created_at": "2025-10-31T03:40:13Z",
+      "path": "srcfrontend/app/campaigns/components/campaignUtil.spec.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153249",
+      "body": "Put `features` into a variable to help readability. \r\n\r\n```suggestion\r\n        const features: FeatureMap = {[Features.CampaignSequence]: true};\r\n\r\n        expect(getPermittedViews({clientAccess: ClientAccessEnum.Full} as CmMemberLite, features)).toEqual([\r\n```"
+    },
+    {
+      "created_at": "2025-10-31T03:41:02Z",
+      "path": "srcfrontend/app/campaigns/components/campaignUtil.spec.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153250",
+      "body": "I think it's better to make a new test. \r\n\"It should return additional views when feature is enabled\" "
+    },
+    {
+      "created_at": "2025-10-31T03:45:37Z",
+      "path": "srcfrontend/app/campaigns/components/campaignUtil.spec.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153252",
+      "body": "Can you delete this file since `campaignUtils.ts` has been moved to `srcfrontend/app/utils/campaigns/campaignUtils.ts` "
+    },
+    {
+      "created_at": "2025-10-31T03:46:01Z",
+      "path": "srcfrontend/app/utils/campaigns/campaignUtils.spec.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153253",
+      "body": "Put `features` into a variable to help readability. \r\n\r\n```suggestion\r\n        const features: FeatureMap = {[Features.CampaignSequence]: true};\r\n\r\n        expect(getPermittedViews({clientAccess: ClientAccessEnum.Full} as CmMemberLite, features)).toEqual([\r\n```"
+    },
+    {
+      "created_at": "2025-10-31T03:46:10Z",
+      "path": "srcfrontend/app/utils/campaigns/campaignUtils.spec.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153254",
+      "body": "I think it's better to make a new test. \r\n\"It should return additional views when feature is enabled\" "
+    },
+    {
+      "created_at": "2025-10-31T04:32:17Z",
+      "path": "srcfrontend/app/campaigns/components/NewSequence/NewSequence.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153256",
+      "body": "Remove the whole block \r\n```suggestion\r\n```"
+    },
+    {
+      "created_at": "2025-10-31T04:33:13Z",
+      "path": "srcfrontend/app/campaigns/components/NewSequence/NewSequence.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153257",
+      "body": "```suggestion\r\n                        <p>Can't create the campaign series now. Please try again</p>\r\n\r\n```"
+    },
+    {
+      "created_at": "2025-10-31T04:44:28Z",
+      "path": "srcfrontend/app/campaigns/components/NewSequence/NewSequence.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153258",
+      "body": "Can you remove this too please. \r\nQuick menu has been rolled out to everyone. "
+    },
+    {
+      "created_at": "2025-10-31T04:49:32Z",
+      "path": "srcfrontend/app/campaigns/components/NewSequence/NewSequence.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21128#discussion_r153259",
+      "body": "```suggestion\r\n                        className=\"cmds-g-layout-horizontal-center\">\r\n\r\n```"
+    }
+  ]
+}

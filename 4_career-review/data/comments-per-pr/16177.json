@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16177,
+  "pr_author": "rashmita-pinto",
+  "pr_title": "Mer 639 b: RecipeTile tracking, automation redirection fixes, empty automation v",
+  "pr_created_at": "2023-09-11T00:16:16Z",
+  "comments": [
+    {
+      "created_at": "2023-09-11T03:06:41Z",
+      "path": "srcfrontend/app/automation/components/RecipeTile/RecipeTile.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16177#discussion_r125710",
+      "body": "Consider wrapping the result in a useMemo too. "
+    }
+  ]
+}

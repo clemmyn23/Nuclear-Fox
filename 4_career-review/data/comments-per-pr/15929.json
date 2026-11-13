@@ -1,0 +1,51 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15929,
+  "pr_author": "brian-luc",
+  "pr_title": "[MER-516] Add polling / notification when clone is complete",
+  "pr_created_at": "2023-08-10T07:02:30Z",
+  "comments": [
+    {
+      "created_at": "2023-08-15T23:43:46Z",
+      "path": "srcfrontend/app/automation/components/CheckWorkflowRecipeStatus/CheckWorkflowRecipeStatus.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15929#discussion_r124242",
+      "body": "is there a hard cap on the frontend side? "
+    },
+    {
+      "created_at": "2023-08-15T12:33:38Z",
+      "path": "srcfrontend/app/automation/components/CheckWorkflowRecipeStatus/CheckWorkflowRecipeStatus.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15929#discussion_r124215",
+      "body": "Use `window.setTimeout` instead. The return type for `window.setTimeout` is `number` "
+    },
+    {
+      "created_at": "2023-08-15T12:37:40Z",
+      "path": "srcfrontend/app/automation/components/CheckWorkflowRecipeStatus/CheckWorkflowRecipeStatus.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15929#discussion_r124216",
+      "body": "Can you type this as `string | null` if this is a nullable value. "
+    },
+    {
+      "created_at": "2023-08-15T12:41:01Z",
+      "path": "srcfrontend/app/automation/components/CheckWorkflowRecipeStatus/CheckWorkflowRecipeStatus.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15929#discussion_r124217",
+      "body": "Can just `setCheckForError(false);` if you are not using the `prevCheck` value. "
+    },
+    {
+      "created_at": "2023-08-15T12:46:21Z",
+      "path": "srcfrontend/app/automation/components/CheckWorkflowRecipeStatus/CheckWorkflowRecipeStatus.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15929#discussion_r124218",
+      "body": "\"Would\""
+    },
+    {
+      "created_at": "2023-08-15T23:34:13Z",
+      "path": "srcfrontend/app/automation/components/CheckWorkflowRecipeStatus/CheckWorkflowRecipeStatus.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15929#discussion_r124241",
+      "body": "Consider checking for direct instead to account for multi-team. \r\n"
+    },
+    {
+      "created_at": "2023-08-15T23:48:06Z",
+      "path": "srcfrontend/app/automation/components/CheckWorkflowRecipeStatus/CheckWorkflowRecipeStatus.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15929#discussion_r124243",
+      "body": "what happens when this throws? "
+    }
+  ]
+}

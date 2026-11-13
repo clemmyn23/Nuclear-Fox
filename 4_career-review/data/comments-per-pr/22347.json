@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22347,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-1068: Implement Opt-in page design",
+  "pr_created_at": "2026-02-23T05:12:40Z",
+  "comments": [
+    {
+      "created_at": "2026-02-24T02:52:39Z",
+      "path": "srcfrontend/app/library/Icons/CheckCircle/CheckCircleLight.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22347#discussion_r161019",
+      "body": "Use UK English in code please. \nUS English in customer facing copies. \n\n`color` -> `colour` "
+    }
+  ]
+}

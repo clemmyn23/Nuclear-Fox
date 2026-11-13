@@ -1,0 +1,87 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10033,
+  "pr_author": "niaw",
+  "pr_title": "Upgrade jest to improve the test duration",
+  "pr_created_at": "2021-06-16T01:11:39Z",
+  "comments": [
+    {
+      "created_at": "2021-07-30T01:14:32Z",
+      "path": "app/.stylelintrc",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86746",
+      "body": "Stylelint current warns deprecation `declaration-property-unit-whitelist` and prefers `declaration-property-unit-allowed-list`. \r\nBut to update this we will need to update upstream first at package `stylelint-config-cm`, otherwise neither rule gets applied. "
+    },
+    {
+      "created_at": "2021-07-30T01:15:28Z",
+      "path": "app/js/src/app/account/payforcampaign/components/PayForCampaignProvider/PayForCampaign.Provider.spec.js",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86748",
+      "body": "Workaround for `window.location.assign` readonly not writable. "
+    },
+    {
+      "created_at": "2021-07-30T01:16:24Z",
+      "path": "app/js/src/app/contacts/hostedsubscribeform/components/Checkbox/index.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86749",
+      "body": "Fix `app/js/src/app/contacts/hostedsubscribeform/components/PrivacyBlock/PrivacyBlock.tsx` importing and using the wrong type `CheckboxProps` "
+    },
+    {
+      "created_at": "2021-07-30T01:19:00Z",
+      "path": "app/js/src/app/shared/Survey/Survey.spec.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86750",
+      "body": "There are multiple of these below. \r\n`FindByText` or `FindByRole('button', ...` returning the elements inside the `button` tag that we want but not the `button` tag themselves. \r\nThis causes `expect(element).toBeDisabled();` checks to always fail which is problematic. "
+    },
+    {
+      "created_at": "2021-07-30T01:20:11Z",
+      "path": "app/test/jest.react.config.js",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86751",
+      "body": "`setupTestFrameworkScriptFile` deprecated use `setupFilesAfterEnv` instead."
+    },
+    {
+      "created_at": "2021-07-30T01:21:22Z",
+      "path": "app/test/testSetup.react.js",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86752",
+      "body": "Fix `ReferenceError: regeneratorRuntime is not defined` in `js/src/app/account/accountdetails/CloseAccount/CloseAccount.spec.tsx` only. \r\nNo idea why it's happening in only that test file, even though there are other test files using async await 🤷 "
+    },
+    {
+      "created_at": "2021-07-30T01:22:37Z",
+      "path": "srcfrontend/app/audience/components/CustomFieldDialog/CustomFieldDialog.spec.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86753",
+      "body": "Breaking change. \r\nSquare brackets and brackets now needs to be escaped `[` --> `[[` "
+    },
+    {
+      "created_at": "2021-07-30T01:23:17Z",
+      "path": "srcfrontend/app/audience/components/Lists/ConfirmBulkDeleteModal.spec.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86754",
+      "body": "Fix multiple elements found error. "
+    },
+    {
+      "created_at": "2021-07-30T01:25:00Z",
+      "path": "srcfrontend/app/campaigncreationchecklist/components/CheckListSteps/DesignStep/Design.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86755",
+      "body": "Fix type checker going wonky and using the node.js type defs for setTimeout. \r\nWe want return type `number` and not `NodeJS.Timer` "
+    },
+    {
+      "created_at": "2021-07-30T01:28:29Z",
+      "path": "srcfrontend/app/campaigncreationchecklist/components/CheckListSteps/ScheduledStep/CancelScheduleApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86757",
+      "body": "Fix `sendApiUpdate` not getting mocked in test. \r\n\r\nThis wasn't immediately obvious to me but if we intend to mock `sendApiUpdate` in tests like this: \r\n![image](https://git.campmon.com/storage/user/367/files/041e9b80-f129-11eb-9b41-b92d1387b6e2)\r\nthen we need to make sure we are importing `sendApiUpdate` from the same file that we are mocking. \r\n"
+    },
+    {
+      "created_at": "2021-07-30T01:33:56Z",
+      "path": "srcfrontend/app/campaigncreationchecklist/components/CheckListSteps/ScheduledStep/ScheduledStep.spec.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86758",
+      "body": "Missing `await` on `waitFor` call. \r\n\r\nThis one was annoying to find because the error \r\n![image](https://git.campmon.com/storage/user/367/files/db4ad600-f129-11eb-97c2-9b804e8b1ed4)\r\ncomes up 10 (random number) test suites later with no stack trace. "
+    },
+    {
+      "created_at": "2021-07-30T01:36:11Z",
+      "path": "srcfrontend/app/earlytierupgrade/components/EarlyTierUpgrade/EarlyTierUpgrade.Provider.spec.js",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r86759",
+      "body": "Jest 27 breaking change \r\nhttps://jestjs.io/blog/2020/05/05/jest-26#new-fake-timers\r\n\r\nWe use legacy timers to mock `setTimeout`"
+    },
+    {
+      "created_at": "2021-08-25T08:31:52Z",
+      "path": "shared/components/UrgencyDiscountModal/UrgencyDiscountUtils.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10033#discussion_r88088",
+      "body": "eslint being funny idk why\r\n![image](https://git.campmon.com/storage/user/367/files/b6376f00-05d2-11ec-8228-9f780087020e)\r\n"
+    }
+  ]
+}

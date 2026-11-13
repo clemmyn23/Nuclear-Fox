@@ -1,0 +1,51 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 9914,
+  "pr_author": "lcallaway",
+  "pr_title": "UX1-475 - Implement custom fields table structure with data fetched from cm-api",
+  "pr_created_at": "2021-06-01T03:34:38Z",
+  "comments": [
+    {
+      "created_at": "2021-06-04T01:24:04Z",
+      "path": "srcfrontend/app/components/DragDropTable/DragDropTable.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9914#discussion_r83736",
+      "body": "Thank you for catching this and fixing it :D "
+    },
+    {
+      "created_at": "2021-06-04T01:36:56Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTableRow.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9914#discussion_r83740",
+      "body": "Can consider checking `title === \"Email address\" || title === \"Name\"` to be more robust and consistent with code in c#. \r\nDunno if it's overkill though. \r\nhttps://git.campmon.com/Freshview/createsend.com/blob/f17599d8641df6da162b5f30923643cd6b4c310b/app/CampMon.CmAPI/Endpoints/CustomFields/CustomFieldsValidationService.cs#L78-L81"
+    },
+    {
+      "created_at": "2021-06-04T01:03:35Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsIntro.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9914#discussion_r83727",
+      "body": "Is the `{' '}` doing anything here? "
+    },
+    {
+      "created_at": "2021-06-04T01:10:08Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTable.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9914#discussion_r83730",
+      "body": "Something to consider: \r\nSince this can never realistically happen in practice (email and name are always gonna be there), we can repurpose this to render a generic error message instead for when the fetch fails? \r\n\r\nCould be annoyingly difficult or not needed since fetch is handled in the parent component. "
+    },
+    {
+      "created_at": "2021-06-04T01:13:09Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTableRow.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9914#discussion_r83733",
+      "body": "Avoid using single character variables. \r\nAlso can move these helper functions and string constants up and outside of the component code so they don't get recreated on every rerender. "
+    },
+    {
+      "created_at": "2021-06-04T01:15:01Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/CustomFieldsTableRow.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9914#discussion_r83734",
+      "body": "Unsure so ignore me if I'm wrong: \r\nDo we need this here since it's also imported in the parent component file `CustomFields.tsx`? "
+    },
+    {
+      "created_at": "2021-06-04T01:23:07Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/customFieldsApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/9914#discussion_r83735",
+      "body": "If you type the function return `Promise<CmCustomField[]>` you can avoid the `as` hard cast here. "
+    }
+  ]
+}

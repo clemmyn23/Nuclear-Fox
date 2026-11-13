@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 18249,
+  "pr_author": "daniel-keith",
+  "pr_title": "EL-1985 - Account Settings Refresh: gave functionality to administrator links, r",
+  "pr_created_at": "2024-10-04T06:18:39Z",
+  "comments": [
+    {
+      "created_at": "2024-10-09T01:59:24Z",
+      "path": "srcfrontend/app/accountsettings/components/ManageAdministratorsPage/AdministratorRow.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18249#discussion_r138529",
+      "body": "It is missing a line \n```\n<div class=\"js-app\" />\n```\nin https://git.campmon.com/Freshview/createsend.com/blob/8ebde635eb903de0a752c1e7ccb92b799b19f8be/app/Areas/Admin/Views/Account/AccountSettingsOverview.cshtml \n\n\nSee for example https://git.campmon.com/Freshview/createsend.com/blob/a4a1327721cb78d3acd850144918e060122a1540/app/Areas/Admin/Views/Account/SmsSettings.cshtml#L19-L20C1\n\nThe cm modal portal relies on that special div to mount the popups. We also use that in some unit tests to verify components are performing as expected. "
+    }
+  ]
+}

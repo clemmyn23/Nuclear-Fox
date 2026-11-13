@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 18059,
+  "pr_author": "rashmita-pinto",
+  "pr_title": "Aj 398- Add how many subscriber are waiting at Wait Until Step on datebased jour",
+  "pr_created_at": "2024-08-26T23:50:10Z",
+  "comments": [
+    {
+      "created_at": "2024-08-29T07:02:19Z",
+      "path": "extras/CampMon.ServiceHost/CampMon.ServiceHost.AgentHost.Tests/App.config",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18059#discussion_r137539",
+      "body": "The spaces here got changed to tabs.\nThat's why git is showing the diff. "
+    },
+    {
+      "created_at": "2024-08-29T07:04:59Z",
+      "path": "extras/CampMon.ServiceHost/CampMon.ServiceHost.AgentHost/App.config",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18059#discussion_r137540",
+      "body": "Yea the rest of the file is using spaces for indent, but all the assembly config changes in this PR are using tabs. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 19224,
+  "pr_author": "david-vanlaarveth",
+  "pr_title": "AJ-515 Improve segment OR condition when selecting engagement segment rules",
+  "pr_created_at": "2025-03-25T05:06:39Z",
+  "comments": [
+    {
+      "created_at": "2025-03-26T00:15:14Z",
+      "path": "srcfrontend/app/audience/components/SegmentBuilder/components/SegmentRulesSection/SegmentRulesSection.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/19224#discussion_r143196",
+      "body": "This can throw on `Object.values(undefined)`. \n"
+    }
+  ]
+}

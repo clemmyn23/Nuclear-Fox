@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 156,
+  "pr_author": "brian-luc",
+  "pr_title": "[MER-335a] Time Filter Select Component refinements",
+  "pr_created_at": "2023-03-15T05:09:34Z",
+  "comments": [
+    {
+      "created_at": "2023-03-16T23:01:02Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/Report/WorkflowConversionsReportDetails.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/156#discussion_r116364",
+      "body": "Had a chat with @brian-luc about this - \r\nSince `displaySelectedValue` is not dependant on any asynchronous changes within this component, thus don't need its own state setter, we can replace \r\n```\r\nconst [displaySelectedValue, setDisplaySelectedValue] = useState(initValue);\r\n```\r\nwith \r\n```\r\nconst displaySelectedValue = isReportingError ? (lastSuccessfulFromDateUtc ?? initValue) : selectedValue;\r\n```\r\nand avoid the whole useEffect event loop problem. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21733,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-888: Apply formatting when displaying note content",
+  "pr_created_at": "2025-12-22T04:53:05Z",
+  "comments": [
+    {
+      "created_at": "2025-12-22T23:31:18Z",
+      "path": "srcfrontend/app/audience/components/SubscriberProfile/SubscriberNotes.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21733#discussion_r157628",
+      "body": "Can you put this further down the tree, to the specific element containing the text content if possible? \r\n\r\n![image](https://git.campmon.com/Freshview/createsend.com/assets/367/72111430-91f6-4fcf-8808-ddc1c6b8327d)\r\n"
+    }
+  ]
+}

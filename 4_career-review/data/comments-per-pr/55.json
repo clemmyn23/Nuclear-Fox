@@ -1,0 +1,15 @@
+{
+  "pr_repo": "data-tribe/insights-web-api",
+  "pr_number": 55,
+  "pr_author": "zhartmann",
+  "pr_title": "SMS-159-2-a: Update README for local development",
+  "pr_created_at": "2022-07-11T23:40:53Z",
+  "comments": [
+    {
+      "created_at": "2022-07-12T00:52:24Z",
+      "path": "README.md",
+      "html_url": "https://git.campmon.com/data-tribe/insights-web-api/pull/55#discussion_r104564",
+      "body": "Pretty sure `-Xms` `-Xmx` are for memory usage, and not necessarily disk storage space. \r\nAnd when your machine runs out of memory trying to start the jvm I'd assume some sort of error manifesting like described? "
+    }
+  ]
+}

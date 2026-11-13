@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Ng — Résumé</title>
+<style>
+  /* ===== PAGE: A4 by default. For US Letter, change `size: A4` to `size: letter`. ===== */
+  @page { size: A4; margin: 14mm 15mm; }
+  :root{
+    --ink:#16202c; --body:#2b3543; --muted:#6b7787; --line:#d7dce3;
+    --accent:#1f3a5f;      /* deep navy. swap for #7b2d26 (brick) or #b15a1e (forge amber) */
+    --accent-soft:#eef2f7;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#eceef1;color:var(--body)}
+  body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:10.4pt; line-height:1.42; -webkit-font-smoothing:antialiased}
+  .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif}
+  /* on-screen page frame (hidden when printing) */
+  .page{max-width:210mm; margin:18px auto; background:#fff; padding:16mm 16mm;
+    box-shadow:0 10px 40px rgba(20,30,50,.18)}
+  .hint{max-width:210mm;margin:14px auto 0;font:600 12px system-ui;color:#55606e;
+    background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+  .hint b{color:var(--accent)}
+  a{color:var(--accent);text-decoration:none}
+
+  header{border-bottom:2px solid var(--accent);padding-bottom:10px;margin-bottom:14px}
+  h1{font-size:27pt;line-height:1;margin:0;color:var(--ink);letter-spacing:.3px}
+  .role{font-size:11.5pt;color:var(--accent);font-weight:700;margin-top:5px;letter-spacing:.4px}
+  .contact{font-size:9.4pt;color:var(--muted);margin-top:6px}
+  .contact a{color:var(--muted)}
+  .summary{margin:12px 0 2px;color:var(--body)}
+  .summary strong{color:var(--ink)}
+
+  h2{font-size:11pt;text-transform:uppercase;letter-spacing:2px;color:var(--accent);
+    margin:18px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--line)}
+  .job{margin-bottom:11px; break-inside:avoid; page-break-inside:avoid}
+  .job .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .job .title{font-weight:700;color:var(--ink);font-size:10.8pt}
+  .job .title .co{color:var(--accent)}
+  .job .when{color:var(--muted);font-size:9.2pt;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .job .desc{color:var(--muted);font-style:italic;margin:2px 0 4px}
+  ul{margin:4px 0 0;padding-left:16px}
+  li{margin:2.5px 0}
+  li strong{color:var(--ink)}
+  .tech{font-style:italic;color:var(--muted);font-size:9.3pt;margin-top:5px}
+  .skills{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;margin-top:4px}
+  .skills dt{font-weight:700;color:var(--ink)}
+  .skills dd{margin:0;color:var(--body)}
+  .compact li{margin:2px 0}
+
+  @media print{
+    html,body{background:#fff}
+    .page{box-shadow:none;margin:0;max-width:none;padding:0}
+    .hint{display:none}
+    a{color:var(--accent)}
+    /* ensure rules/accent print */
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="hint">📄 To export: <b>⌘/Ctrl + P → Save as PDF</b>. Enable “Background graphics”. Default size is <b>A4</b>; for US roles change <code>size: A4</code> → <code>letter</code> in the &lt;style&gt;. This bar won't appear in the PDF.</div>
+
+<div class="page">
+  <header>
+    <h1 class="serif">Clement Ng</h1>
+    <div class="role">Senior Software Engineer · Director of IT</div>
+    <div class="contact">Sydney, Australia &nbsp;·&nbsp; +61 413-424-888 &nbsp;·&nbsp; clementng23@gmail.com &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/clemchowder/">linkedin.com/in/clemchowder</a></div>
+  </header>
+
+  <p class="summary">Full-stack software engineer with <strong>8+ years</strong> across SaaS platforms, real-time systems, and event-scale IT infrastructure. Owns features end-to-end through React/TypeScript front ends, .NET/C# services, and gRPC/Kafka messaging — and the design docs that get them through architecture review. For 7+ years has helped build and now leads the IT function for one of Australia's largest pop-culture conventions — from founding engineer to Director of IT (<strong>45,000+ attendees, 25-person team</strong>). Known for translating messy real-world constraints into reliable systems and for being the engineer teams defer to across a large codebase.</p>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">Campaign Monitor (Marigold)</span> — Software Engineer</span><span class="when">Apr 2021 – Present · Sydney</span></div>
+    <div class="desc">Email-marketing SaaS. Shipped product and platform work across the createsend.com monolith and its microservice mesh; worked across six product domains (Audience UX, Campaign Authoring, SMS, Commerce, Automation Recipes, Journeys/CRM).</div>
+    <ul>
+      <li><strong>Feature tech lead for CRM Lite (single-customer-view).</strong> Authored the design (LDR reviewed by the architecture function), brokered schema decisions with DBAs and privacy-by-design decisions with the platform team, then delivered it end-to-end — protobuf contracts, a paged SQS/Kafka backfill pipeline sized for 20-million-contact client lists, the subscriber-profile UI, and the production rollout.</li>
+      <li><strong>Built the SMS product as a vertical slice through the entire stack</strong> — React UI, CmAPI endpoints, gRPC services, and the link-tracking topic taxonomy spanning protobuf, Kafka ACLs, and shared messaging libraries. Extended to geo expansion, hosted sign-up forms, and preference-center consent.</li>
+      <li><strong>Led front-end build/toolchain modernisation for the org as a JavaScript Crew member</strong> — yarn workspaces, Vite/esbuild dev builds, Node LTS upgrades, TypeScript 4→5, Prettier/ESLint rollouts, React 18 concurrent-mode migration, and Webpack 5. Reviewed JS merges and maintained shared libraries across the front-end engineering org.</li>
+      <li><strong>Drove multi-repo, contract-first changes</strong> — e.g. permission-checking and failure-handling features landing across 3–4 repositories (monolith + protobuf + microservices + datastores) in a single coordinated set.</li>
+      <li><strong>Migrated a workflow-lookup service from the .NET-Framework monolith to a standalone .NET Core gRPC service</strong>, persisting through multiple production-load iterations to land it cleanly.</li>
+      <li><strong>Delivered the Journeys/Automation step library</strong> — advanced custom-field expressions, a Wait-Until step (schema, persistence, cross-DB clone, GDPR-audited activity logging), send-a-test, and condition-path swapping — each feature-flag-gated across monolith and microservice.</li>
+      <li><strong>Shipped Commerce / Shopify</strong> — the migration assistant, Commerce Management pages, and automation recipes, coordinating contract changes across the monolith, protobuf, the third-party importer service, and the admin tool.</li>
+      <li>Authored <strong>20+ architecture and reference docs</strong> (still used to onboard engineers); organised pre-release bug-bash sessions; <strong>screened mid-level engineering candidates</strong> and mentored juniors. Across the tenure: <strong>authored 530+ and reviewed 550+ pull requests across the entire engineering department.</strong></li>
+    </ul>
+    <div class="tech">Tech: C#/.NET (Framework → Core → 9), TypeScript/React (16→18), gRPC + protobuf, Kafka, MSSQL, DynamoDB, Terraform, AWS.</div>
+  </div>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">WiseTech Global</span> — Associate Software Developer</span><span class="when">May 2019 – Mar 2021 · Sydney</span></div>
+    <div class="desc">Global logistics-software platform (CargoWise).</div>
+    <ul>
+      <li><strong>Sole owner of the AIS ship-tracking system</strong> (React, TypeScript, Google Maps) delivering real-time cargo visibility to all CargoWise customers — responsibility above the title.</li>
+      <li>Maintained and extended the <strong>MAWB air-cargo automation system</strong>, ingesting airline/carrier data for near-real-time cargo visibility (C#, MSSQL).</li>
+      <li>Delivered UI enhancements to <strong>PAVE</strong>, WiseTech's in-house task-management platform.</li>
+    </ul>
+    <div class="tech">Tech: C#, MSSQL, React, JavaScript/TypeScript.</div>
+  </div>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">EdApp LMS</span> — Software Engineer <span style="font-weight:400;color:var(--muted)">(formerly Creative Licence Digital)</span></span><span class="when">Feb 2018 – May 2019 · Sydney</span></div>
+    <div class="desc">Mobile-first learning-management platform.</div>
+    <ul>
+      <li>Built peer-authoring templates and mobile features across React Native, Backbone.js, and Cordova.</li>
+      <li>Implemented logging and audit trails for the push-notification system.</li>
+      <li>Participated in 24/7 on-call support, CI/CD pipelines, and automated testing.</li>
+    </ul>
+    <div class="tech">Tech: CoffeeScript/JavaScript, MongoDB, React, C#, PostgreSQL, Jenkins, React Native.</div>
+  </div>
+
+  <h2>Engineering Leadership (Volunteer)</h2>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">SMASH! Inc.</span> — Director of IT</span><span class="when">Nov 2025 – Present</span></div>
+    <div class="desc">Sydney Manga and Anime Show — one of Australia's largest pop-culture conventions.</div>
+    <ul>
+      <li><strong>Lead IT across Engineering, Systems, and Support — 25 volunteers and 3 leads.</strong></li>
+      <li>Partner with the Board and Executive to <strong>set IT strategy</strong> aligned with growth, risk, and live-event constraints.</li>
+      <li>Accountable for <strong>ticketing, access control, networking, and on-site incident response for 45,000+ attendees</strong>.</li>
+      <li>Leading a <strong>multi-year IT strategy and roadmap</strong> — cost monitoring, infrastructure scaling, internal systems, and volunteer engineering operations.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">SMASH! Inc.</span> — Assistant IT Director</span><span class="when">Jan 2020 – Nov 2025</span></div>
+    <ul class="compact">
+      <li>Coordinated cross-team delivery across IT, Ticketing, and Operations; managed ticket allocations for all exhibitors and guest performers.</li>
+      <li>Planned, delegated, and reviewed work for a team of engineers building event systems; <strong>grew the team from 5 engineers</strong>.</li>
+      <li><strong>Delivered 5 consecutive conventions with zero critical IT failures</strong>; ran on-site technical setup and live operations under peak load.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="row"><span class="title"><span class="co">SMASH! Inc.</span> — Software Developer</span><span class="when">Nov 2018 – Jan 2020</span></div>
+    <ul class="compact">
+      <li><strong>Designed and built an integrated ticketing and mobile-scanning system</strong> supporting 40,000+ attendees and vendors, as one of a founding team of 5 engineers.</li>
+      <li>Managed on-site technical setup and live operations under peak load.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="job"><div class="row"><span class="title">B.Sc. (Computer Science) — University of New South Wales</span><span class="when">2014 – 2017</span></div></div>
+
+  <h2>Speaking &amp; Extras</h2>
+  <ul class="compact" style="padding-left:16px">
+    <li><strong>“Preparing IT Infrastructure for an Anime Convention”</strong> — engineering-wide company-retreat talk (Campaign Monitor) on the DevOps, hardware, software, and personnel behind running a major live event. Jun 2025 · <a href="https://www.youtube.com/watch?v=bBZFJ9uXrbU">youtube.com/watch?v=bBZFJ9uXrbU</a></li>
+  </ul>
+
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>JavaScript, TypeScript, C#, Java</dd>
+    <dt>Frameworks</dt><dd>React, .NET, Express.js, Jest, NUnit</dd>
+    <dt>Data</dt><dd>MSSQL, MySQL, PostgreSQL, Redis, DynamoDB</dd>
+    <dt>Messaging / Infra</dt><dd>gRPC, Kafka, AWS, Azure, Terraform</dd>
+    <dt>CI/CD &amp; Tooling</dt><dd>TeamCity, GitHub Actions, Git, Jira, Vite, Webpack</dd>
+  </dl>
+</div>
+</body>
+</html>

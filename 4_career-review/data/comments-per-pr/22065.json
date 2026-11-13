@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22065,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-1038 - Setup SQS queues using terraform for CRM data population",
+  "pr_created_at": "2026-01-28T01:27:12Z",
+  "comments": [
+    {
+      "created_at": "2026-01-29T04:40:52Z",
+      "path": "terraform/modules/crm_lite_initiate_data_population/main.tf",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22065#discussion_r159265",
+      "body": "Maybe having both queues tagged with the same `name` would be nicer \r\n`\"crmlitedatapopulationagent\"`"
+    }
+  ]
+}

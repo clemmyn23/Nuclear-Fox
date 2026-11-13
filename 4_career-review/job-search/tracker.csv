@@ -1,0 +1,6 @@
+company,role_title,category,resume_variant_used,source_or_referral,date_applied,stage,next_action,next_action_date,comp_base_target,comp_offered,recruiter_contact,reverse_qs_asked,org_health_notes,status
+"EXAMPLE — Octopus Deploy","Senior Software Engineer","B: .NET shop","Backend/Platform","Referral: ex-WiseTech colleague",2026-06-01,"Phone screen","Prep system-design (CRM-Lite story)",2026-06-08,170000,,"Jane R. (recruiter)","Promo ladder? Comp reviews?","Stable; .NET-first",active
+"EXAMPLE — Canva","Senior Software Engineer","A: top-tier product","Staff/Senior+ IC","Cold apply + LinkedIn",2026-06-02,"Applied","Follow up if no reply by",2026-06-16,180000,,,"","Equity-heavy comp",active
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,

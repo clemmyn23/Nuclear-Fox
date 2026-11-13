@@ -1,0 +1,39 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22903,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-1108 refactor crmlist cm api endpoint responses",
+  "pr_created_at": "2026-04-15T07:40:17Z",
+  "comments": [
+    {
+      "created_at": "2026-04-21T04:51:47Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/SubscriberProfilePage/useScvSubscriberData.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22903#discussion_r164940",
+      "body": "Do you need to explicitly check against `true` here? "
+    },
+    {
+      "created_at": "2026-04-21T04:54:50Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmLiteApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22903#discussion_r164941",
+      "body": "Always check `response.ok` _before_ reading the body stream (`.json()`) "
+    },
+    {
+      "created_at": "2026-04-21T05:00:43Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmLiteApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22903#discussion_r164942",
+      "body": "Do you need to explicitly check for `false` here? \nIf not it's better written as \n```\nif (!result.hasCrmAccess) {\n...\n```\n\nExplicitly checking for `true/false` usually implies underlying issues such as - incorrect typing, incomplete typing, or overloading boolean when property is better represented as enum. \n\nAlso see below comments on checks for explicit `true` "
+    },
+    {
+      "created_at": "2026-04-21T05:03:47Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmListPage/CrmList.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22903#discussion_r164943",
+      "body": "Code smell - Do you need to explicitly check against true here?"
+    },
+    {
+      "created_at": "2026-04-21T05:04:34Z",
+      "path": "app/CampMon.CmAPI/ErrorHandling/ErrorHandlingMiddleware.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22903#discussion_r164944",
+      "body": "Don't think we need to log this."
+    }
+  ]
+}

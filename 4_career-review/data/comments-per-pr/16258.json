@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16258,
+  "pr_author": "subrat-shrestha",
+  "pr_title": "EL-1265 InApp disable 2FA ",
+  "pr_created_at": "2023-09-21T08:44:11Z",
+  "comments": [
+    {
+      "created_at": "2023-09-26T05:12:56Z",
+      "path": "srcfrontend/app/components/DisableAuthenticator/DisableAuthenticator.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16258#discussion_r126408",
+      "body": "This form and backend ok if the user spam clicks the submit button? \r\n(Suggest disabling submit when form is submitting) "
+    }
+  ]
+}

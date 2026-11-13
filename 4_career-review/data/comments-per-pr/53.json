@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowcontext.triggerservice.core",
+  "pr_number": 53,
+  "pr_author": "masoudc",
+  "pr_title": "SRE-2586 Monolith couchbase removal - added redis in front of couchbase",
+  "pr_created_at": "2025-07-19T00:03:06Z",
+  "comments": [
+    {
+      "created_at": "2025-07-22T23:51:17Z",
+      "path": "WorkflowContext.TriggerService/Infrastructure/Caching/CouchbaseCache.cs",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.triggerservice.core/pull/53#discussion_r147583",
+      "body": "Perhaps rename the file in the next PR since we are getting rid of Couchbase"
+    }
+  ]
+}

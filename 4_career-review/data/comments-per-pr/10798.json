@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10798,
+  "pr_author": "leoc",
+  "pr_title": "Set import/named to warn due to type import issues from .d.ts",
+  "pr_created_at": "2021-08-31T00:47:21Z",
+  "comments": [
+    {
+      "created_at": "2021-08-31T04:23:46Z",
+      "path": "shared/components/UrgencyDiscountModal/UrgencyDiscountUtils.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10798#discussion_r88392",
+      "body": "oh this PR is merging into the `upgrade-jest` branch. \r\nThanks for reverting these changes. "
+    }
+  ]
+}

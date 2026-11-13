@@ -1,0 +1,51 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21938,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-1026: create CM-API endpoint to get count of CRM Lite customers",
+  "pr_created_at": "2026-01-16T00:44:44Z",
+  "comments": [
+    {
+      "created_at": "2026-01-21T05:39:01Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteService.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21938#discussion_r158945",
+      "body": "Don't need the `.ConfigureAwait(false)` call here. \r\n\r\nSee https://git.campmon.com/crews/c-sharp/blob/master/CodingGuidelines/AsyncCodeAndConfigureAwait.MD"
+    },
+    {
+      "created_at": "2026-01-21T05:40:47Z",
+      "path": "app/CampMon.Data.NetStandard/Crm/CrmLiteRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21938#discussion_r158946",
+      "body": "PK is unique, don't need the `distinct` here. \r\nPlus we don't have single subscriber on multiple lists in CM, it would break our current contact model. "
+    },
+    {
+      "created_at": "2026-01-21T05:47:35Z",
+      "path": "app/CampMon.Data.NetStandard/Crm/CrmLiteRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21938#discussion_r158948",
+      "body": "Use `sqlDataAccess.QuerySingleAsync` to avoid the `.Sum(x => (int)x);` at the end. "
+    },
+    {
+      "created_at": "2026-01-21T05:59:13Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21938#discussion_r158949",
+      "body": "```suggestion\r\n        logEx(ex, 'Failed to get CRM customer count', {clientId});\r\n```\r\n\r\nShould probably improve the type definition [js crew work]"
+    },
+    {
+      "created_at": "2026-01-21T05:59:45Z",
+      "path": "srcfrontend/app/audience/components/CrmLiteSideBar/CrmLiteSideBar.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21938#discussion_r158950",
+      "body": "Please check linting"
+    },
+    {
+      "created_at": "2026-01-21T06:05:50Z",
+      "path": "srcfrontend/app/audience/AudienceUserData.Provider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21938#discussion_r158951",
+      "body": "I don't think we need to put this here in AudienceUserData provider. \r\n\r\nWe don't need to grab crm customer count data for every single user using CM. (and we don't want an extra 50k db queries per hour for no use)\r\n\r\nYou can implement the fetch call as close to where it's actually used as possible - in this case in `CrmLiteSideBar.tsx` "
+    },
+    {
+      "created_at": "2026-01-28T00:25:35Z",
+      "path": "srcfrontend/app/audience/components/Layout/AudienceLayout.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21938#discussion_r159194",
+      "body": "I missed this in the previous review. \r\n\r\nCan you catch this please. \r\nThis is gonna get a 502 for the majority of the time because most clients won't have crmlite enabled. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 11379,
+  "pr_author": "russella",
+  "pr_title": "CA-1160: Create an actual sms campaign in the backend when creating a new sms ca",
+  "pr_created_at": "2021-11-05T05:02:20Z",
+  "comments": [
+    {
+      "created_at": "2021-11-05T05:08:29Z",
+      "path": "srcfrontend/app/cm-api/models/CmSMSMailing.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11379#discussion_r91871",
+      "body": "`content` can be undefined when the campaign is freshly created but I don't think it matters much here. "
+    }
+  ]
+}

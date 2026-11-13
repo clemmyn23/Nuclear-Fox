@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/contentbuildercontext.staticresourceservice.core",
+  "pr_number": 1004,
+  "pr_author": "james-dunlop",
+  "pr_title": "PP-848 Activation of LiveContent",
+  "pr_created_at": "2024-03-27T21:49:56Z",
+  "comments": [
+    {
+      "created_at": "2024-04-09T01:42:09Z",
+      "path": "ContentBuilderContext.StaticResourceService/static_src/ts/modules/emailbuilder/services/live-content-enablement.service.ts",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1004#discussion_r133426",
+      "body": "TODO?"
+    }
+  ]
+}

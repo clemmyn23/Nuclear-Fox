@@ -1,0 +1,57 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15633,
+  "pr_author": "azissis",
+  "pr_title": "alter in app copy for migration assistant and support different groups",
+  "pr_created_at": "2023-06-29T02:40:15Z",
+  "comments": [
+    {
+      "created_at": "2023-06-29T04:19:19Z",
+      "path": "srcfrontend/app/commercesettings/pages/ShopifyMigrationFaq/AgencyMigrationFaqContent.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121258",
+      "body": "missed one"
+    },
+    {
+      "created_at": "2023-06-29T04:20:15Z",
+      "path": "srcfrontend/app/components/Integrations/IntegrationMigrationDialog/variants/ShopifyPreSunsetIntegrationMigrationDialogVariant.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121259",
+      "body": "is this supposed to be \"migration\"? "
+    },
+    {
+      "created_at": "2023-06-29T04:20:34Z",
+      "path": "srcfrontend/app/components/Integrations/IntegrationMigrationDialog/variants/ShopifyPostSunsetIntegrationMigrationDialogVariant.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121261",
+      "body": "also this supposed to be \"migration\"? "
+    },
+    {
+      "created_at": "2023-06-29T04:21:41Z",
+      "path": "srcfrontend/app/components/Integrations/IntegrationMigrationDialog/variants/ShopifyPostSunsetIntegrationMigrationDialogVariant.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121262",
+      "body": "Capitalized \"Administrator\" intentional?  "
+    },
+    {
+      "created_at": "2023-06-29T04:37:57Z",
+      "path": "srcfrontend/app/components/Integrations/IntegrationMigrationDialog/variants/ShopifyPreSunsetIntegrationMigrationDialogVariant.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121269",
+      "body": "add spacing `between` paragraphs"
+    },
+    {
+      "created_at": "2023-06-29T04:41:33Z",
+      "path": "srcfrontend/app/components/Integrations/IntegrationMigrationDialog/variants/ShopifyPreSunsetIntegrationMigrationDialogVariant.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121271",
+      "body": "small `yyyy` for year format. \r\nhttps://github.com/moment/luxon/blob/master/docs/formatting.md"
+    },
+    {
+      "created_at": "2023-06-29T04:54:28Z",
+      "path": "srcfrontend/app/components/Integrations/IntegrationMigrationDialog/variants/ShopifyPostSunsetIntegrationMigrationDialogVariant.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121276",
+      "body": "```suggestion\r\n                    [IMPORTANT - ACTION REQUIRED] Migrate {isDirect ? '' : 'your clients'} to our new Shopify integration before {date.toFormat('LLLL d')}\r\n```"
+    },
+    {
+      "created_at": "2023-06-29T05:35:44Z",
+      "path": "srcfrontend/app/components/Integrations/IntegrationMigrationPromptData.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15633#discussion_r121291",
+      "body": "should be using `getUrgencyDateByGroup` for `urgencyDate` instead of the sunset getter method? "
+    }
+  ]
+}

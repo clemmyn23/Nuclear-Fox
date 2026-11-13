@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13752,
+  "pr_author": "david-connell",
+  "pr_title": "SMS-240 frontend changes to to separate out CmSmsMailing into two separate class",
+  "pr_created_at": "2022-09-27T15:33:04Z",
+  "comments": [
+    {
+      "created_at": "2022-09-28T00:31:08Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/SmsDataProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13752#discussion_r108418",
+      "body": "console.log"
+    }
+  ]
+}

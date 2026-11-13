@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16786,
+  "pr_author": "mattheww",
+  "pr_title": "PP-747 - [Campaign checklist] Update assistant notifications",
+  "pr_created_at": "2024-01-05T02:32:53Z",
+  "comments": [
+    {
+      "created_at": "2024-01-12T01:34:14Z",
+      "path": "srcfrontend/app/components/Assistant/FeedbackPanel.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16786#discussion_r130652",
+      "body": "This reads like it's setting state during render which would cause an infinite rendering loop. \r\n\r\nMaybe put the whole block inside a useEffect "
+    },
+    {
+      "created_at": "2024-01-12T02:13:20Z",
+      "path": "srcfrontend/app/components/Assistant/FeedbackPanel.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16786#discussion_r130657",
+      "body": "Yes please put the block inside a `useEffect`. \r\nWe want to keep the rendering method pure, it's bad practice to do side-effect things there as it leads to unmaintainable spaghetti state machine. "
+    }
+  ]
+}

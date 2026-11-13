@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 11960,
+  "pr_author": "chrisw",
+  "pr_title": "SMS: create sms progress notification banner",
+  "pr_created_at": "2022-02-04T03:44:09Z",
+  "comments": [
+    {
+      "created_at": "2022-02-04T05:25:08Z",
+      "path": "srcfrontend/app/smscampaignreport/components/SMSReportsSnapshotPage/SMSReportsSnapshotPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11960#discussion_r95653",
+      "body": "Note - Might move this later when we add in the logic to conditionally display this. \r\nI'm thinking `SMSReportsAppLayout.tsx` since the banner will be displayed in all the pages. "
+    }
+  ]
+}

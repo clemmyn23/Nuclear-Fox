@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12058,
+  "pr_author": "henrys",
+  "pr_title": "Fixed front end interface conflict",
+  "pr_created_at": "2022-02-15T03:46:41Z",
+  "comments": [
+    {
+      "created_at": "2022-02-15T05:06:56Z",
+      "path": "shared/package.json",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12058#discussion_r96233",
+      "body": "Need to update lockfile too. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 288,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-598 - Implement Remove Subscriber step in the \"add\" tooltip",
+  "pr_created_at": "2025-03-28T03:09:50Z",
+  "comments": [
+    {
+      "created_at": "2025-03-28T03:50:52Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/Step/AddStep.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/288#discussion_r143366",
+      "body": "Interesting stub 😄 "
+    }
+  ]
+}

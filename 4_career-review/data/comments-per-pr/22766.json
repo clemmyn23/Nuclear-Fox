@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22766,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-1107: refactor upsell banner code to be maintainable",
+  "pr_created_at": "2026-04-02T06:11:15Z",
+  "comments": [
+    {
+      "created_at": "2026-04-13T06:57:50Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmOptInUpsell/CrmOptInUpsell.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22766#discussion_r164274",
+      "body": "Don't need this React.Fragment"
+    }
+  ]
+}

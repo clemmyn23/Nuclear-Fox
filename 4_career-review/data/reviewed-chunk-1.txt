@@ -1,0 +1,100 @@
+Freshview|createsend.com|9661|lcallaway|2021-05-06T07:11:31Z|UX1-436 - Create the modal to delete multiple lists
+Freshview|TestingCore|125|clewis|2021-05-21T05:58:29Z|Add support for CMDS Header Automations/Transactional links
+Freshview|createsend.com|9816|lcallaway|2021-05-24T06:15:16Z|UX1-492 - Add custom field limit text to subheading
+Freshview|createsend.com|9870|clewis|2021-05-28T00:04:03Z|UX1-500 Fix table re-render issue with bulk delete feature
+Freshview|createsend.com|9914|lcallaway|2021-06-01T03:34:38Z|UX1-475 - Implement custom fields table structure with data fetched from cm-api
+Freshview|createsend.com|9915|lcallaway|2021-06-01T04:47:11Z|UX1-499 - Copy update for draft campaigns blank state
+Freshview|createsend.com|9926|lcallaway|2021-06-02T02:09:15Z|UX1-510 - Fix missing page load tracking for client overview
+Freshview|createsend.com|9931|clewis|2021-06-02T05:03:17Z|UX1-511: Don't request campaign screenshots on overview page load
+Freshview|createsend.com|9946|clewis|2021-06-04T00:47:19Z|UX1-511: Display overview page sections as they become available
+Freshview|createsend.com|9957|clewis|2021-06-07T01:05:24Z|Fix analytics for Edit Custom Field modal
+Freshview|createsend.com|9968|lcallaway|2021-06-08T02:07:44Z|CAS-2278 - Import subscribers error
+Freshview|createsend.com|10033|niaw|2021-06-16T01:11:39Z|Upgrade jest to improve the test duration
+Freshview|createsend.com|10037|clewis|2021-06-16T01:58:24Z|CopyDialog.spec.tsx: Fix warnings about inappropriate act() usage
+Freshview|createsend.com|10049|clewis|2021-06-16T23:39:30Z|UX1-518: Skeleton loader for custom fields page
+Freshview|createsend.com|10074|clewis|2021-06-18T05:07:26Z|UX1-520: Use reducer pattern for new Custom Fields app
+Freshview|createsend.com|10087|lcallaway|2021-06-21T05:11:58Z|UX1-523 - Update sidebar custom field count
+Freshview|createsend.com|10101|lcallaway|2021-06-22T06:09:13Z|UX1-525 - Add line break in custom fields intro
+Freshview|createsend.com|10186|lcallaway|2021-06-30T02:12:25Z|UX1-481 - Delete option: check for journey usages and prevent deletion
+Freshview|createsend.com|10222|clewis|2021-07-04T23:36:20Z|UX1-530: Custom fields bug bash fixes
+Freshview|createsend.com|10232|clewis|2021-07-05T04:26:52Z|UX1-533: Implement new single/double column layout for client overview
+Freshview|createsend.com|10274|lcallaway|2021-07-07T06:45:24Z|UX1-532 - Duplicate changes made to create dialog
+Freshview|createsend.com|10290|lcallaway|2021-07-09T00:58:33Z|UX1-549 - Truncate custom field name in the new and deleted custom field toast
+Freshview|createsend.com|10291|clewis|2021-07-09T01:16:50Z|UX1-552: Better handling of custom field api error responses
+Freshview|createsend.com|10347|lcallaway|2021-07-14T07:26:01Z|UX1-558 - Fix broken link in legacy overview
+Freshview|createsend.com|10383|lcallaway|2021-07-19T02:27:51Z|UX1-543 - Implement header and notification styling changes
+Freshview|createsend.com|10392|lcallaway|2021-07-20T00:06:46Z|UX1-562 - Blank state modules tweaks
+Freshview|createsend.com|10395|clewis|2021-07-20T02:21:05Z|UX1-542: Update client overview welcome banner
+Freshview|createsend.com|10625|clewis|2021-08-11T22:56:56Z|UX1-590: Retain querystring without ID value when client-switching
+Engineering|TestAutomation|173|clewis|2021-08-13T00:36:04Z|Try to prevent toasts blocking the save custom field button
+Freshview|createsend.com|10786|leoc|2021-08-29T23:21:43Z|CA-1100 Prevent clicks on scrollbar closing the checklist step
+Freshview|createsend.com|10798|leoc|2021-08-31T00:47:21Z|Set import/named to warn due to type import issues from .d.ts
+Freshview|createsend.com|10832|masoudc|2021-09-02T23:22:26Z|darkmode-list-and-subscribers
+Freshview|createsend.com|10868|leoc|2021-09-08T12:52:43Z|CA-1080 Add config to allow disabling of text formatting tracking in email build
+Freshview|createsend.com|10871|lcallaway|2021-09-09T03:00:12Z|Update test changed script to use correct jsdom env
+Freshview|createsend.com|10903|russella|2021-09-14T07:16:26Z|CA-1086-a: Bring in Exclude button when url has ?excl=cm21 on the end of the url
+Freshview|createsend.com|10933|lcallaway|2021-09-20T00:57:40Z|Remove legacy client overview
+Freshview|createsend.com|10950|russella|2021-09-21T07:32:09Z|CA-1086-h: Only show "Used to target parts of your content" section when we have
+Freshview|createsend.com|10989|russella|2021-09-28T00:56:12Z|CA-1087-a: Introduce functionality to have excluded items included with selected
+Engineering|SegmentTrackingPlan|265|leoc|2021-10-04T23:12:47Z|CA-1134 Add contexts for Inserted Code
+Freshview|createsend.com|11068|russella|2021-10-07T05:37:49Z|Typo and Type Fixes
+Freshview|createsend.com|11135|russella|2021-10-15T00:21:23Z|CA-1131-FF-Removal: Remove ChecklistAbSubject and ChecklistAbContent feature fla
+Freshview|createsend.com|11141|russella|2021-10-15T02:51:17Z|CA-1131-EnableSpecificLinks: Allow choosing of specific links
+Freshview|createsend.com|11158|russella|2021-10-18T06:57:58Z|CA-1131-save-specific-link-ids: Save specific link Ids
+Freshview|createsend.com|11174|russella|2021-10-19T07:32:39Z|CA-1131: Minimal changes to get specific link IDs from the details endpoint in t
+Freshview|createsend.com|11300|russella|2021-10-29T06:58:30Z|CA-1146-j: Do not allow beta banner to be stacked when tour is active
+Freshview|createsend.com|11328|leoc|2021-11-02T05:51:29Z|CA-1162 Fix overriding campaign name
+Freshview|createsend.com|11330|russella|2021-11-02T07:32:40Z|CA-1160: Add in the beginnings of a (couchbase) repository to simulate a DB
+Freshview|createsend.com|11335|leoc|2021-11-02T23:44:24Z|Fix showing prompt for import subscribers on checklist
+Freshview|createsend.com|11344|russella|2021-11-03T11:39:53Z|CA-1160: Add from name details
+Freshview|createsend.com|11345|russella|2021-11-03T12:06:55Z|CA-1160: Add a config settings for sms prototype
+Freshview|createsend.com|11353|russella|2021-11-04T01:41:49Z|CA-1160: Add opt out field that was requested
+Freshview|createsend.com|11368|russella|2021-11-04T23:46:56Z|CA-1160-sms-send-service: Beginnings of the SMS send service
+Freshview|createsend.com|11379|russella|2021-11-05T05:02:20Z|CA-1160: Create an actual sms campaign in the backend when creating a new sms ca
+Freshview|createsend.com|11402|samanthac|2021-11-08T06:00:46Z|CA-1160-small-fixes
+Freshview|createsend.com|11425|samanthac|2021-11-10T00:00:16Z|CA-1160-manage-sms-get-sms - set up skeleton, initial routes and display sms
+Freshview|createsend.com|11427|russella|2021-11-10T00:44:13Z|CA-1160: Put in an endpoint for drafts
+Freshview|createsend.com|11493|leoc|2021-11-16T02:41:58Z|CA-1143 Add config to disable content clean up
+Freshview|createsend.com|11664|russella|2021-12-13T00:07:04Z|ED-1170: Add text formatting to desired features array
+Freshview|createsend.com|11789|michael-yin|2022-01-11T01:20:04Z|Add plain text button over thumbnail
+Freshview|createsend.com|11824|michael-yin|2022-01-17T03:31:30Z|CA-1191 Added Change template button
+Freshview|createsend.com|11835|zhartmann|2022-01-18T05:27:12Z|CA-1209 - Fix spacing between mobile and desktop checklist previews
+Freshview|createsend.com|11854|michael-yin|2022-01-20T09:21:49Z|CA-1211 b thumbnail button organisation
+Freshview|createsend.com|11863|michael-yin|2022-01-23T22:53:25Z|CA-1211 c responsive thumbnail buttons
+Freshview|createsend.com|11913|zhartmann|2022-01-31T07:17:06Z|CA-1216-b: Move SMS data handling from Couchbase to SQL Server
+Freshview|createsend.com|11919|michael-yin|2022-02-01T01:12:56Z|CA-1220 add helper function for SMS personalization of custom fields.
+Freshview|createsend.com|11948|chrisw|2022-02-03T05:57:13Z|SMS Reporting matching Campaign reporting
+Freshview|createsend.com|11960|chrisw|2022-02-04T03:44:09Z|SMS: create sms progress notification banner
+Freshview|createsend.com|11961|chrisw|2022-02-04T05:20:24Z|SMS: Add menu button on small screens for mobile view
+Freshview|createsend.com|11968|michael-yin|2022-02-07T01:21:14Z|Ca 1248 b sms insert personalization button
+Freshview|createsend.com|11978|lcallaway|2022-02-07T05:43:45Z|SE-240 - CmHeader active section incorrect for journey reports
+Freshview|createsend.com|11982|michael-yin|2022-02-07T06:58:24Z|Ca 1247 a sms personalization preview
+Freshview|createsend.com|12011|zhartmann|2022-02-09T05:15:31Z|CA-1217: Display draft, sending, sent campaigns
+Freshview|createsend.com|12024|russella|2022-02-10T08:58:41Z|CA-1223-int-e: Producer changes
+Freshview|createsend.com|12058|henrys|2022-02-15T03:46:41Z|Fixed front end interface conflict
+Freshview|createsend.com|12063|henrys|2022-02-15T10:22:55Z|Fed conflict dependencies - the missing yarn.lock file commit
+Freshview|createsend.com|12064|michael-yin|2022-02-15T14:43:02Z|CA-1260 rename SMS to Sms
+Freshview|createsend.com|12075|zhartmann|2022-02-16T05:05:44Z|CA-1261: Rename SmsPrototype
+Freshview|createsend.com|12081|zhartmann|2022-02-17T00:04:11Z|CA-1264-b: Update tooltip for unsubscribe button
+Freshview|createsend.com|12189|russella|2022-02-27T06:41:08Z|CA-1281-d: Get actual SMS recipient data when user doesn't have FF 651
+Freshview|createsend.com|12261|michael-yin|2022-03-03T23:15:47Z|CA-1280 rename Sms casing
+Freshview|createsend.com|12425|russella|2022-03-18T11:09:49Z|SMS Bug Bash Fix - Copy change to remove full stop on empty text
+Freshview|createsend.com|12426|russella|2022-03-18T11:12:22Z|SMS Bug Bash Fix - Copy change to tooltip text
+Freshview|createsend.com|12427|russella|2022-03-18T11:27:27Z|SMS Bug Bash Fix - Style fix to display state of Message Step
+Freshview|createsend.com|12428|russella|2022-03-18T11:40:42Z|SMS Bug Bash Fix - Remove search text boxes from report page
+Freshview|createsend.com|12479|michael-yin|2022-03-24T06:32:05Z|Sms 59 b Estimation of delivery time
+Freshview|createsend.com|12522|michael-yin|2022-03-29T01:10:19Z|SMS message focus state
+Freshview|createsend.com|12541|michael-yin|2022-03-30T04:34:50Z|SMS-101 Add help widget
+Freshview|createsend.com|12574|zhartmann|2022-04-04T00:36:28Z|SMS-88: Unsubscribes link should go to unsubscribes tab of recipient activity
+Freshview|createsend.com|12577|michael-yin|2022-04-04T02:40:35Z|SMS-107 prevent re-sending an SMS campaign
+Freshview|createsend.com|12587|yzein|2022-04-05T02:08:23Z|EL-469 Get and rotate client api key
+Freshview|createsend.com|12632|jamesr|2022-04-11T02:01:22Z|CONV-951 Obsolete ChoosePlanIntroductionContentRefresh
+Freshview|createsend.com|12636|michael-yin|2022-04-11T05:10:19Z|SMS-76-c SMS preview followup improvements
+Engineering|SegmentTrackingPlan|301|zhartmann|2022-04-12T02:29:32Z|SMS-111: Add "Created Sms Campaign" event
+Freshview|createsend.com|12650|jamesr|2022-04-12T04:33:41Z|CONV-969 Re-order feature list for table expansion
+Freshview|createsend.com|12651|yzein|2022-04-12T04:43:09Z|EL-559b Add hash routing to url
+Freshview|createsend.com|12652|ttruong|2022-04-12T05:55:49Z|SE-348 - Add feature feedback widget to the 'Latest Subject Line'
+Freshview|createsend.com|12665|russella|2022-04-13T05:41:57Z|SMS-124: Beginnings of usage of SmsBillingAccess
+Freshview|createsend.com|12681|michael-yin|2022-04-15T15:07:46Z|Sms 110 b track sent sms campaign
+Freshview|createsend.com|12703|michael-yin|2022-04-20T03:09:34Z|Sms 89 a sms report bounce refactor
+Freshview|createsend.com|12709|michael-yin|2022-04-20T07:44:39Z|Sms 89 b sms report bounce count

@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 18517,
+  "pr_author": "david-vanlaarveth",
+  "pr_title": "AJ 518 Create new CmApi endpoint(s) for Send a Test",
+  "pr_created_at": "2024-12-02T23:14:17Z",
+  "comments": [
+    {
+      "created_at": "2025-01-06T03:27:52Z",
+      "path": "app/CampMon.Core/CreateSend/SendTest.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18517#discussion_r140438",
+      "body": "Don't think the parent endpoint that calls this is used at all. \n`sendtemporaryimport` "
+    },
+    {
+      "created_at": "2025-01-06T00:24:53Z",
+      "path": "app/CampMon.Core/CreateSend/SendTest.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18517#discussion_r140433",
+      "body": "NullReferenceException here. SystemEmailSender is null. \n\nSuggestion -\n```suggestion\n                var systemEmailSender = AutofacContainer.Resolver.Resolve<ISystemEmailSender>();\n                SystemEmailSender.SendPossibleSPAMWarningToSupport(message, dbId, userId, clientName);\n```\n\nSee other usages of SystemEmailSender in this file for examples. "
+    },
+    {
+      "created_at": "2025-01-06T00:25:04Z",
+      "path": "app/CampMon.Core/CreateSend/SendTest.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18517#discussion_r140434",
+      "body": "NullReferenceException same here"
+    },
+    {
+      "created_at": "2025-01-06T03:29:44Z",
+      "path": "app/CampMon.CmAPI/Endpoints/SendATest/SendTestController.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/18517#discussion_r140439",
+      "body": "Nice work figuring out `MailingId == new MailingId((int)workflowStepIdWithDbId)` "
+    }
+  ]
+}

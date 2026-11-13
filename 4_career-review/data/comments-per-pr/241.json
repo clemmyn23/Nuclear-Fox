@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 241,
+  "pr_author": "david-vanlaarveth",
+  "pr_title": "AJ-327 Show the expression in shorthand \"mathy syntax\" format in the step name a",
+  "pr_created_at": "2024-06-20T06:26:45Z",
+  "comments": [
+    {
+      "created_at": "2024-06-25T04:06:15Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/CustomField/components/CustomFieldExpressionSyntaxElement.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/241#discussion_r135608",
+      "body": "Nit: `i` is not used. Also avoid single character variable names pls"
+    },
+    {
+      "created_at": "2024-06-25T04:10:03Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/CustomField/CustomFieldDetails.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/241#discussion_r135611",
+      "body": "Nitpick:\n```suggestion\n        const selectedCustomField = customFields?.find((customField) => customField.customFieldId === customFieldConfig.customFieldId);\n        const referredCustomField = customFieldConfig.value ? customFields?.find((customField) => customField.customFieldId === customFieldConfig.value) : null;\n```"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+platform/cm.protobuf	814	AJ-603 Add rpc GetWorkflowStatusForWorkflowId	2025-04-02T05:32:40Z	closed	2025-04-02T23:40:31Z	https://git.campmon.com/platform/cm.protobuf/pull/814
+Freshview/createsend.com	19348	AJ-617-b1 Benchmark implementations for grabbing contact activity	2025-04-04T03:28:45Z	open		https://git.campmon.com/Freshview/createsend.com/pull/19348
+Freshview/createsend.com	19349	AJ-617-b2 GetDateActionsMultipleCampaigns improve efficiency	2025-04-04T03:33:42Z	closed	2025-04-08T05:31:18Z	https://git.campmon.com/Freshview/createsend.com/pull/19349
+Freshview/createsend.com	19365	JC-406-c Migrate bundles to react 18	2025-04-08T00:29:21Z	closed	2025-04-08T05:31:50Z	https://git.campmon.com/Freshview/createsend.com/pull/19365
+Freshview/createsend.com	19409	AJ-603-b Migrate workflow lookup service to netcore	2025-04-09T06:36:25Z	closed	2025-04-30T00:40:04Z	https://git.campmon.com/Freshview/createsend.com/pull/19409
+Freshview/createsend.com	19476	AJ-603-c Implement get-journey-status rpc endpoint	2025-04-14T04:03:43Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/19476
+Freshview/createsend.com	19512	AJ-603-d Remove old WorkflowLookupService implementation	2025-04-15T06:00:58Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/19512
+Engineering/workflowcontext.runnerservice.core	130	AJ-604-a Implement remove subscriber	2025-04-28T05:37:19Z	closed	2025-05-20T01:37:07Z	https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/130
+Freshview/createsend.com	19675	AJ-603-c Remove the old WorkflowLookupService	2025-04-30T05:28:23Z	closed	2025-05-13T01:31:27Z	https://git.campmon.com/Freshview/createsend.com/pull/19675
+Freshview/createsend.com	19681	Revert "AJ-603-b Migrate workflow lookup service to netcore"	2025-04-30T23:16:05Z	closed	2025-04-30T23:32:23Z	https://git.campmon.com/Freshview/createsend.com/pull/19681
+Freshview/createsend.com	19703	Revert "AJ-603-b Migrate workflow lookup service to netcore"	2025-05-02T00:40:39Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/19703
+Freshview/createsend.com	19705	AJ-603-b Migrate workflow lookup service to netcore. Implement GetWorkflowStatusForWorkflowId [Second try]	2025-05-02T00:41:21Z	closed	2025-05-07T23:45:53Z	https://git.campmon.com/Freshview/createsend.com/pull/19705
+Freshview/createsend.com	19748	React 18 - migrate conversionsummary	2025-05-06T00:38:39Z	closed	2025-05-08T05:20:55Z	https://git.campmon.com/Freshview/createsend.com/pull/19748
+Freshview/createsend.com	19808	Revert "AJ-603-b Migrate workflow lookup service to netcore. Implement GetWorkflowStatusForWorkflowId [Second try]"	2025-05-08T02:15:49Z	closed	2025-05-08T02:39:00Z	https://git.campmon.com/Freshview/createsend.com/pull/19808
+Freshview/createsend.com	19811	AJ-603-b Migrate workflow lookup service to netcore. Implement GetWorkflowStatusForWorkflowId [Third try]	2025-05-08T05:19:52Z	closed	2025-05-12T00:29:21Z	https://git.campmon.com/Freshview/createsend.com/pull/19811
+Freshview/createsend.com	19903	React 18 - CreateSessionThirdParty 	2025-05-20T00:27:01Z	open		https://git.campmon.com/Freshview/createsend.com/pull/19903
+Freshview/createsend.com	19904	React 18 - DirectLoginBanner	2025-05-20T00:37:23Z	closed	2025-07-29T23:56:34Z	https://git.campmon.com/Freshview/createsend.com/pull/19904
+Freshview/createsend.com	19921	AJ-654 Campaign Success - Add campaigns drafts shortcut	2025-05-21T04:58:56Z	closed	2025-06-22T23:26:44Z	https://git.campmon.com/Freshview/createsend.com/pull/19921
+Freshview/createsend.com	19952	Hex - Remove package-lock.json	2025-05-26T04:49:55Z	closed	2025-06-26T00:25:10Z	https://git.campmon.com/Freshview/createsend.com/pull/19952
+Freshview/createsend.com	19957	AJ-627-c Prebuilt-journeys - CmApi send usage and howitworks properties	2025-05-26T06:07:33Z	closed	2025-05-26T23:44:02Z	https://git.campmon.com/Freshview/createsend.com/pull/19957
+Engineering/workflowcontext.runnerservice.core	137	AJ-671 Fix tracing for grpc services 	2025-06-13T06:22:03Z	closed	2025-06-24T04:39:24Z	https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/137
+Freshview/createsend.com	20071	Fix welcome journey link url slug	2025-06-16T04:53:15Z	closed	2025-06-16T05:17:18Z	https://git.campmon.com/Freshview/createsend.com/pull/20071
+Freshview/createsend.com	20188	AJ-678-a Set up cron agent for agency performance report	2025-07-02T01:58:02Z	closed	2025-07-10T01:46:40Z	https://git.campmon.com/Freshview/createsend.com/pull/20188
+Freshview/createsend.com	20200	[srcfrontend] Use cross-env for script build:faster	2025-07-03T05:01:45Z	closed	2025-07-04T06:36:43Z	https://git.campmon.com/Freshview/createsend.com/pull/20200
+Freshview/createsend.com	20227	AJ-678-b AgencyPerformanceReportAgent - Upgrade to dotnet 9	2025-07-07T05:20:12Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/20227
+Freshview/createsend.com	20281	Upgrade to node 22.17.0 lts	2025-07-15T00:14:09Z	closed	2025-07-15T00:32:03Z	https://git.campmon.com/Freshview/createsend.com/pull/20281
+Freshview/createsend.com	20282	Upgrade to node 18.20.8 LTS instead	2025-07-15T00:47:31Z	closed	2025-07-15T01:11:43Z	https://git.campmon.com/Freshview/createsend.com/pull/20282
+Freshview/createsend.com	20283	Fix upgrade to node 18.20.8	2025-07-15T01:36:21Z	closed	2025-07-15T01:46:51Z	https://git.campmon.com/Freshview/createsend.com/pull/20283
+Freshview/createsend.com	20288	Add openssl legacy flag for workaround node 18 build	2025-07-15T03:29:07Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/20288
+Freshview/createsend.com	20317	AJ-691 AJ-699 - Compute agency annual revenue  (#20317)	2025-07-18T07:34:36Z	closed	2025-07-30T04:33:31Z	https://git.campmon.com/Freshview/createsend.com/pull/20317
+Freshview/createsend.com	20431	AJ-742 Update agency revenue cron - Add schedule check bypass setting	2025-08-01T02:11:57Z	closed	2025-08-01T04:04:40Z	https://git.campmon.com/Freshview/createsend.com/pull/20431
+Freshview/createsend.com	20435	AJ-699-b Agency reports cron - Adjust error handling	2025-08-01T04:30:03Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/20435
+Engineering/workflowcontext.runnerservice.core	142	update localdev setup instructions	2025-08-19T00:46:02Z	closed	2025-08-21T01:51:53Z	https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/142
+Freshview/createsend.com	20598	AJ-727 Agency partnership status page - part 1	2025-08-22T07:25:37Z	closed	2025-09-02T00:50:14Z	https://git.campmon.com/Freshview/createsend.com/pull/20598
+Freshview/createsend.com	20684	AJ-727-b Agency partnership status page - part 2	2025-09-02T06:55:44Z	closed	2025-09-08T05:54:54Z	https://git.campmon.com/Freshview/createsend.com/pull/20684
+Freshview/createsend.com	20746	AJ-791 Agency partner status page styling adjustments	2025-09-10T01:44:00Z	closed	2025-09-10T06:49:13Z	https://git.campmon.com/Freshview/createsend.com/pull/20746
+Freshview/createsend.com	20748	AJ-799 Agency partner status page - bugbash fixes part 3	2025-09-10T03:41:39Z	closed	2025-09-10T04:54:26Z	https://git.campmon.com/Freshview/createsend.com/pull/20748
+Freshview/createsend.com	20755	Agency partner status - Fix eligibility check 	2025-09-10T08:03:24Z	closed	2025-09-10T23:53:24Z	https://git.campmon.com/Freshview/createsend.com/pull/20755
+Freshview/createsend.com	20963	AJ-863-a Audience - Clean up routing code 	2025-10-09T06:09:52Z	closed	2025-10-14T00:24:23Z	https://git.campmon.com/Freshview/createsend.com/pull/20963
+Freshview/createsend.com	20984	AJ-863-b Implement subscriber notes UI tabs	2025-10-14T02:24:47Z	closed	2025-10-16T00:51:51Z	https://git.campmon.com/Freshview/createsend.com/pull/20984
+Freshview/createsend.com	20990	AJ-863-c Fetch and display subscriber notes	2025-10-14T05:53:47Z	closed	2025-10-16T04:30:07Z	https://git.campmon.com/Freshview/createsend.com/pull/20990
+Engineering/onboardingcontext.setupguideservice	356	Add Contrib.Grpc.Core.M1" to run on macs 	2025-10-23T04:38:31Z	closed	2025-10-24T00:21:51Z	https://git.campmon.com/Engineering/onboardingcontext.setupguideservice/pull/356
+Freshview/createsend.com	21109	AJ-846-a Foundational steps - Sending domain step POC	2025-10-29T05:17:10Z	open		https://git.campmon.com/Freshview/createsend.com/pull/21109
+Freshview/createsend.com	21140	AJ-891-a Campaign sequence - Backend part 1	2025-10-31T06:30:09Z	closed	2025-11-06T03:58:13Z	https://git.campmon.com/Freshview/createsend.com/pull/21140
+Freshview/createsend.com	21208	AJ-923-a Campaign sequence - Create campaign in sequence	2025-11-09T23:59:53Z	open		https://git.campmon.com/Freshview/createsend.com/pull/21208
+Freshview/createsend.com	21224	AJ-923-b - Campaign sequence - Create campaign in sequence 	2025-11-11T05:55:26Z	closed	2025-11-12T22:20:48Z	https://git.campmon.com/Freshview/createsend.com/pull/21224
+Freshview/createsend.com	21375	AJ-896-a - Single campaign series view frontend	2025-11-26T03:02:59Z	closed	2025-12-08T23:38:12Z	https://git.campmon.com/Freshview/createsend.com/pull/21375
+Freshview/createsend.com	21411	AJ-935-a Modify series details endpoint	2025-11-28T01:41:03Z	closed	2025-12-02T02:54:46Z	https://git.campmon.com/Freshview/createsend.com/pull/21411
+Engineering/SegmentTrackingPlan	583	AJ-911-a Tracking campaign series - part 2a	2025-12-09T23:27:29Z	closed	2025-12-16T02:56:07Z	https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/583
+Freshview/createsend.com	21520	AJ-911-a Update tracking campaign series - part 2a	2025-12-10T02:36:28Z	closed	2025-12-16T02:56:26Z	https://git.campmon.com/Freshview/createsend.com/pull/21520
+Engineering/SegmentTrackingPlan	585	AJ-911-b Tracking campaign series - part 2b	2025-12-12T06:01:21Z	closed	2025-12-16T23:05:13Z	https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/585
+Freshview/createsend.com	21572	AJ-911-b Update tracking campaign series - part 2b	2025-12-12T06:03:03Z	closed	2025-12-17T02:59:39Z	https://git.campmon.com/Freshview/createsend.com/pull/21572
+Freshview/createsend.com	21589	AJ-911-c Track changes to sender and subject for campaign in sequence	2025-12-15T05:17:41Z	closed	2025-12-16T02:59:11Z	https://git.campmon.com/Freshview/createsend.com/pull/21589
+Engineering/SegmentTrackingPlan	586	AJ-911-c Track changes to sender and subject for emails in sequence	2025-12-15T05:17:53Z	closed	2025-12-16T02:58:46Z	https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/586
+Freshview/createsend.com	21664	Revert "AJ-911-b Update tracking campaign series - part 2b"	2025-12-17T07:44:36Z	closed	2025-12-17T07:49:42Z	https://git.campmon.com/Freshview/createsend.com/pull/21664
+Freshview/createsend.com	21665	AJ-911-d Update tracking campaign series (reapply) 	2025-12-17T08:09:30Z	closed	2025-12-18T00:58:30Z	https://git.campmon.com/Freshview/createsend.com/pull/21665
+Engineering/SegmentTrackingPlan	588	AJ-911-d Campaign Series Id should be optional for editing campaign 	2025-12-17T23:51:51Z	closed	2025-12-17T23:55:00Z	https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/588
+Freshview/createsend.com	21685	AJ-911-e Update tracking `Series Id` -> `Campaign Series Id`	2025-12-18T04:40:22Z	closed	2025-12-18T05:20:32Z	https://git.campmon.com/Freshview/createsend.com/pull/21685
+Engineering/SegmentTrackingPlan	589	AJ-911-f Fix property value misalignment Campaign Series	2025-12-23T04:41:38Z	closed	2025-12-23T23:51:58Z	https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/589
+Freshview/createsend.com	21797	AJ-994-c Sequence report fix campaign count display	2026-01-06T04:14:52Z	closed	2026-01-06T23:02:27Z	https://git.campmon.com/Freshview/createsend.com/pull/21797
+Freshview/createsend.com	22078	AJ-1039-a Upgrade cm.protobuf 1.0.1396	2026-01-29T00:27:27Z	closed	2026-01-29T01:02:53Z	https://git.campmon.com/Freshview/createsend.com/pull/22078
+Freshview/createsend.com	22099	AJ-1039-b Start crm list population process on feature opt-in	2026-01-30T02:49:22Z	closed	2026-02-06T01:21:53Z	https://git.campmon.com/Freshview/createsend.com/pull/22099
+Freshview/createsend.com	22291	AJ-1063-a - CRM Subscriber profile page frontend - part 1	2026-02-17T06:24:27Z	closed	2026-02-23T05:05:33Z	https://git.campmon.com/Freshview/createsend.com/pull/22291
+Freshview/createsend.com	22334	AJ-1063-b CRM Subscriber profile page frontend - part 2	2026-02-20T04:56:50Z	closed	2026-03-08T23:58:42Z	https://git.campmon.com/Freshview/createsend.com/pull/22334
+Freshview/createsend.com	22374	AJ-1063-c - CRM Subscriber profile page frontend - part 3	2026-02-25T00:42:23Z	closed	2026-03-10T00:54:16Z	https://git.campmon.com/Freshview/createsend.com/pull/22374
+Freshview/createsend.com	22483	AJ-1017-b Subscriber profile routing change	2026-03-11T00:12:02Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/22483
+Freshview/createsend.com	22505	AJ-1019-a Add FF 1159 CRMLiteSlice2	2026-03-12T01:56:00Z	closed	2026-03-12T03:10:56Z	https://git.campmon.com/Freshview/createsend.com/pull/22505
+Engineering/localdev-tools	74	Modernise local proxy	2026-03-12T02:13:04Z	open		https://git.campmon.com/Engineering/localdev-tools/pull/74
+Freshview/createsend.com	22510	AJ-1065-a Subscriber profile small fixes	2026-03-12T05:44:25Z	closed	2026-03-12T23:10:02Z	https://git.campmon.com/Freshview/createsend.com/pull/22510
+Freshview/createsend.com	22512	Update Microsoft.Bcl.Memory	2026-03-12T06:30:40Z	closed	2026-03-12T08:25:19Z	https://git.campmon.com/Freshview/createsend.com/pull/22512
+Freshview/createsend.com	22534	AJ-1092-a Subscriber profile - Fix sidebar counters	2026-03-16T00:19:44Z	closed	2026-03-16T23:56:26Z	https://git.campmon.com/Freshview/createsend.com/pull/22534
+Freshview/createsend.com	22550	AJ-1095-a Subscriber profile - Fix subscriber timezone display	2026-03-17T02:23:19Z	closed	2026-03-17T22:54:44Z	https://git.campmon.com/Freshview/createsend.com/pull/22550
+Freshview/createsend.com	22551	AJ-1092-b Subscriber profile - Fix value array can be undefined	2026-03-17T02:36:09Z	closed	2026-03-17T02:56:36Z	https://git.campmon.com/Freshview/createsend.com/pull/22551
+Engineering/GitHubTeamManagement	5	✨ 🌈  CM-Github bot improvements ⭐ 	2026-03-17T05:19:26Z	closed		https://git.campmon.com/Engineering/GitHubTeamManagement/pull/5
+Freshview/createsend.com	22636	AJ-1030-a Subscriber profile - Get segment membership backend	2026-03-24T01:11:48Z	closed	2026-03-26T00:38:31Z	https://git.campmon.com/Freshview/createsend.com/pull/22636
+Freshview/createsend.com	22655	AJ-1127-a Subscriber profile - Fix ListDefined event publishing on CRM list creation. 	2026-03-25T03:32:11Z	closed	2026-03-25T04:56:55Z	https://git.campmon.com/Freshview/createsend.com/pull/22655
+Freshview/createsend.com	22680	AJ-crm-release-prod Subscriber profile - Turn on contactmanagementscheduledagent in prod	2026-03-27T02:13:51Z	closed	2026-03-29T22:08:59Z	https://git.campmon.com/Freshview/createsend.com/pull/22680
+Freshview/createsend.com	22838	AJ-1115-a Add table CS_ComplexSequenceNodeTree	2026-04-10T06:07:02Z	closed	2026-04-14T00:20:40Z	https://git.campmon.com/Freshview/createsend.com/pull/22838
+Freshview/createsend.com	22857	AJ-1115-b Implement complex campaign series backend 	2026-04-13T08:19:51Z	closed	2026-04-16T05:26:48Z	https://git.campmon.com/Freshview/createsend.com/pull/22857
+Freshview/createsend.com	22915	AJ-1115-c Campaign series backend - Fix not grabbing condition type	2026-04-16T05:44:53Z	closed	2026-04-16T05:53:11Z	https://git.campmon.com/Freshview/createsend.com/pull/22915
+Freshview/createsend.com	22934	js prefer workspace version typescript	2026-04-20T00:54:23Z	closed	2026-04-21T01:27:02Z	https://git.campmon.com/Freshview/createsend.com/pull/22934
+Freshview/createsend.com	22945	AJ-1115-d Advanced campaign sequence frontend part 1	2026-04-21T01:14:42Z	closed	2026-05-05T06:04:18Z	https://git.campmon.com/Freshview/createsend.com/pull/22945
+Freshview/createsend.com	23083	AJ-1139-a Advanced campaign series - Implement tree rendering 	2026-05-04T04:05:49Z	closed	2026-05-19T01:02:51Z	https://git.campmon.com/Freshview/createsend.com/pull/23083
+Freshview/createsend.com	23115	AJ-1115-e Fix frontend build	2026-05-05T23:32:33Z	closed	2026-05-05T23:54:18Z	https://git.campmon.com/Freshview/createsend.com/pull/23115
+Freshview/createsend.com	23156	AJ-1139-b Complex campaign series - improve frontend tree rendering	2026-05-11T07:34:55Z	closed	2026-05-20T00:07:00Z	https://git.campmon.com/Freshview/createsend.com/pull/23156
+Freshview/createsend.com	23200	AJ-1140-a Campaign series - fix enum inconsistency	2026-05-14T07:16:53Z	closed	2026-05-17T23:35:24Z	https://git.campmon.com/Freshview/createsend.com/pull/23200
+Freshview/createsend.com	23243	AJ-1140-c Complex sequence - Add campaign nodes to tree	2026-05-20T07:08:46Z	closed		https://git.campmon.com/Freshview/createsend.com/pull/23243
+Freshview/createsend.com	23265	AJ-1140-e Complex sequence - Add campaign nodes to tree	2026-05-22T07:31:46Z	open		https://git.campmon.com/Freshview/createsend.com/pull/23265
+Engineering/workflowcontext.runnerservice.core	147	AJ-1196-a Add feature flag client	2026-05-25T05:12:01Z	closed	2026-05-27T06:37:40Z	https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/147
+Engineering/workflowcontext.runnerservice.core	153	AJ-1206-a Migrate to GrpcClient v2	2026-05-28T05:05:58Z	open		https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/153
+Freshview/createsend.com	23354	Upgrade webpack 5 - part 2	2026-05-28T05:27:47Z	open		https://git.campmon.com/Freshview/createsend.com/pull/23354
+Freshview/createsend.com	23356	AJ-1196-d Pass IsJourneyReportingEnabled feature flag to workflow ui	2026-05-28T06:04:28Z	open		https://git.campmon.com/Freshview/createsend.com/pull/23356

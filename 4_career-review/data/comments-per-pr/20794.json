@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 20794,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-750 - Implement amplitude reporting in CRON JOB (buckets)",
+  "pr_created_at": "2025-09-16T23:46:13Z",
+  "comments": [
+    {
+      "created_at": "2025-09-22T01:14:50Z",
+      "path": "extras/CampMon.ServiceAgents.NetCore/CampMon.AgencyPerformanceReportAgent/AgencyPerformanceReportGenerator.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20794#discussion_r151138",
+      "body": "Are we doing nearest date (at 00:00 UTC today) or the exact UtcNow date time? "
+    },
+    {
+      "created_at": "2025-09-24T04:46:06Z",
+      "path": "extras/CampMon.ServiceAgents.NetCore/CampMon.AgencyPerformanceReportAgent/Services/IAgencyProgramPartnerStatus.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20794#discussion_r151352",
+      "body": "Can you name this something else that's not `Get...`? \r\nIt's confusing when this doesn't return anything. "
+    }
+  ]
+}

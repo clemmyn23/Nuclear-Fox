@@ -1,0 +1,69 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22386,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-1077: add a waiting message while sync is happening",
+  "pr_created_at": "2026-02-25T05:41:48Z",
+  "comments": [
+    {
+      "created_at": "2026-02-26T02:49:57Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteService.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161233",
+      "body": "Can you update this to match the other endpoints please\n\n```suggestion\n        {\n            if (!await crmLiteFeatureProvider.IsCrmLiteEnabledForClient(dbId, clientId, cancellationToken))\n            {\n                throw new CmAPIBadRequestException(\"CRM Lite is not available for this client.\", CmAPIClientError.CrmLiteDisabledForClient);\n            }\n```\n\n"
+    },
+    {
+      "created_at": "2026-02-26T02:50:17Z",
+      "path": "app/CampMon.Data.NetStandard/Crm/CrmLiteRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161234",
+      "body": "```suggestion\n                FROM CL_ClientCRM WITH (NOLOCK)\n```"
+    },
+    {
+      "created_at": "2026-02-26T03:01:18Z",
+      "path": "app/CampMon.Data.NetStandard/Crm/CrmLiteRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161241",
+      "body": "Please use the `CrmPopulateJobStatus` enum\n```suggestion\n        public async Task<CrmPopulateJobStatus> GetClientCrmPopulateJobStatus(string dbId, int clientId, CancellationToken cancellationToken = default)\n```"
+    },
+    {
+      "created_at": "2026-02-26T03:01:30Z",
+      "path": "app/CampMon.Data.NetStandard/Crm/CrmLiteRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161242",
+      "body": "```suggestion\n            return await sqlDataAccess.QuerySingleOrDefaultAsync<CrmPopulateJobStatus>(connectionString, sqlQuery, parameters, cancellationToken: cancellationToken).ConfigureAwait(false);\n```"
+    },
+    {
+      "created_at": "2026-02-26T03:03:00Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmLiteApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161244",
+      "body": "Do you need this cast? "
+    },
+    {
+      "created_at": "2026-02-26T03:05:41Z",
+      "path": "app/CampMon.Data.NetStandard/Crm/ICrmLiteRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161246",
+      "body": "I think you picked the old version from resolving a merge conflict here. \n```suggestion\n        Task UpdateClientCrmPopulateJobStatus(string dbId, int clientId, CrmPopulateJobStatus populateJobStatus, CancellationToken cancellationToken = default);\n```"
+    },
+    {
+      "created_at": "2026-02-26T03:07:55Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteService.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161247",
+      "body": "See below. If you map the result to enum in the query call helper then you don't have to map it here. "
+    },
+    {
+      "created_at": "2026-02-26T03:09:31Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmLiteApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161248",
+      "body": "Can you make this a enum please. Refer to https://git.campmon.com/Freshview/createsend.com/blob/master/app/CampMon.Data.NetStandard/Crm/Model/CrmPopulateJobStatus.cs"
+    },
+    {
+      "created_at": "2026-02-26T03:10:37Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/CrmLiteApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161249",
+      "body": "You will need to check all three - `InProgress`, `Finalising`, `Failed`.\n\nWe won't be displaying a dedicated message for `Failed` (so display the same in-progress message) but it's important to not treat it as `Success` "
+    },
+    {
+      "created_at": "2026-03-02T00:04:01Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/CrmLiteController.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22386#discussion_r161480",
+      "body": "Can you add a check so this is only called when the client has opted into the feature? "
+    }
+  ]
+}

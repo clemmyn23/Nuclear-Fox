@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 14950,
+  "pr_author": "james-dunlop",
+  "pr_title": "PP-117 Braintree React component to show card type validations",
+  "pr_created_at": "2023-03-25T00:48:41Z",
+  "comments": [
+    {
+      "created_at": "2023-03-28T00:42:40Z",
+      "path": "shared/components/managecard/Card/AddCardComponents/CardHostedFields.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14950#discussion_r116914",
+      "body": "Can move the below code into a helper function to preserve const-ness here.\r\n\r\nThis does not look like it needs to be recomputed on every render. \r\nCan consider moving the variable assignment inside `setCardNumberValidationState()` \r\n\r\n"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16129,
+  "pr_author": "brian-luc",
+  "pr_title": "[MER-615] Automations Overview component (direct only)",
+  "pr_created_at": "2023-09-04T02:15:14Z",
+  "comments": [
+    {
+      "created_at": "2023-09-07T04:34:12Z",
+      "path": "srcfrontend/app/automation/components/AutomationPrebuiltJourneysBanner/AutomationPrebuiltJourneysBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16129#discussion_r125552",
+      "body": "Check copy capitalization "
+    },
+    {
+      "created_at": "2023-09-07T04:35:31Z",
+      "path": "srcfrontend/app/automation/components/AutomationsOverview/AutomationRecipeOverviewInner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16129#discussion_r125553",
+      "body": "Unnecessary default for `hasAutomations`. "
+    },
+    {
+      "created_at": "2023-09-07T04:38:35Z",
+      "path": "srcfrontend/app/automation/components/AutomationsOverview/AutomationsOverview.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16129#discussion_r125559",
+      "body": "Usually when you split off chunks of components like this, it's time for a new file. "
+    },
+    {
+      "created_at": "2023-09-07T04:46:07Z",
+      "path": "srcfrontend/app/automation/components/AutomationActions/AutomationActions.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16129#discussion_r125566",
+      "body": "Can also grab `hasAutomationRecipeFeature` instead of prop drilling if you are gonna grab stuff from `FeatureContext` here. "
+    },
+    {
+      "created_at": "2023-09-07T04:48:30Z",
+      "path": "srcfrontend/app/automation/components/AutomationsOverview/types.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16129#discussion_r125568",
+      "body": "I think better use `AutomationLink[]` as is to be explicit. \r\nUnless this is a fancy array type that needs to be abstracted. "
+    },
+    {
+      "created_at": "2023-09-08T02:26:14Z",
+      "path": "srcfrontend/app/automation/components/AutomationActions/AutomationActions.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16129#discussion_r125621",
+      "body": "Probably don't need the clientId check here. \r\nIf it's actually needed then you should also set `disabled`. \r\nIt would be weird if the user clicks the button but nothing happens because clientId is falsy. "
+    }
+  ]
+}

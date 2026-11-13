@@ -1,0 +1,57 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15907,
+  "pr_author": "anthony-alexis",
+  "pr_title": "Added Welcome Journey Recipe Tile",
+  "pr_created_at": "2023-08-09T00:45:03Z",
+  "comments": [
+    {
+      "created_at": "2023-08-10T05:32:05Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/api.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r123946",
+      "body": "```suggestion\r\nexport const createJourney = async (workflowName: string, workflowListId: string, workflowType: WorkflowType, isOnlineStoreJourney = true) => {\r\n```"
+    },
+    {
+      "created_at": "2023-08-10T05:34:16Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/api.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r123947",
+      "body": "```suggestion\r\n    if (workflowType === WorkflowType.Default && !isOnlineStoreJourney) {\r\n```"
+    },
+    {
+      "created_at": "2023-08-10T05:39:31Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/components/WelcomeJourneyThumbnail.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r123951",
+      "body": "Can we update this to a non-generic id to avoid potential collisions?\r\nTo something like `<g clipPath=\"url(#welcome-journey-tile-a)\">`"
+    },
+    {
+      "created_at": "2023-08-10T05:39:48Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/components/WelcomeJourneyThumbnail.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r123952",
+      "body": "this one for `welcome-journey-tile-b`"
+    },
+    {
+      "created_at": "2023-08-10T05:40:14Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/components/WelcomeJourneyThumbnail.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r123953",
+      "body": "`mask=\"url(#welcome-journey-tile-b)\"`"
+    },
+    {
+      "created_at": "2023-08-10T05:40:33Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/components/WelcomeJourneyThumbnail.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r123954",
+      "body": "`id=\"welcome-journey-tile-a\"`"
+    },
+    {
+      "created_at": "2023-08-11T06:27:37Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/api.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r124053",
+      "body": "Can you put a type on this please"
+    },
+    {
+      "created_at": "2023-08-14T00:15:10Z",
+      "path": "srcfrontend/app/components/CommerceStoreRegistration/api.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15907#discussion_r124076",
+      "body": "Create a type for the payload. So above the function put \r\n```\r\ninterface CreateJourneyRequest {\r\n  stuff: stuff. ... \r\n}\r\n```\r\n\r\nand then replace this line with. \r\n```\r\nlet payload: CreateJourneyRequest;\r\n```\r\n\r\nThis should also get rid of the yellow linter warning for implicit any. "
+    }
+  ]
+}

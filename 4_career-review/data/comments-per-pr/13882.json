@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13882,
+  "pr_author": "jari-talka",
+  "pr_title": "SMS-311: SMS campaign search front end changes",
+  "pr_created_at": "2022-10-19T01:27:48Z",
+  "comments": [
+    {
+      "created_at": "2022-10-19T23:14:13Z",
+      "path": "srcfrontend/app/managesmscampaigns/components/ResultsListWrapper/ResultsListWrapper.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13882#discussion_r109512",
+      "body": "Can you import the NoResults component at `srcfrontend\\app\\managesmscampaigns\\components\\NoResults\\NoResults.tsx` instead. \r\nTry to avoid cross app references if possible. "
+    }
+  ]
+}

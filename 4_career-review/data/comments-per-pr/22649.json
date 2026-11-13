@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22649,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-1112: Update opt-in page content and add FAQ for Subscriber Profile",
+  "pr_created_at": "2026-03-24T22:44:43Z",
+  "comments": [
+    {
+      "created_at": "2026-03-24T23:31:05Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/LandingPage/CrmLandingPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22649#discussion_r162805",
+      "body": "```suggestion\n                                            not appear in Subscriber profile.\n```"
+    },
+    {
+      "created_at": "2026-03-24T23:32:55Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/LandingPage/CrmLandingPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22649#discussion_r162808",
+      "body": "Use `&ldquo;` `&rdquo;` for `\"` in text copy"
+    },
+    {
+      "created_at": "2026-03-24T23:33:14Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/LandingPage/CrmLandingPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22649#discussion_r162809",
+      "body": "```suggestion\n                    Custom field options need to be set up before enabling Subscriber profile. After the initial sync, adding new options is not supported\n```"
+    },
+    {
+      "created_at": "2026-03-25T11:09:55Z",
+      "path": "srcfrontend/app/audience/components/CrmLite/LandingPage/CrmLandingPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22649#discussion_r162898",
+      "body": "supported fields should be lower case "
+    }
+  ]
+}

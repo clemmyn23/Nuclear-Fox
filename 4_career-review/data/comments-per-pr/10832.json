@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10832,
+  "pr_author": "masoudc",
+  "pr_title": "darkmode-list-and-subscribers",
+  "pr_created_at": "2021-09-02T23:22:26Z",
+  "comments": [
+    {
+      "created_at": "2021-09-03T00:21:43Z",
+      "path": "srcfrontend/app/audience/components/Layout/PageLayout.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10832#discussion_r88596",
+      "body": "I probably should have named `ThemedFragment` better to not have the word `Fragment` in it, but\r\nwe only need one in the tree. "
+    }
+  ]
+}

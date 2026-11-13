@@ -1,0 +1,27 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10395,
+  "pr_author": "clewis",
+  "pr_title": "UX1-542: Update client overview welcome banner",
+  "pr_created_at": "2021-07-20T02:21:05Z",
+  "comments": [
+    {
+      "created_at": "2021-07-20T05:30:10Z",
+      "path": "srcfrontend/app/clientoverview/components/OverviewHeader/NewMemberWelcome.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10395#discussion_r86117",
+      "body": "TODO?"
+    },
+    {
+      "created_at": "2021-07-20T05:32:39Z",
+      "path": "srcfrontend/app/clientoverview/components/RecentCampaignsSection/RecentCampaignsSection.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10395#discussion_r86118",
+      "body": "Can consider moving this to `ClientOverview.tsx` and add a `hasSentCampaigns` check similar to `hasSendingCampaigns` and `hasScheduledCampaigns` to keep things consistent. \r\n\r\n![image](https://git.campmon.com/storage/user/367/files/ab4d1cc2-e96f-11eb-873b-3faaab32e189)\r\n"
+    },
+    {
+      "created_at": "2021-07-20T05:40:46Z",
+      "path": "srcfrontend/app/clientoverview/components/Utilities/clientOverviewApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10395#discussion_r86119",
+      "body": "Side note: None of the fetches in this file check for `response.ok`. Might be fine but it's spoopy 👻 "
+    }
+  ]
+}

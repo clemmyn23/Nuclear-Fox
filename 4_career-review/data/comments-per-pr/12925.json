@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12925,
+  "pr_author": "michael-yin",
+  "pr_title": "Ca 1311 b emoji picker for subject line",
+  "pr_created_at": "2022-05-24T02:22:12Z",
+  "comments": [
+    {
+      "created_at": "2022-05-26T05:26:20Z",
+      "path": "srcfrontend/app/campaigncreationchecklist/components/CheckListSteps/SubjectStep/Personalization.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12925#discussion_r101877",
+      "body": "```suggestion\r\n    const getAppearance = (): 'link' | 'link-secondary' | 'outline' => {\r\n```"
+    }
+  ]
+}

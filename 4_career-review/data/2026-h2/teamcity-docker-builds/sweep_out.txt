@@ -1,0 +1,75 @@
+docker builds 9312 missing stats 0; windows builds 8916 missing stats 5228
+TARGET (Windows era 27 Oct-6 Nov): push->green p50=327 p90=827
+ACTUAL Docker (11 agents)          push->green p50=  502 p90= 1819 | wait biz p50=  48 p90= 1145 p99= 2514 | off-peak wait p90=   0 p99=  125 | $3,469/mo
+SIM 11 always-on (calibration)     push->green p50=  522 p90= 1716 | wait biz p50= 109 p90= 1119 p99= 2164 | off-peak wait p90=   0 p99=  113 | $3,469/mo
+JC-414 scenario adds 127 Docker package builds
+
+== NOW
+11 always-on                       push->green p50=  522 p90= 1716 | wait biz p50= 109 p90= 1119 p99= 2164 | off-peak wait p90=   0 p99=  113 | $3,469/mo
+12 always-on                       push->green p50=  357 p90= 1201 | wait biz p50=   8 p90=  736 p99= 1460 | off-peak wait p90=   0 p99=   78 | $3,784/mo
+13 always-on                       push->green p50=  298 p90=  881 | wait biz p50=   0 p90=  497 p99= 1182 | off-peak wait p90=   0 p99=   42 | $4,100/mo
+14 always-on                       push->green p50=  251 p90=  694 | wait biz p50=   0 p90=  353 p99= 1020 | off-peak wait p90=   0 p99=   17 | $4,415/mo
+15 always-on                       push->green p50=  218 p90=  591 | wait biz p50=   0 p90=  261 p99=  885 | off-peak wait p90=   0 p99=    0 | $4,730/mo
+16 always-on                       push->green p50=  196 p90=  522 | wait biz p50=   0 p90=  192 p99=  785 | off-peak wait p90=   0 p99=    0 | $5,046/mo
+17 always-on                       push->green p50=  191 p90=  464 | wait biz p50=   0 p90=  138 p99=  710 | off-peak wait p90=   0 p99=    0 | $5,361/mo
+18 always-on                       push->green p50=  189 p90=  409 | wait biz p50=   0 p90=   96 p99=  634 | off-peak wait p90=   0 p99=    0 | $5,676/mo
+19 always-on                       push->green p50=  186 p90=  371 | wait biz p50=   0 p90=   57 p99=  567 | off-peak wait p90=   0 p99=    0 | $5,992/mo
+20 always-on                       push->green p50=  186 p90=  342 | wait biz p50=   0 p90=   28 p99=  517 | off-peak wait p90=   0 p99=    0 | $6,307/mo
+12 peak / 4 off-peak (module 70%)  push->green p50=  357 p90= 1201 | wait biz p50=   8 p90=  736 p99= 1460 | off-peak wait p90= 597 p99= 1465 | $2,400/mo
+13 peak / 4 off-peak (module 70%)  push->green p50=  298 p90=  881 | wait biz p50=   0 p90=  497 p99= 1182 | off-peak wait p90= 597 p99= 1465 | $2,543/mo
+14 peak / 5 off-peak (module 70%)  push->green p50=  251 p90=  694 | wait biz p50=   0 p90=  353 p99= 1020 | off-peak wait p90= 303 p99= 1009 | $2,858/mo
+15 peak / 5 off-peak (module 70%)  push->green p50=  218 p90=  591 | wait biz p50=   0 p90=  261 p99=  885 | off-peak wait p90= 303 p99= 1009 | $3,000/mo
+16 peak / 5 off-peak (module 70%)  push->green p50=  196 p90=  522 | wait biz p50=   0 p90=  192 p99=  785 | off-peak wait p90= 303 p99= 1009 | $3,143/mo
+17 peak / 6 off-peak (module 70%)  push->green p50=  191 p90=  464 | wait biz p50=   0 p90=  138 p99=  710 | off-peak wait p90= 159 p99=  704 | $3,458/mo
+18 peak / 6 off-peak (module 70%)  push->green p50=  189 p90=  409 | wait biz p50=   0 p90=   96 p99=  634 | off-peak wait p90= 159 p99=  704 | $3,600/mo
+19 peak / 6 off-peak (module 70%)  push->green p50=  186 p90=  371 | wait biz p50=   0 p90=   57 p99=  567 | off-peak wait p90= 159 p99=  704 | $3,743/mo
+20 peak / 6 off-peak (module 70%)  push->green p50=  186 p90=  342 | wait biz p50=   0 p90=   28 p99=  517 | off-peak wait p90= 159 p99=  704 | $3,885/mo
+12 peak / 6 off-peak               push->green p50=  357 p90= 1201 | wait biz p50=   8 p90=  736 p99= 1460 | off-peak wait p90= 159 p99=  704 | $2,746/mo
+12 peak / 8 off-peak               push->green p50=  357 p90= 1201 | wait biz p50=   8 p90=  736 p99= 1460 | off-peak wait p90=   0 p99=  321 | $3,092/mo
+13 peak / 6 off-peak               push->green p50=  298 p90=  881 | wait biz p50=   0 p90=  497 p99= 1182 | off-peak wait p90= 159 p99=  704 | $2,889/mo
+13 peak / 8 off-peak               push->green p50=  298 p90=  881 | wait biz p50=   0 p90=  497 p99= 1182 | off-peak wait p90=   0 p99=  321 | $3,235/mo
+14 peak / 6 off-peak               push->green p50=  251 p90=  694 | wait biz p50=   0 p90=  353 p99= 1020 | off-peak wait p90= 159 p99=  704 | $3,031/mo
+14 peak / 8 off-peak               push->green p50=  251 p90=  694 | wait biz p50=   0 p90=  353 p99= 1020 | off-peak wait p90=   0 p99=  321 | $3,377/mo
+15 peak / 6 off-peak               push->green p50=  218 p90=  591 | wait biz p50=   0 p90=  261 p99=  885 | off-peak wait p90= 159 p99=  704 | $3,173/mo
+15 peak / 8 off-peak               push->green p50=  218 p90=  591 | wait biz p50=   0 p90=  261 p99=  885 | off-peak wait p90=   0 p99=  321 | $3,519/mo
+16 peak / 6 off-peak               push->green p50=  196 p90=  522 | wait biz p50=   0 p90=  192 p99=  785 | off-peak wait p90= 159 p99=  704 | $3,316/mo
+16 peak / 8 off-peak               push->green p50=  196 p90=  522 | wait biz p50=   0 p90=  192 p99=  785 | off-peak wait p90=   0 p99=  321 | $3,662/mo
+17 peak / 6 off-peak               push->green p50=  191 p90=  464 | wait biz p50=   0 p90=  138 p99=  710 | off-peak wait p90= 159 p99=  704 | $3,458/mo
+17 peak / 8 off-peak               push->green p50=  191 p90=  464 | wait biz p50=   0 p90=  138 p99=  710 | off-peak wait p90=   0 p99=  321 | $3,804/mo
+18 peak / 6 off-peak               push->green p50=  189 p90=  409 | wait biz p50=   0 p90=   96 p99=  634 | off-peak wait p90= 159 p99=  704 | $3,600/mo
+18 peak / 8 off-peak               push->green p50=  189 p90=  409 | wait biz p50=   0 p90=   96 p99=  634 | off-peak wait p90=   0 p99=  321 | $3,946/mo
+
+== AFTER JC-414
+11 always-on                       push->green p50=  556 p90= 1811 | wait biz p50= 136 p90= 1157 p99= 2209 | off-peak wait p90=   0 p99=  112 | $3,469/mo
+12 always-on                       push->green p50=  366 p90= 1218 | wait biz p50=  21 p90=  760 p99= 1495 | off-peak wait p90=   0 p99=   78 | $3,784/mo
+13 always-on                       push->green p50=  304 p90=  905 | wait biz p50=   0 p90=  526 p99= 1232 | off-peak wait p90=   0 p99=   40 | $4,100/mo
+14 always-on                       push->green p50=  255 p90=  729 | wait biz p50=   0 p90=  374 p99= 1044 | off-peak wait p90=   0 p99=   17 | $4,415/mo
+15 always-on                       push->green p50=  224 p90=  591 | wait biz p50=   0 p90=  273 p99=  911 | off-peak wait p90=   0 p99=    0 | $4,730/mo
+16 always-on                       push->green p50=  198 p90=  526 | wait biz p50=   0 p90=  201 p99=  811 | off-peak wait p90=   0 p99=    0 | $5,046/mo
+17 always-on                       push->green p50=  191 p90=  467 | wait biz p50=   0 p90=  146 p99=  729 | off-peak wait p90=   0 p99=    0 | $5,361/mo
+18 always-on                       push->green p50=  190 p90=  409 | wait biz p50=   0 p90=  101 p99=  653 | off-peak wait p90=   0 p99=    0 | $5,676/mo
+19 always-on                       push->green p50=  187 p90=  371 | wait biz p50=   0 p90=   62 p99=  578 | off-peak wait p90=   0 p99=    0 | $5,992/mo
+20 always-on                       push->green p50=  186 p90=  342 | wait biz p50=   0 p90=   32 p99=  527 | off-peak wait p90=   0 p99=    0 | $6,307/mo
+12 peak / 4 off-peak (module 70%)  push->green p50=  366 p90= 1218 | wait biz p50=  21 p90=  760 p99= 1495 | off-peak wait p90= 674 p99= 1461 | $2,400/mo
+13 peak / 4 off-peak (module 70%)  push->green p50=  304 p90=  905 | wait biz p50=   0 p90=  526 p99= 1232 | off-peak wait p90= 674 p99= 1461 | $2,543/mo
+14 peak / 5 off-peak (module 70%)  push->green p50=  255 p90=  729 | wait biz p50=   0 p90=  374 p99= 1044 | off-peak wait p90= 328 p99= 1009 | $2,858/mo
+15 peak / 5 off-peak (module 70%)  push->green p50=  224 p90=  591 | wait biz p50=   0 p90=  273 p99=  911 | off-peak wait p90= 328 p99= 1009 | $3,000/mo
+16 peak / 5 off-peak (module 70%)  push->green p50=  198 p90=  526 | wait biz p50=   0 p90=  201 p99=  811 | off-peak wait p90= 328 p99= 1009 | $3,143/mo
+17 peak / 6 off-peak (module 70%)  push->green p50=  191 p90=  467 | wait biz p50=   0 p90=  146 p99=  729 | off-peak wait p90= 168 p99=  704 | $3,458/mo
+18 peak / 6 off-peak (module 70%)  push->green p50=  190 p90=  409 | wait biz p50=   0 p90=  101 p99=  653 | off-peak wait p90= 168 p99=  704 | $3,600/mo
+19 peak / 6 off-peak (module 70%)  push->green p50=  187 p90=  371 | wait biz p50=   0 p90=   62 p99=  578 | off-peak wait p90= 168 p99=  704 | $3,743/mo
+20 peak / 6 off-peak (module 70%)  push->green p50=  186 p90=  342 | wait biz p50=   0 p90=   32 p99=  527 | off-peak wait p90= 168 p99=  704 | $3,885/mo
+12 peak / 6 off-peak               push->green p50=  366 p90= 1218 | wait biz p50=  21 p90=  760 p99= 1495 | off-peak wait p90= 168 p99=  704 | $2,746/mo
+12 peak / 8 off-peak               push->green p50=  366 p90= 1218 | wait biz p50=  21 p90=  760 p99= 1495 | off-peak wait p90=   0 p99=  321 | $3,092/mo
+13 peak / 6 off-peak               push->green p50=  304 p90=  905 | wait biz p50=   0 p90=  526 p99= 1232 | off-peak wait p90= 168 p99=  704 | $2,889/mo
+13 peak / 8 off-peak               push->green p50=  304 p90=  905 | wait biz p50=   0 p90=  526 p99= 1232 | off-peak wait p90=   0 p99=  321 | $3,235/mo
+14 peak / 6 off-peak               push->green p50=  255 p90=  729 | wait biz p50=   0 p90=  374 p99= 1044 | off-peak wait p90= 168 p99=  704 | $3,031/mo
+14 peak / 8 off-peak               push->green p50=  255 p90=  729 | wait biz p50=   0 p90=  374 p99= 1044 | off-peak wait p90=   0 p99=  321 | $3,377/mo
+15 peak / 6 off-peak               push->green p50=  224 p90=  591 | wait biz p50=   0 p90=  273 p99=  911 | off-peak wait p90= 168 p99=  704 | $3,173/mo
+15 peak / 8 off-peak               push->green p50=  224 p90=  591 | wait biz p50=   0 p90=  273 p99=  911 | off-peak wait p90=   0 p99=  321 | $3,519/mo
+16 peak / 6 off-peak               push->green p50=  198 p90=  526 | wait biz p50=   0 p90=  201 p99=  811 | off-peak wait p90= 168 p99=  704 | $3,316/mo
+16 peak / 8 off-peak               push->green p50=  198 p90=  526 | wait biz p50=   0 p90=  201 p99=  811 | off-peak wait p90=   0 p99=  321 | $3,662/mo
+17 peak / 6 off-peak               push->green p50=  191 p90=  467 | wait biz p50=   0 p90=  146 p99=  729 | off-peak wait p90= 168 p99=  704 | $3,458/mo
+17 peak / 8 off-peak               push->green p50=  191 p90=  467 | wait biz p50=   0 p90=  146 p99=  729 | off-peak wait p90=   0 p99=  321 | $3,804/mo
+18 peak / 6 off-peak               push->green p50=  190 p90=  409 | wait biz p50=   0 p90=  101 p99=  653 | off-peak wait p90= 168 p99=  704 | $3,600/mo
+18 peak / 8 off-peak               push->green p50=  190 p90=  409 | wait biz p50=   0 p90=  101 p99=  653 | off-peak wait p90=   0 p99=  321 | $3,946/mo

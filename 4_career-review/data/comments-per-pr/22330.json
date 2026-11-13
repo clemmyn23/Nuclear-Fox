@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22330,
+  "pr_author": "sherry-lotfi",
+  "pr_title": "AJ 1047 Add CAL for CrmLite",
+  "pr_created_at": "2026-02-20T02:36:44Z",
+  "comments": [
+    {
+      "created_at": "2026-02-23T05:22:37Z",
+      "path": "extras/CampMon.ServiceAgents.NetCore/CampMon.ContactManagementScheduledAgent/Consumers/CrmLiteDataPopulationConsumer.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22330#discussion_r160961",
+      "body": "We'll come back to this at https://campaignmonitor.atlassian.net/browse/AJ-1083 \nBut for this PR it's fine. "
+    }
+  ]
+}

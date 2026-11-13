@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16849,
+  "pr_author": "subrat-shrestha",
+  "pr_title": "EL-1541 Client sending domain audit",
+  "pr_created_at": "2024-01-16T00:09:50Z",
+  "comments": [
+    {
+      "created_at": "2024-01-23T00:36:39Z",
+      "path": "srcfrontend/app/embeddedagencysendingdomainbanner/embeddedagencysendingdomainbanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16849#discussion_r131015",
+      "body": "The is the root file. \r\nHistorically the root files have all been full lower case. \r\nI don't have strong opinions on this, but if you do change it to camel case please make sure you update the reference in `webpack.builds.js` and ensure the project still builds fine. "
+    },
+    {
+      "created_at": "2024-01-23T04:08:51Z",
+      "path": "srcfrontend/app/adminoverview/utils.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16849#discussion_r131025",
+      "body": "Unused imports"
+    }
+  ]
+}

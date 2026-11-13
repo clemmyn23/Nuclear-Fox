@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15934,
+  "pr_author": "jeromec",
+  "pr_title": "EL-1275-b - automatic login following the two factor setup",
+  "pr_created_at": "2023-08-10T21:41:52Z",
+  "comments": [
+    {
+      "created_at": "2023-08-15T01:21:40Z",
+      "path": "srcfrontend/app/twofactormanagement/api.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15934#discussion_r124155",
+      "body": "It may be uncommon but completely valid and to spec. \r\nhttps://developer.mozilla.org/en-US/docs/Web/API/fetch#body"
+    },
+    {
+      "created_at": "2023-08-15T01:24:41Z",
+      "path": "srcfrontend/app/twofactormanagement/api.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15934#discussion_r124156",
+      "body": "JS functions start with lower case. "
+    }
+  ]
+}

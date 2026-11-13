@@ -1,0 +1,129 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21066,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-840: Create foundational steps section and adjust layout based on designs",
+  "pr_created_at": "2025-10-27T00:07:05Z",
+  "comments": [
+    {
+      "created_at": "2025-10-28T01:00:41Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepCardStatusLozenge.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152918",
+      "body": "Please capitalise components\r\n```suggestion\r\nconst Completed = () => {\r\n```"
+    },
+    {
+      "created_at": "2025-10-28T01:01:15Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepCardStatusLozenge.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152919",
+      "body": "```suggestion\r\nconst Skipped = () => {\r\n```"
+    },
+    {
+      "created_at": "2025-10-28T01:01:32Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepCardStatusLozenge.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152920",
+      "body": "```suggestion\r\nconst Recommended = () => {\r\n```"
+    },
+    {
+      "created_at": "2025-10-28T01:21:27Z",
+      "path": "app/CampMon.CmAPI/Endpoints/Clients/ClientsService.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152922",
+      "body": "Consider making this enum"
+    },
+    {
+      "created_at": "2025-10-28T01:25:26Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepCardStatusLozenge.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152923",
+      "body": "https://cmds.campmon.com/#/components/icon/technical `isInlineBlock` "
+    },
+    {
+      "created_at": "2025-10-28T01:26:08Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepCardStatusLozenge.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152924",
+      "body": "```suggestion\r\n        return <Completed />;\r\n```"
+    },
+    {
+      "created_at": "2025-10-28T01:27:42Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepsProgressIcon.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152925",
+      "body": "Try to avoid inline styles.\r\nUse a css file"
+    },
+    {
+      "created_at": "2025-10-28T01:29:25Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/utils/index.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152927",
+      "body": "More specific file name, try not to put logic into `index.ts`"
+    },
+    {
+      "created_at": "2025-10-28T01:32:24Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/utils/index.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152928",
+      "body": "Add some comments on how this works.\r\n\r\nConsider \r\n```\r\nposition = NamedConstant + 1;\r\n```"
+    },
+    {
+      "created_at": "2025-10-28T01:35:00Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/types/card.types.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152929",
+      "body": "Capitalise"
+    },
+    {
+      "created_at": "2025-10-28T01:36:13Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/utils/index.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152930",
+      "body": "Remember to remove this later"
+    },
+    {
+      "created_at": "2025-10-28T01:40:31Z",
+      "path": "srcfrontend/app/library/Icons/CheckCircle/CheckCircle.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152931",
+      "body": "```suggestion\r\ninterface CheckCicleProps {\r\n    size?: IconSize;\r\n}\r\n\r\nconst CheckCircle = ({size = 'base'}: CheckCircleProps) => {\r\n```"
+    },
+    {
+      "created_at": "2025-10-28T01:42:07Z",
+      "path": "srcfrontend/app/library/Icons/CheckCircle/CheckCircle.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152932",
+      "body": "Pick one either export at the end of the file or export inline, and keep it consistent for the entire PR. \r\nI personally like exporting inline. \r\n"
+    },
+    {
+      "created_at": "2025-10-28T01:42:20Z",
+      "path": "srcfrontend/app/library/Icons/CheckCircle/CheckCircleLight.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152933",
+      "body": "`interface CheckCircleLightProps`"
+    },
+    {
+      "created_at": "2025-10-28T01:43:14Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepCard.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r152934",
+      "body": "Check css bem naming"
+    },
+    {
+      "created_at": "2025-10-30T00:42:25Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/FoundationalStepsProgressPieChart.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r153135",
+      "body": "You updated the classname in tsx but not the css. \r\n\r\n\r\n```suggestion\r\n.c-foundational-steps-progress-pie-chart__progress-circle {\r\n```"
+    },
+    {
+      "created_at": "2025-10-30T00:46:07Z",
+      "path": "srcfrontend/app/clientoverview/components/FoundationalSteps/utils/apiUtils.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r153138",
+      "body": "This scares me. \r\nCan you pass the `clientId` in from the parent component? "
+    },
+    {
+      "created_at": "2025-10-30T00:52:22Z",
+      "path": "srcfrontend/app/clientoverview/components/SetupGuideSection/FoundationalStepsSection.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r153141",
+      "body": "You can keep these. \r\nI think it's better to have the server return the exact data in the order we want. \r\nWe can do both. "
+    },
+    {
+      "created_at": "2025-10-30T00:55:03Z",
+      "path": "srcfrontend/app/clientoverview/components/SetupGuideSection/FoundationalStepsSection.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r153143",
+      "body": "I think this is equivalent. \r\n```suggestion\r\n            <RowCardTable isDataLoading={setupGuideData === null}>\r\n```"
+    },
+    {
+      "created_at": "2025-10-30T00:59:36Z",
+      "path": "app/CampMon.CmAPI/Endpoints/Clients/CmClientSetupGuideClientOverviewEligibility.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21066#discussion_r153144",
+      "body": "huhh `Feature` type is too wide for this purpose. \r\nMake a new enum. "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 11068,
+  "pr_author": "russella",
+  "pr_title": "Typo and Type Fixes",
+  "pr_created_at": "2021-10-07T05:37:49Z",
+  "comments": [
+    {
+      "created_at": "2021-10-07T05:48:29Z",
+      "path": "srcfrontend/app/campaigncreationchecklist/components/CheckListSteps/ToStep/RecipientSelectionDialog/RecipientInclusionDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/11068#discussion_r90108",
+      "body": "Throwing `Record<'campaignId', string>` into the bag :)"
+    }
+  ]
+}

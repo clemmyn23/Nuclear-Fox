@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21249,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-902 - Return whether it is a series campaign when returning campaigns to the ",
+  "pr_created_at": "2025-11-13T06:13:38Z",
+  "comments": [
+    {
+      "created_at": "2025-11-17T05:06:57Z",
+      "path": "app/CampMon.CmAPI/Endpoints/Mailings/CmBulkMailing.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21249#discussion_r154283",
+      "body": "Please always use the encoded identifier in responses. \r\n```suggestion\r\n        public SequenceId SequenceId { get; set; }\r\n```\r\n"
+    }
+  ]
+}

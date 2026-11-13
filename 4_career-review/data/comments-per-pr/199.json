@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 199,
+  "pr_author": "samanthac",
+  "pr_title": "AJ-287 - Update custom field using event data UI",
+  "pr_created_at": "2024-04-17T04:24:30Z",
+  "comments": [
+    {
+      "created_at": "2024-04-18T23:39:59Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/CustomField/components/CustomFieldOperation.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/199#discussion_r133794",
+      "body": "Check linting :) "
+    }
+  ]
+}

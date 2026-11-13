@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10933,
+  "pr_author": "lcallaway",
+  "pr_title": "Remove legacy client overview",
+  "pr_created_at": "2021-09-20T00:57:40Z",
+  "comments": [
+    {
+      "created_at": "2021-09-20T01:28:05Z",
+      "path": "app/Controllers/ClientOverviewController.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10933#discussion_r89199",
+      "body": "Can remove this comment too. "
+    }
+  ]
+}

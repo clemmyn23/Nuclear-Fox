@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 14789,
+  "pr_author": "james-dunlop",
+  "pr_title": "PP-155 New component for Braintree card authorisation with hosted fields",
+  "pr_created_at": "2023-02-27T09:42:33Z",
+  "comments": [
+    {
+      "created_at": "2023-03-01T02:35:40Z",
+      "path": "shared/components/managecard/Card/AddBraintreeCard.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14789#discussion_r115701",
+      "body": "`AddCard.tsx` here for reference https://git.campmon.com/Freshview/createsend.com/blob/master/shared/components/managecard/Card/AddCard.tsx\r\n\r\n"
+    },
+    {
+      "created_at": "2023-03-01T02:35:32Z",
+      "path": "shared/components/managecard/Card/AddBraintreeCard.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14789#discussion_r115700",
+      "body": "bit strange the prettier didn't catch the empty line here"
+    },
+    {
+      "created_at": "2023-03-01T02:37:02Z",
+      "path": "shared/components/managecard/Card/AddBraintreeCard.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14789#discussion_r115702",
+      "body": "I know these are copy pasted from `AddCard.tsx` but 😢 so many `any` types. "
+    },
+    {
+      "created_at": "2023-03-01T02:38:04Z",
+      "path": "shared/components/managecard/Card/AddBraintreeCard.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14789#discussion_r115703",
+      "body": "Don't need to define no-op function"
+    }
+  ]
+}

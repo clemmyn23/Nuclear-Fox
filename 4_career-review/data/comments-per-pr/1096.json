@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Engineering/contentbuildercontext.staticresourceservice.core",
+  "pr_number": 1096,
+  "pr_author": "tai-woodley",
+  "pr_title": "ZUSE-194: Allow bullet point colours to be changed",
+  "pr_created_at": "2025-06-13T06:54:54Z",
+  "comments": [
+    {
+      "created_at": "2025-07-03T04:25:39Z",
+      "path": "ContentBuilderContext.StaticResourceService/static_src/ts/modules/emailbuilder/content-blocks/ckeditor-text-color.plugin.ts",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1096#discussion_r146668",
+      "body": "This looks scary. \r\nReading this as isolated code, it reads like it can run into array access out of bounds or null reference errors. (Which might not happen in practice)\r\n\r\nhttps://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dom_element.html#method-getNext\r\n\r\nI don't like iterating on `i` and especially when it's not used. Maybe consider using iterator loop pattern and `CKEDITOR.dom.element.prototype.hasNext()` instead. "
+    },
+    {
+      "created_at": "2025-07-03T05:10:47Z",
+      "path": "ContentBuilderContext.StaticResourceService/static_src/ts/modules/emailbuilder/content-blocks/ckeditor-text-color.plugin.ts",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1096#discussion_r146687",
+      "body": "Okay thank you for more context I understand now. \r\n\r\nWould checking for both work? 🤔 \r\n```\r\nfor (let i = 0; (i < selectedRows && list.hasNext()); i++)\r\n```"
+    }
+  ]
+}

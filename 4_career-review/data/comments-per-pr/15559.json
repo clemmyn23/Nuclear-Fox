@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15559,
+  "pr_author": "brian-luc",
+  "pr_title": "[MER-391a] Integration Request Dialog analytics + JS cleanup ",
+  "pr_created_at": "2023-06-16T06:47:03Z",
+  "comments": [
+    {
+      "created_at": "2023-06-20T02:38:55Z",
+      "path": "srcfrontend/app/commercesettings/components/CommerceRequestSubmissionDialog/CommerceRequestSubmissionDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15559#discussion_r120751",
+      "body": "do we need `await` on this? "
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 202,
+  "pr_author": "samanthac",
+  "pr_title": "Missed Linting",
+  "pr_created_at": "2024-04-19T02:15:04Z",
+  "comments": [
+    {
+      "created_at": "2024-04-19T02:22:05Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/CustomField/CustomFieldContainer.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/202#discussion_r133804",
+      "body": "Shouldn't this be `return state;`? "
+    },
+    {
+      "created_at": "2024-04-19T02:23:28Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/CustomField/CustomFieldContainer.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/202#discussion_r133806",
+      "body": "Actually nvm returning undefined here preserves existing behaviour"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 10291,
+  "pr_author": "clewis",
+  "pr_title": "UX1-552: Better handling of custom field api error responses",
+  "pr_created_at": "2021-07-09T01:16:50Z",
+  "comments": [
+    {
+      "created_at": "2021-07-09T04:24:36Z",
+      "path": "srcfrontend/app/audience/components/CustomFields/customFieldsApi.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/10291#discussion_r85606",
+      "body": "The `json` method does throw exceptions. \r\nThe most common one is when it tries to parse the default asp.net 500 internal server error page and fails. \r\nThe second most common would probably be calling in on a response that has an empty body. "
+    }
+  ]
+}

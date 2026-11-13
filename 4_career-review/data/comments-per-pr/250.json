@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 250,
+  "pr_author": "david-vanlaarveth",
+  "pr_title": "AJ-405-a Fix popup viewport detection not working",
+  "pr_created_at": "2024-07-05T05:34:00Z",
+  "comments": [
+    {
+      "created_at": "2024-07-08T05:07:36Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/TrapFocus/TrapFocus.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/250#discussion_r136036",
+      "body": "Do you need this? "
+    }
+  ]
+}

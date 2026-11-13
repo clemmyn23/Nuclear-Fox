@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22070,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-1056: return the oldest original date scv",
+  "pr_created_at": "2026-01-28T03:37:11Z",
+  "comments": [
+    {
+      "created_at": "2026-01-30T06:23:48Z",
+      "path": "app/CampMon.CmAPI/Endpoints/CrmLite/Models/CmCrmCustomerDetails.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22070#discussion_r159369",
+      "body": "```\r\nAction GetCrmCustomerDetails on controller CrmLiteController includes a DateTime property in the response type System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult~1[CampMon.CmAPI.Endpoints.CrmLite.Models.CmCrmCustomerDetails]] \r\n\r\n```\r\n\r\nShould be returning `string` in cmapi models. \r\nYou can probably just `.ToString(\"o\")` the DateTime value. (Check with csharp crew)"
+    }
+  ]
+}

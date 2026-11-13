@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 20428,
+  "pr_author": "david-vanlaarveth",
+  "pr_title": "AJ-725 Fix xss in unsubscribe page from send a test email",
+  "pr_created_at": "2025-08-01T01:33:57Z",
+  "comments": [
+    {
+      "created_at": "2025-08-01T04:03:27Z",
+      "path": "app/CampMon.Track/Views/Shared/PreviewUnsubscribe.aspx.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20428#discussion_r148141",
+      "body": "nice"
+    }
+  ]
+}

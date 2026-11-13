@@ -1,0 +1,18 @@
+{
+  "pr_repo": "Engineering/workflowcontext.runnerservice.core",
+  "pr_number": 147,
+  "pr_title": "AJ-1196-a Add feature flag client",
+  "pr_created_at": "2026-05-25T05:12:01Z",
+  "own_comments": [
+    {
+      "created_at": "2026-05-26T06:36:44Z",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/147#issuecomment-27985",
+      "body": "Okay I spent half a day fighting mac vm proxying stuff and finally got it working. \nThe code works! Yippie!! \n\n![image](https://git.campmon.com/user-attachments/assets/04707ff1-d6a8-4eb6-9851-2a76d5e55dd1)\n"
+    },
+    {
+      "created_at": "2026-05-27T06:37:26Z",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/147#issuecomment-28024",
+      "body": "> LGTMasoud! It would be better to use V2 grpc client in this repo. We can use https://git.campmon.com/Engineering/workflowcontext.triggerservice.core/blob/master/WorkflowContext.TriggerService/appsettings.production.json#L19 as a sample\n\nWill look into this later I'll make a card"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21609,
+  "pr_author": "chris-luong",
+  "pr_title": "AJ-958 campaign series page UI updates",
+  "pr_created_at": "2025-12-15T23:56:20Z",
+  "comments": [
+    {
+      "created_at": "2025-12-16T01:22:06Z",
+      "path": "srcfrontend/app/campaigns/components/EditSequence/EditSequence.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21609#discussion_r157195",
+      "body": "variable "
+    },
+    {
+      "created_at": "2025-12-16T01:24:41Z",
+      "path": "srcfrontend/app/components/RowCard/RowCard.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21609#discussion_r157196",
+      "body": "errrr don't change RowCard this will mess with Client Overview"
+    },
+    {
+      "created_at": "2025-12-16T04:05:22Z",
+      "path": "srcfrontend/app/campaigns/components/EditSequence/SequenceRow.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21609#discussion_r157212",
+      "body": "typo \r\n```suggestion\r\n                    <div className=\"c-sequence-row__timeline-scheduled-date cmds-typography-body\">{displayDate}</div>\r\n```"
+    },
+    {
+      "created_at": "2025-12-16T04:06:10Z",
+      "path": "srcfrontend/app/campaigns/components/EditSequence/SequenceRow.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21609#discussion_r157213",
+      "body": "use `$cmds-g-space-small` or `$cmds-g-spacing` "
+    }
+  ]
+}

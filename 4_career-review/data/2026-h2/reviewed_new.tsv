@@ -1,0 +1,63 @@
+2026-11-10	rowena-kite	createsend.com	25621	closed	COM-1804-b: New Images for Client Features Tour
+2026-11-09	melisa-irmako	createsend.com	25582	closed	COM-1770: Small UI/Copy Fixes for Basic Drip Campaign and Regular Campaign -> Checklist dialog copy
+2026-11-05	melisa-irmako	createsend.com	25552	closed	COM 1771: Basic Drip Campaign Creating a Tree view context menu for "Edit Campaign
+2026-11-02	melisa-irmako	createsend.com	25442	closed	COM-1744: Basic Drip Campaign Sidebar — List name Linked
+2026-11-02	russella	SegmentTrackingPlan	699	closed	Review skill: save report outside the repo and never commit it
+2026-11-02	russella	SegmentTrackingPlan	698	closed	[COM-1799] Add Account Settings - Client Features page
+2026-11-01	russella	createsend.com	25416	closed	COM-1767 - Add a shared Brand Hub access service
+2026-10-30	russella	createsend.com	25405	closed	COM-1781: Remove Live Content from the plan matrix
+2026-10-18	steven-li	createsend.com	25161	closed	SHARE-6397: Let the user opt into the Atlas run's proposed sender name
+2026-10-15	james-dunlop	createsend.com	25133	closed	fix(CmAPI.NetCore): lift System.Security.Cryptography.Pkcs to 10.0.13
+2026-10-13	russella	createsend.com	25098	closed	COM-1728 Remove F_ClientFeatureBetaAccess data access code
+2026-10-13	russella	createsend.com	25086	closed	feat(COM-1712): add admin and client user access columns to F_ClientFeatureControlState
+2026-10-12	russella	createsend.com	25068	closed	feat(COM-1708): add F_AccountClientFeatureBetaAccess table
+2026-10-09	francois-naude	GitHubTeamManagement	9	closed	SRE-3624: check out on server in TeamCity builds
+2026-10-09	alex-lai	createsend.com	25035	closed	SHARE-6367: Wire up the Atlas review page
+2026-10-09	CopilotGitReviews	GitHubTeamManagement	6	closed	JC-436 Send logs to Datadog instead of Graylog
+2026-10-08	alex-lai	createsend.com	25023	closed	SHARE-6371: Show each Atlas run stage on the generating page
+2026-10-06	alexis-tzanos	createsend.com	24978	closed	COM-1649 Add Twilio Compliance Embed
+2026-09-30	russella	createsend.com	24890	closed	COM-1674: Refactor the SMS credit usage CSV uploader
+2026-09-30	melisa-irmako	createsend.com	24871	closed	COM-452-M: Display "Set by" name on the campaign report header behind a feature flag
+2026-09-25	russella	createsend.com	24815	closed	COM-1005: Remove CustomFieldQueryService gRPC endpoint
+2026-09-17	matthewn	localdev-tools	84	closed	fix(proxy): support multi-tier environment hostdomains
+2026-09-10	russella	localdev-tools	82	closed	Regenerate proxy/yarn.lock with the cross-platform optional binaries
+2026-09-09	russella	SmsSendingServices	133	closed	COM-1635 (4/4): Retire the Graylog hostnames from Terraform
+2026-09-09	russella	SmsSendingServices	128	closed	COM-1635 (2/4): Remove unused GELF appender dependency and dead Graylog logger overrides
+2026-08-26	lcallaway	createsend.com	24396	closed	JS - Add Biome rule to order imports for srcfrontend
+2026-08-26	jianjun-chen	createsend.com	24385	closed	AJ-1163: Update the warning banner for both basic and advanced drip campaign
+2026-08-25	lcallaway	createsend.com	24365	closed	JS - Use Biome for formatting
+2026-08-24	lcallaway	createsend.com	24351	closed	JS - Update browserslist DB, core-js, and remove legacy polyfills
+2026-08-24	lcallaway	createsend.com	24346	closed	JS - Fix a bunch of test warnings
+2026-08-21	lcallaway	createsend.com	24330	closed	JS - Convert linting to Biome in App and Shared
+2026-08-21	lcallaway	createsend.com	24324	closed	JS - Swap in Biome for ESLint
+2026-08-21	dmitry-antonov	chargebee-custom-codes	12	closed	LSK-1414 retract add-ons pending cancellation from the list of pre-selected add-ons during upgrade
+2026-08-20	jianjun-chen	createsend.com	24318	closed	AJ-1160: Sidebar for campaign
+2026-08-20	fan-li	createsend.com	24308	closed	AJ-1294: adding RssSchedulingDstFix FF
+2026-08-06	jianjun-chen	WorkflowEventCatalogIndexer	12	closed	AJ-969: Migrate WorkflowEventCatalogIndexer off Graylog to Datadog (jvm-libs 3.0.419)
+2026-08-06	jianjun-chen	workflowcontext.updatecustomfield	72	closed	AJ-965: Graylog migration: Verified parity + Drop GELF
+2026-07-27	samanthac	createsend.com	24044	closed	AJ-1176-fix - namespace please fix
+2026-07-23	fan-li	createsend.com	24016	closed	AJ-1180: drip campaign sending state styling updates
+2026-07-23	chris-luong	createsend.com	24009	closed	AJ-1241-b
+2026-07-21	fan-li	createsend.com	23987	closed	AJ-1258: Cancel downstream campaigns when a complex-sequence campaign fails to send
+2026-07-17	kim-to	contentbuildercontext.staticresourceservice.core	1249	closed	SHARE-5708 Handle rate limit error types with correct UX copy
+2026-07-15	david-vanlaarveth	createsend.com	23923	closed	TUR-366 <5 check for lists overview blank state
+2026-07-15	fan-li	createsend.com	23915	closed	AJ-1235-b: Fix drip campaign icon rendering larger than single campaign icon
+2026-07-07	david-vanlaarveth	cmds	3106	closed	fix(release): regenerate yarn.lock for newly-declared @cmds/* workspace deps
+2026-07-07	steven-li	contentbuildercontext.staticresourceservice.core	1230	closed	SHARE-5609: AI image generator — Report image + Rate this image
+2026-07-03	fan-li	createsend.com	23793	closed	AJ-1142: Delete campaign from the complex series
+2026-07-01	subrat-shrestha	localdev-tools	77	closed	NM-22 Add CmAPI.NetCore to local dev proxy
+2026-06-30	sherry-lotfi	createsend.com	23750	closed	AJ 1171 : Campaign siblings under conditions validation
+2026-06-29	david-vanlaarveth	workflowbuildercontext.uiservice.core	335	open	JC-438: fix(EditTextInline): remove dead validity gate
+2026-06-29	fan-li	createsend.com	23724	closed	AJ-1234: complexsequencemailingsendservice DB shard configuration
+2026-06-29	david-vanlaarveth	workflowbuildercontext.uiservice.core	334	open	JC-438: fix(queue): remove dead replace path + dead urlAndRequests exports
+2026-06-25	chris-luong	createsend.com	23685	closed	AJ-1151: condition rule selection
+2026-06-24	rashmita-pinto	createsend.com	23674	closed	ZUSE-458: Routing and feature flag for AICampaignAgentV2
+2026-06-24	fan-li	createsend.com	23660	closed	AJ-1148: Cancel schedule cascade and UI warning
+2026-06-17	sherry-lotfi	workflowcontext.triggereventcatalogservice.core	23	closed	AJ-1227 : Point production Elasticsearch to campmon.com endpoint
+2026-06-16	tai-woodley	createsend.com	23569	closed	ZUSE-98: Clean up unreleased Shopify forms work
+2026-06-16	samanthac	createsend.com	23566	closed	AJ-1144 - Sidebar for campaign details
+2026-06-12	sherry-lotfi	createsend.com	23544	closed	AJ-1141 Add condition for complex series 
+2026-06-10	fan-li	createsend.com	23519	closed	AJ-1185: ComplexSequenceAgent: scaffold new agent
+2026-06-09	alexis-tzanos	contentbuildercontext.staticresourceservice.core	1204	closed	Change day link changes
+2026-05-29	samanthac	workflowbuildercontext.uiservice.core	316	closed	Mock Flow UI - Add mock counts to steps and paths, and add statistic boxes to the sidebar
+2026-05-28	sherry-lotfi	workflowcontext.runnerservice.core	152	closed	AJ-1196 : Add feature flag gRPC client to RunnerService and monolith feature flag for journey reporting UI

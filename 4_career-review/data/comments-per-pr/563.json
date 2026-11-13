@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/SegmentTrackingPlan",
+  "pr_number": 563,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-880 - Subscriber notes tracking",
+  "pr_created_at": "2025-10-14T23:25:14Z",
+  "comments": [
+    {
+      "created_at": "2025-10-15T01:07:12Z",
+      "path": "TrackingPlan/events.yaml",
+      "html_url": "https://git.campmon.com/Engineering/SegmentTrackingPlan/pull/563#discussion_r152463",
+      "body": "Interacted with UI\r\n- action: Clicked\r\n- element: Note tab\r\n- context: Subscriber Snapshot"
+    }
+  ]
+}

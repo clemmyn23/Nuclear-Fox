@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowcontext.runnerservice.core",
+  "pr_number": 143,
+  "pr_author": "francois-naude",
+  "pr_title": "SRE-2737 Update build scripts to use IAM roles instead of keys",
+  "pr_created_at": "2025-10-15T01:58:54Z",
+  "comments": [
+    {
+      "created_at": "2025-10-16T03:06:50Z",
+      "path": "terraform/modules/service/service.tf",
+      "html_url": "https://git.campmon.com/Engineering/workflowcontext.runnerservice.core/pull/143#discussion_r152557",
+      "body": "I don't understand the rationale behind the tf formatter rules sometimes 😅 "
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "platform/kafka-acls",
+  "pr_number": 89,
+  "pr_author": "russella",
+  "pr_title": "SMS-158: Allow InsightsKafkaConsumer to consume ContactClickedLinkInSmsMailing",
+  "pr_created_at": "2022-07-05T04:54:33Z",
+  "comments": [
+    {
+      "created_at": "2022-07-05T07:36:05Z",
+      "path": "topics.json",
+      "html_url": "https://git.campmon.com/platform/kafka-acls/pull/89#discussion_r104228",
+      "body": "```suggestion\r\n    \"consumers\": [ \"InsightsKafkaConsumer\" ],\r\n```"
+    }
+  ]
+}

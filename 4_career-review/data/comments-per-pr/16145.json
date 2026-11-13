@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16145,
+  "pr_author": "brian-luc",
+  "pr_title": "[MER-540] Introduce Sentry logging to new commerce frontend apps",
+  "pr_created_at": "2023-09-05T05:57:51Z",
+  "comments": [
+    {
+      "created_at": "2023-09-05T06:01:21Z",
+      "path": "srcfrontend/app/commercesettings/commercesettings.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16145#discussion_r125406",
+      "body": "Should include the throttling function. \r\n`import {limitErrorMessages} from '@createsend/shared/utils/sentryUtils';`\r\n```\r\n    beforeSend: limitErrorMessages,\r\n    blacklistUrls: [/^https:\\/\\/cdn\\.segment\\.com\\/analytics\\.js/],\r\n```\r\nNot sure if there are more blacklist urls. "
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16128,
+  "pr_author": "subrat-shrestha",
+  "pr_title": "EL-1309-b InApp 2FA",
+  "pr_created_at": "2023-09-04T02:01:15Z",
+  "comments": [
+    {
+      "created_at": "2023-09-07T02:55:39Z",
+      "path": "srcfrontend/app/memberprofile/memberprofile.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16128#discussion_r125540",
+      "body": "Wait why `HashRouter as BrowserRouter` "
+    },
+    {
+      "created_at": "2023-09-07T23:19:13Z",
+      "path": "srcfrontend/app/memberprofile/memberprofile.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16128#discussion_r125605",
+      "body": "You should be able to use HashRouter as is (not recommended), don't rename it to something it isn't. \r\n\r\nProbably should fix this in the monolith router. "
+    },
+    {
+      "created_at": "2023-09-07T02:56:05Z",
+      "path": "srcfrontend/app/memberprofile/components/ReauthenticationPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16128#discussion_r125541",
+      "body": "Shouldn't need the cast here\r\n```suggestion\r\n            logEx(ex, 'validatepassword resulted in an error');\r\n\r\n```"
+    },
+    {
+      "created_at": "2023-09-07T02:57:20Z",
+      "path": "srcfrontend/app/memberprofile/memberprofile.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16128#discussion_r125542",
+      "body": "Consider useReducer may be a better fit instead of 5 useEffect setters. "
+    },
+    {
+      "created_at": "2023-09-07T03:00:26Z",
+      "path": "srcfrontend/app/twofactormanagement/components/ConfigureAuthenticator/ConfigureAuthenticator.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16128#discussion_r125544",
+      "body": "Does this need to be explicitly `false`?"
+    },
+    {
+      "created_at": "2023-09-07T03:01:37Z",
+      "path": "srcfrontend/app/memberprofile/components/ReauthenticationPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16128#discussion_r125545",
+      "body": "Please provide a valid `id` "
+    },
+    {
+      "created_at": "2023-09-08T01:52:30Z",
+      "path": "srcfrontend/app/memberprofile/memberprofile.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16128#discussion_r125615",
+      "body": "Just checking if you really need the `baseName` here. \r\nThis can mess with links inside the app. Users will get wonky links when they open link in new tab. "
+    }
+  ]
+}

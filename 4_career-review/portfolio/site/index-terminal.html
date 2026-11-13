@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clem@forge:~$</title>
+<meta name="description" content="Clement Ng — software engineer & convention IT director. Type 'help'.">
+<style>
+  :root{ --bg:#0b0e0b; --fg:#33ff66; --dim:#1f7a3f; --amber:#ffcc66; --cyan:#7fdbff; --pink:#ff7ab6; --err:#ff5d5d; }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0; background:var(--bg); color:var(--fg);
+    font-family:ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace;
+    font-size:15px; line-height:1.55;}
+  /* subtle CRT scanlines + glow */
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(transparent 0 2px, rgba(0,0,0,.18) 2px 4px); opacity:.5; z-index:2}
+  .screen{max-width:880px; margin:0 auto; min-height:100%; padding:clamp(14px,3vw,32px);
+    text-shadow:0 0 6px rgba(51,255,102,.35)}
+  #out > div{white-space:pre-wrap; word-break:break-word}
+  .prompt{color:var(--dim)} .prompt b{color:var(--fg)}
+  .cmd{color:#fff}
+  a{color:var(--cyan)} a:hover{color:#fff}
+  .amber{color:var(--amber)} .cyan{color:var(--cyan)} .pink{color:var(--pink)} .err{color:var(--err)} .dim{color:var(--dim)}
+  .inputline{display:flex; gap:8px; align-items:baseline}
+  .inputline .ps{color:var(--dim); white-space:nowrap}
+  .inputline .ps b{color:var(--fg)}
+  #cli{background:transparent; border:0; color:#fff; font:inherit; flex:1; outline:none; caret-color:var(--fg)}
+  .blink{animation:bl 1.05s steps(1) infinite} @keyframes bl{50%{opacity:0}}
+  ::selection{background:var(--fg); color:var(--bg)}
+  @media (prefers-reduced-motion: reduce){ .blink{animation:none} body::after{display:none} }
+</style>
+</head>
+<body>
+<div class="screen" id="screen">
+  <div id="out"></div>
+  <div class="inputline" id="line" style="display:none">
+    <span class="ps">clem@forge:<b>~</b>$</span>
+    <input id="cli" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="terminal input">
+  </div>
+</div>
+
+<script>
+const out = document.getElementById('out');
+const line = document.getElementById('line');
+const cli = document.getElementById('cli');
+const screen = document.getElementById('screen');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function el(html){ const d=document.createElement('div'); d.innerHTML=html; out.appendChild(d); return d; }
+function scroll(){ window.scrollTo(0, document.body.scrollHeight); }
+
+/* typed output, char by char */
+function typeLine(html, speed=12){
+  return new Promise(res=>{
+    const d=el('');
+    if(reduce){ d.innerHTML=html; scroll(); return res(); }
+    let i=0; const tmp=document.createElement('div'); tmp.innerHTML=html;
+    const text=tmp.textContent; // type plain, then swap to formatted
+    (function step(){
+      d.textContent=text.slice(0,i++);
+      scroll();
+      if(i<=text.length) setTimeout(step, speed);
+      else { d.innerHTML=html; res(); }
+    })();
+  });
+}
+function printNow(html){ el(html); scroll(); }
+
+const banner =
+`<span class="amber">  __  ___   ___ _ __ ___ _____</span>
+<span class="amber"> / _|/ _ \\ / _ \\ '__/ _ \\___ /</span>  <span class="dim">forge OS v8.0</span>
+<span class="amber">| |_| (_) |  __/ | |  __/ |_ \\</span>  <span class="dim">© Clement Ng — Sydney</span>
+<span class="amber"> \\__|\\___/ \\___|_|  \\___|___ /</span>  🔨🐱`;
+
+const ABOUT =
+`<span class="cyan">Clement Ng</span> — software engineer &amp; convention IT director, based in Sydney.
+8+ years building SaaS and real-time systems; 7+ years keeping one of Australia's
+largest anime conventions online. Founding engineer → Director of IT.
+Likes: reliable systems, fantasy novels, strong coffee, and cats (emoji &amp; animal). 加油`;
+
+const NEOFETCH =
+`<span class="pink">       /\\_/\\        </span> <span class="cyan">clem</span>@<span class="cyan">forge</span>
+<span class="pink">      ( o.o )       </span> -----------
+<span class="pink">       &gt; ^ &lt;        </span> <span class="amber">role</span>: Senior Software Engineer
+                    <span class="amber">also</span>: Director of IT @ SMASH! (45,000+ attendees)
+                    <span class="amber">stack</span>: C#/.NET · TypeScript/React · gRPC · Kafka · MSSQL
+                    <span class="amber">exp</span>: 8 years · <span class="amber">uptime</span>: 5 conventions, 0 critical failures
+                    <span class="amber">prs</span>: 530+ authored · 550+ reviewed (whole dept)
+                    <span class="amber">fuel</span>: coffee ☕ · <span class="amber">pet</span>: cat 🐱 · <span class="amber">reads</span>: fantasy`;
+
+const commands = {
+  help(){ return `available commands:
+  <span class="cyan">about</span>        who is this guy
+  <span class="cyan">whoami</span>       short version
+  <span class="cyan">skills</span>       the tech stack
+  <span class="cyan">experience</span>   work history
+  <span class="cyan">smash</span>        the convention life
+  <span class="cyan">achievements</span> trophy shelf
+  <span class="cyan">talk</span>         a conference talk (video)
+  <span class="cyan">contact</span>      how to reach me
+  <span class="cyan">neofetch</span>     system info, cat included
+  <span class="cyan">coffee</span>       ☕
+  <span class="cyan">clear</span>        wipe the screen
+  <span class="dim">…and maybe a few that aren't listed. it's a terminal. poke around.</span>`; },
+  about(){ return ABOUT; },
+  whoami(){ return `clement — engineer by weekday, convention IT director by also-weekday. 🐱`; },
+  skills(){ return `<span class="amber">languages</span>   C#, TypeScript, JavaScript, Java
+<span class="amber">frontend</span>    React, .NET, Express.js, Jest, NUnit
+<span class="amber">backend</span>     gRPC, Kafka, event-driven services, MSSQL, MySQL, PostgreSQL, Redis, DynamoDB
+<span class="amber">infra</span>       AWS, Azure, Terraform, TeamCity, GitHub Actions, Git, Jira, Vite, Webpack
+<span class="amber">specials</span>    design docs that pass review · migrations that land on try #3 · offline-first systems`; },
+  experience(){ return `<span class="cyan">Campaign Monitor (Marigold)</span>  2021–now   Software engineer / feature lead. Full-stack across 6 product domains; JS-crew reviewer. Led CRM-Lite end-to-end (backfill pipeline for 20M-contact lists). 530+ PRs authored, 550+ reviewed across the dept.
+<span class="cyan">WiseTech Global</span>            2019–2021  Sole owner of a real-time ship-tracking system used by all CargoWise customers.
+<span class="cyan">EdApp LMS</span>                  2018–2019  Mobile/LMS features, 24/7 on-call.
+<span class="cyan">SMASH! Inc.</span>                2018–now   Founding engineer → Director of IT (see: <span class="cyan">smash</span>).`; },
+  smash(){ return `<span class="pink">SMASH!</span> — Sydney Manga and Anime Show, one of Australia's largest conventions.
+Started as 1 of 5 founding engineers; built the ticketing + door-scanning system.
+Now Director of IT: 25 volunteers / 3 leads, Board-level strategy, and live tech
+for <span class="amber">45,000+ attendees</span> — <span class="amber">5 consecutive years, zero critical failures</span>.
+Lesson learned: the venue network ALWAYS dies at doors-open. Design for it.`; },
+  achievements(){ return `🏆 <span class="amber">Zero-Critical-Failures ×5</span> .......... Legendary
+🦉 Drew the Rest of the Owl
+😅 Survived 5 C-suites
+👥 Founding Five → Guild of 25
+🐱 Emoji Grandmaster`; },
+  talk(){ return `🎤 "Preparing IT Infrastructure for an Anime Convention"
+   keeping tech alive for 45,000 people.
+   ▶ <a href="https://www.youtube.com/watch?v=bBZFJ9uXrbU" target="_blank" rel="noopener">youtube.com/watch?v=bBZFJ9uXrbU</a>`; },
+  contact(){ return `📧 <a href="mailto:clementng23@gmail.com">clementng23@gmail.com</a>
+🔗 <a href="https://www.linkedin.com/in/clemchowder/" target="_blank" rel="noopener">linkedin.com/in/clemchowder</a>
+🐙 <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">github.com/YOUR_GITHUB</a>   <span class="dim">(replace me!)</span>
+<span class="dim">open to: senior/staff/lead roles · fantasy recs · ride buddies</span>`; },
+  neofetch(){ return NEOFETCH; },
+  coffee(){ return `☕ brewing... +2 Focus applied. you may now deploy on a Friday. (do not deploy on a Friday.)`; },
+  ls(){ return `about.txt  skills.json  experience.log  smash/  achievements/  contact.vcf  <span class="dim">secret/</span>`; },
+  cat(a){ if(/secret/.test(a)) return `<span class="pink">🐱 meow. the secret is: there is no secret. just ship it and review your PRs.</span>`;
+          return `usage: cat &lt;file&gt; — try 'about', or 'cat secret'`; },
+  sudo(a){ if(/sandwich/.test(a)) return `<span class="err">you are not in the sudoers file. but here's a 🥪 anyway. don't tell anyone.</span>`;
+           return `<span class="err">[sudo] password for clem: </span><span class="dim">nice try 😏</span>`; },
+  rm(a){ if(/-rf/.test(a)) return `<span class="err">nope. we don't do that here. (this engineer reverts; he does not rm -rf /.)</span>`;
+         return `rm: missing operand`; },
+  exit(){ return `there is no escape. but you can <span class="cyan">clear</span> the screen. 🐱`; },
+  echo(a){ return a||''; },
+  hello(){ return `oh hey 👋 try <span class="cyan">help</span>.`; },
+  hi(){ return commands.hello(); }
+};
+
+const ALIASES = { '加油':()=>'加油 💪 you too.', 'meow':()=>'🐱 meow.', 'man':()=>commands.help() };
+
+function run(raw){
+  const input = raw.trim();
+  if(!input) return '';
+  const [name, ...rest] = input.split(/\s+/);
+  const arg = rest.join(' ');
+  if(name==='clear'){ out.innerHTML=''; return null; }
+  const fn = commands[name] || ALIASES[name];
+  if(fn) return fn(arg);
+  return `<span class="err">command not found: ${escapeHtml(name)}</span> — type <span class="cyan">help</span>`;
+}
+function escapeHtml(s){ return s.replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+/* command history */
+const history=[]; let hpos=-1;
+
+cli.addEventListener('keydown', e=>{
+  if(e.key==='Enter'){
+    const v=cli.value;
+    printNow(`<span class="prompt">clem@forge:<b>~</b>$</span> <span class="cmd">${escapeHtml(v)}</span>`);
+    if(v.trim()){ history.unshift(v); hpos=-1; }
+    const res=run(v);
+    if(res!==null && res!=='') printNow(res);
+    cli.value=''; scroll();
+  } else if(e.key==='ArrowUp'){ e.preventDefault(); if(hpos<history.length-1){ hpos++; cli.value=history[hpos]; } }
+  else if(e.key==='ArrowDown'){ e.preventDefault(); if(hpos>0){ hpos--; cli.value=history[hpos]; } else { hpos=-1; cli.value=''; } }
+});
+screen.addEventListener('click', ()=>cli.focus());
+
+/* boot sequence */
+(async function boot(){
+  printNow(banner);
+  await typeLine("",1);
+  await typeLine(`<span class="dim">booting forge OS</span> ... <span class="amber">ok</span>`, 18);
+  await typeLine(`<span class="dim">mounting</span> /coffee ... <span class="amber">+2 focus</span>`, 14);
+  await typeLine(`<span class="dim">summoning cat</span> ... 🐱 <span class="amber">ok</span>`, 14);
+  await typeLine("", 1);
+  await typeLine(`<span class="prompt">clem@forge:<b>~</b>$</span> <span class="cmd">whoami</span>`, 22);
+  await typeLine(commands.whoami(), 10);
+  await typeLine("", 1);
+  await typeLine(`type <span class="cyan">help</span> to explore, or <span class="cyan">neofetch</span> for the cat. ↑/↓ for history.`, 10);
+  line.style.display='flex';
+  cli.focus();
+})();
+
+/* console + konami */
+console.log("%c🔨 forge OS — you opened the real console. respect.","color:#33ff66;font-weight:bold");
+console.log("%clet's talk → clementng23@gmail.com","color:#7fdbff");
+(function(){const s=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];let i=0;
+addEventListener('keydown',e=>{i=(e.key===s[i])?i+1:0;if(i===s.length){i=0;printNow('<span class="pink">🐱🐱🐱 CHEAT ACTIVATED: infinite coffee. go forth. 🐱🐱🐱</span>');scroll();}});})();
+</script>
+</body>
+</html>

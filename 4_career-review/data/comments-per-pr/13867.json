@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13867,
+  "pr_author": "david-connell",
+  "pr_title": "Sms 242-b apply frontend changes to preview and report, sync back end to send me",
+  "pr_created_at": "2022-10-17T06:39:48Z",
+  "comments": [
+    {
+      "created_at": "2022-10-18T03:38:53Z",
+      "path": "srcfrontend/app/smscampaignreport/components/SMSReportsSnapshotPage/SMSSnapshotMobilePreview.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13867#discussion_r109463",
+      "body": "Empty line here\r\n```suggestion\r\n```"
+    },
+    {
+      "created_at": "2022-10-18T03:40:20Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsMessageStepDisplay.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13867#discussion_r109465",
+      "body": "Indent and empty line here. \r\n\r\n```suggestion\r\n        return hasOrganizationPrefixEnabled || hasUnsubscribeInstructionsEnabled ? 'Custom' : 'Disabled';\r\n    };\r\n```"
+    },
+    {
+      "created_at": "2022-10-18T03:45:49Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsMessageStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13867#discussion_r109467",
+      "body": "Can you fix `Nonbranded` to `NonBranded` while you are at it please. "
+    },
+    {
+      "created_at": "2022-10-18T03:52:54Z",
+      "path": "srcfrontend/app/utils/sms/smsMessageUtil/smsMessagePrefix.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13867#discussion_r109470",
+      "body": "ReactNodeArray should have `key` props for each entry. \r\nEslint will probably complain in the future. \r\nI suggest changing this to \r\n```\r\n<React.Fragment>\r\n    {messagePrefix}: {renderedMessage}\r\n</React.Fragment>\r\n```"
+    }
+  ]
+}

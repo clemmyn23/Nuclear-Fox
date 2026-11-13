@@ -1,0 +1,33 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12912,
+  "pr_author": "azissis",
+  "pr_title": "MER-16 - add page to install shopify app from",
+  "pr_created_at": "2022-05-23T01:54:06Z",
+  "comments": [
+    {
+      "created_at": "2022-05-25T01:16:39Z",
+      "path": "srcfrontend/app/commercesettings/commercesettings.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12912#discussion_r101754",
+      "body": "Security thing - I thought we are trying to move away from this (data attributes injected into the html from c# side) and grab the client id via url parsing instead. \r\nI won't block this but maybe ask Ricky about it. "
+    },
+    {
+      "created_at": "2022-05-25T01:18:03Z",
+      "path": "srcfrontend/app/commercesettings/components/CommerceStoreRegistration/CommerceStoreRegistration.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12912#discussion_r101755",
+      "body": "Unused. I assume this will get cleaned up in the next PR..."
+    },
+    {
+      "created_at": "2022-05-25T01:21:29Z",
+      "path": "srcfrontend/app/commercesettings/components/CommerceStoreRegistration/states/StoreRegistrationForm/StoreRegistrationForm.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12912#discussion_r101757",
+      "body": "Check formatting here. Indents look funny. "
+    },
+    {
+      "created_at": "2022-05-25T03:45:06Z",
+      "path": "srcfrontend/app/commercesettings/components/CommerceStoreRegistration/states/StoreRegistrationForm/StoreRegistrationForm.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12912#discussion_r101782",
+      "body": "❤️ \r\nI have a big linter upgrade PR coming in a week or two, it should make this less painful 😆 "
+    }
+  ]
+}

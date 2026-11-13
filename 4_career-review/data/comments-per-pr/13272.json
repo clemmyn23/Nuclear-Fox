@@ -1,0 +1,27 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13272,
+  "pr_author": "jowers",
+  "pr_title": "MER-43b - Show success/error banner based on querystring",
+  "pr_created_at": "2022-07-13T10:31:53Z",
+  "comments": [
+    {
+      "created_at": "2022-07-19T05:26:31Z",
+      "path": "srcfrontend/app/commercesettings/components/CommerceStoreRegistration/CommerceStoreRegistration.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13272#discussion_r104979",
+      "body": "This will work but doesn't look stable. 🙈"
+    },
+    {
+      "created_at": "2022-07-19T05:47:47Z",
+      "path": "srcfrontend/app/commercesettings/components/CommerceStoreRegistration/CommerceStoreRegistration.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13272#discussion_r104984",
+      "body": "Try to export the props upstream in cmds repo if you have time."
+    },
+    {
+      "created_at": "2022-07-19T05:39:55Z",
+      "path": "srcfrontend/app/commercesettings/components/CommerceStoreRegistration/CommerceStoreRegistration.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13272#discussion_r104982",
+      "body": "Prefer curly quotes \r\nhttps://cmds.campmon.com/#/writing/punctuation\r\n"
+    }
+  ]
+}

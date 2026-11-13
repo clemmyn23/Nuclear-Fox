@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13398,
+  "pr_author": "oliver-toon",
+  "pr_title": "EL-749 Client settings custom access bug fixes",
+  "pr_created_at": "2022-08-05T06:22:59Z",
+  "comments": [
+    {
+      "created_at": "2022-08-10T02:29:13Z",
+      "path": "srcfrontend/app/clientsettings/components/SavePersonDialog/AccessToggle.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13398#discussion_r106102",
+      "body": "You'll need a `key` prop here. "
+    }
+  ]
+}

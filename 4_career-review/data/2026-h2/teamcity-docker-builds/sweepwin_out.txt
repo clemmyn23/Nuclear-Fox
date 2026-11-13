@@ -1,0 +1,15 @@
+windows builds 8916 missing stats 0
+ACTUAL 26 (incl FE PR until 6 Nov)       wait biz p50=   0 p90=  303 p99= 1495 | off-peak p90=   0 p99=   63 | $18,304/mo
+SIM 26 (calibration, same load)          wait biz p50=   0 p90=  275 p99=  966 | off-peak p90=   0 p99=   62 | $18,304/mo
+
+== Windows without any FE work (after JC-414): 7004 builds
+26 always-on                             wait biz p50=   0 p90=  145 p99=  504 | off-peak p90=   0 p99=    0 | $18,304/mo
+24 always-on                             wait biz p50=   0 p90=  225 p99=  587 | off-peak p90=   0 p99=    0 | $16,896/mo
+22 always-on                             wait biz p50=   0 p90=  321 p99=  769 | off-peak p90=   0 p99=   99 | $15,488/mo
+20 always-on                             wait biz p50=   0 p90=  461 p99= 1041 | off-peak p90=   0 p99=  235 | $14,080/mo
+18 always-on                             wait biz p50=   0 p90=  734 p99= 1494 | off-peak p90=   0 p99=  386 | $12,672/mo
+26 peak / 13 off-peak                    wait biz p50=   0 p90=  145 p99=  504 | off-peak p90= 367 p99=  897 | $13,283/mo
+24 peak / 12 off-peak                    wait biz p50=   0 p90=  225 p99=  587 | off-peak p90= 415 p99= 1091 | $12,261/mo
+22 peak / 11 off-peak                    wait biz p50=   0 p90=  321 p99=  769 | off-peak p90= 508 p99= 1304 | $11,240/mo
+24 peak / 8 off-peak                     wait biz p50=   0 p90=  225 p99=  587 | off-peak p90= 844 p99= 2392 | $10,716/mo
+22 peak / 8 off-peak                     wait biz p50=   0 p90=  321 p99=  769 | off-peak p90= 844 p99= 2392 | $10,081/mo

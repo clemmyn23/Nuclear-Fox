@@ -1,0 +1,87 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13570,
+  "pr_author": "david-connell",
+  "pr_title": "Sms 187 b javascript changes to prevent sending and display tooltips and unverif",
+  "pr_created_at": "2022-09-02T01:38:19Z",
+  "comments": [
+    {
+      "created_at": "2022-09-02T03:44:06Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/SmsDataProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107103",
+      "body": "This might be better off as a separate (new) context, doesn't really fit in with all the sms campaign stuff. \r\nUp for team debate. "
+    },
+    {
+      "created_at": "2022-09-02T03:45:52Z",
+      "path": "srcfrontend/app/cm-api/models/TFNVerificationStatusEnum.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107105",
+      "body": "Make sure you update this to match what's in the c# backend PR. "
+    },
+    {
+      "created_at": "2022-09-02T06:05:39Z",
+      "path": "srcfrontend/app/cm-api/models/TFNVerificationStatusEnum.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107128",
+      "body": "@david-connell Also change the file name to match please"
+    },
+    {
+      "created_at": "2022-09-02T03:46:19Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsFromStep/SmsFromStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107106",
+      "body": "stray `;` in the format string"
+    },
+    {
+      "created_at": "2022-09-02T03:48:28Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsFromStep/SmsFromStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107108",
+      "body": "Use `&rsquo;` or `\\u2019` for quotation marks in copy. \r\nhttps://cmds.campmon.com/#/writing/punctuation\r\n"
+    },
+    {
+      "created_at": "2022-09-02T03:50:48Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsFromStep/SmsFromStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107110",
+      "body": "Errr do you have eslint and prettier extensions installed on your vscode? \r\n\r\nElse or otherwise you can run `yarn lint --fix` in the `/srcfrontend` directory. "
+    },
+    {
+      "created_at": "2022-09-02T03:53:15Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsPrepareToSend/SmsPrepareToSendDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107111",
+      "body": "This looks messy. I'll revisit this later. "
+    },
+    {
+      "created_at": "2022-09-02T03:55:20Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsPrepareToSend/SmsPrepareToSendDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107112",
+      "body": "`use` prefix is usually reserved for react hooks. \r\nCan you use another prefix here? `Is` or `Has` etc. for booleans. \r\nSomething like `isTooltipEnabled` `setIsTooltipEnabled` "
+    },
+    {
+      "created_at": "2022-09-02T03:58:46Z",
+      "path": "srcfrontend/app/cm-api/utils/smsCampaignsUtils.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107113",
+      "body": "Probably don't need logging and the whole try-catch block here, but I guess it doesn't hurt. \r\nKeep in mind that `logEx` send logs to one of our monitoring services so in this case - not very helpful either. "
+    },
+    {
+      "created_at": "2022-09-02T06:30:07Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsFromStep/SmsFromStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107132",
+      "body": "The type system in Typescript is purely decorative, it only screams and paints red squiggly lines on your editor. \r\nVery different from C# where casting actually changes the value underneath or can throw at runtime. \r\nWhich means what you are doing here won't work. \r\n\r\nFirst step is to update `app\\cm-api\\models\\TFNVerificationStatusEnum.ts` (or new name `app\\cm-api\\models\\TollFreeNumberVerificationStatus.ts` ) to match what's getting served from the server - string literals, as seen on the screenshot in your PR description. \r\n\r\n```\r\nexport enum TollFreeNumberVerificationStatus {\r\n    NotApplicable = 'NotApplicable',\r\n    Unverified = 'Unverified',\r\n    Pending = 'Pending',\r\n    Verified = 'Verified',\r\n}\r\n```\r\n\r\nSecond step is to update the stuff here. \r\nYou can't do `<` comparisons with strings so you'll need to do `===` checks. \r\n```\r\nif (cmSmsClient.tollFreeNumberStatus !== TollFreeNumberVerificationStatus.Verified) {\r\n  // do stuff\r\n} else {\r\n  // do other stuff\r\n}\r\n```\r\n\r\nWhile you are at it you may want to update `app\\cm-api\\models\\CmSmsClient.ts` interface property `tollFreeNumberStatus` to be of type `TollFreeNumberVerificationStatus` instead of `string` \r\n\r\nHope this makes sense. "
+    },
+    {
+      "created_at": "2022-09-06T03:54:37Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsPrepareToSend/SmsPrepareToSendDialog.spec.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107231",
+      "body": "console log here"
+    },
+    {
+      "created_at": "2022-09-06T03:55:04Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsPrepareToSend/SmsPrepareToSendDialog.spec.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107232",
+      "body": "linting"
+    },
+    {
+      "created_at": "2022-09-06T04:02:43Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsPrepareToSend/SmsPrepareToSendDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13570#discussion_r107233",
+      "body": "Should we enable the next button on `NotApplicable` status?"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 14013,
+  "pr_author": "amy-diaz",
+  "pr_title": "EL-798 Instrumentation - Tax information pages",
+  "pr_created_at": "2022-11-07T02:13:00Z",
+  "comments": [
+    {
+      "created_at": "2022-11-14T05:13:35Z",
+      "path": "srcfrontend/app/accountsettings/components/TaxDetails/TaxDetailsPage.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14013#discussion_r110592",
+      "body": "`isNullOrEmpty` is imported but not used. \r\nDid you mean to pass in `clientId` for the first arg here? "
+    }
+  ]
+}

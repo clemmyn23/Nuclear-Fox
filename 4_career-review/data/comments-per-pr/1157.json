@@ -1,0 +1,39 @@
+{
+  "pr_repo": "Engineering/contentbuildercontext.staticresourceservice.core",
+  "pr_number": 1157,
+  "pr_author": "tai-woodley",
+  "pr_title": "STRK-66: Update rate limiting error messages and show upgrade dialog for lite pl",
+  "pr_created_at": "2025-12-17T05:24:41Z",
+  "comments": [
+    {
+      "created_at": "2026-01-15T00:11:28Z",
+      "path": "react/apps/emailreview/src/EmailReview.tsx",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1157#discussion_r158501",
+      "body": "what's this ts-ignore for? "
+    },
+    {
+      "created_at": "2026-01-15T00:57:11Z",
+      "path": "react/apps/emailreview/src/EmailReview.tsx",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1157#discussion_r158517",
+      "body": "This is so strange but ok 😔 "
+    },
+    {
+      "created_at": "2026-01-15T00:14:30Z",
+      "path": "react/apps/emailreview/src/services/EmailReviewService.ts",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1157#discussion_r158502",
+      "body": "This throws the error class definition. \r\n\r\n```suggestion\r\n        throw new Error();\r\n```\r\nto get the stack trace and all. \r\n\r\n"
+    },
+    {
+      "created_at": "2026-01-15T00:15:13Z",
+      "path": "react/apps/emailreview/src/services/EmailReviewService.ts",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1157#discussion_r158503",
+      "body": "here too"
+    },
+    {
+      "created_at": "2026-01-15T00:15:18Z",
+      "path": "react/apps/emailreview/src/services/EmailReviewService.ts",
+      "html_url": "https://git.campmon.com/Engineering/contentbuildercontext.staticresourceservice.core/pull/1157#discussion_r158504",
+      "body": "also "
+    }
+  ]
+}

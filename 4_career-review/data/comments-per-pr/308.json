@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 308,
+  "pr_author": "fan-li",
+  "pr_title": "AJ-676: Fix or prevent analytics tracking errors in the Journey Builder",
+  "pr_created_at": "2025-06-20T02:48:29Z",
+  "comments": [
+    {
+      "created_at": "2025-06-20T03:06:20Z",
+      "path": "WorkflowBuilderContext.UIService/ui/utils/analytics/analytics.ts",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/308#discussion_r146210",
+      "body": "This doesn't go here. \r\nIt's not guaranteed that the client id comes from the query param for every place that uses this utility function. "
+    }
+  ]
+}

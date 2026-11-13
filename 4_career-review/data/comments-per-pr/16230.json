@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 16230,
+  "pr_author": "brian-luc",
+  "pr_title": "[MER-669] Enable Local Storage to manage new Prebuilt Journeys Banner",
+  "pr_created_at": "2023-09-18T08:10:48Z",
+  "comments": [
+    {
+      "created_at": "2023-09-21T03:58:48Z",
+      "path": "srcfrontend/app/automation/components/recipeHelpers.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16230#discussion_r126213",
+      "body": "Are these used? "
+    },
+    {
+      "created_at": "2023-09-21T04:04:58Z",
+      "path": "srcfrontend/app/automation/components/AutomationPrebuiltJourneysBanner/AutomationPrebuiltJourneysBanner.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/16230#discussion_r126214",
+      "body": "Suggestion: \r\nYou probably don't need the separate \r\n`const [showBanner, setShowBanner] = useState(false);`. \r\n\r\n`useLocalStorage` looks like it can do everything you need, default to true. \r\n\r\nhttps://git.campmon.com/CMDS/cm-utils/blob/main/packages/use-local-storage/src/index.ts"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Ng — Résumé 2026-11 (ATS)</title>
+<style>
+  /* ATS-SAFE: single column, standard headings, real text, no icons/graphics/columns.
+     Use THIS one for online application portals (Workday, Greenhouse, LinkedIn Easy Apply). A4 default. */
+  @page{ size:A4; margin:16mm 16mm; }
+  *{box-sizing:border-box}
+  body{max-width:200mm;margin:0 auto;padding:10mm 8mm;background:#fff;color:#111;
+    font-family:Arial,Helvetica,'Segoe UI',sans-serif;font-size:11pt;line-height:1.4}
+  .hint{font:600 12px Arial;color:#555;background:#f4f5f7;border:1px solid #dcdfe4;border-radius:8px;padding:10px 14px;margin-bottom:16px}
+  h1{font-size:22pt;margin:0 0 2px}
+  .role{font-size:12pt;font-weight:bold;margin:0 0 4px}
+  .contact{font-size:10.5pt;margin:0 0 12px}
+  a{color:#0a58ca}
+  h2{font-size:12pt;text-transform:uppercase;letter-spacing:1px;border-bottom:1.5px solid #111;
+    padding-bottom:2px;margin:16px 0 8px}
+  h3{font-size:11pt;margin:10px 0 1px}
+  .meta{font-size:10pt;color:#333;margin:0 0 4px}
+  ul{margin:4px 0 0;padding-left:20px} li{margin:3px 0}
+  .tech{font-size:10pt;color:#333;margin-top:4px}
+  p{margin:0 0 8px}
+  @media print{ .hint{display:none} body{padding:0} }
+</style>
+</head>
+<body>
+<div class="hint">📄 ATS-SAFE VERSION (2026-11). Use for online application forms. Fill or delete every ⟨…⟩ before exporting (⌘/Ctrl+P → Save as PDF).</div>
+
+<h1>Clement Ng</h1>
+<p class="role">Senior Software Engineer · Director of IT</p>
+<p class="contact">Sydney, Australia | +61 413-424-888 | clementng23@gmail.com | linkedin.com/in/clemchowder</p>
+
+  
+
+  <h2>Summary</h2>
+<p>Senior full-stack engineer (<strong>8+ years</strong>) who leads customer-facing features from discovery through delivery at a global email-marketing SaaS. I scope the work, drive the architecture and rollout decisions, bring product, design and partner teams with me, and own launch readiness. Hands-on across React/TypeScript, C#/.NET, gRPC/Kafka and SQL. I also run IT for one of Australia's largest pop-culture conventions as <strong>Director of IT</strong>, leading a 25-person team for 45,000+ attendees.</p>
+
+  <h2>Experience</h2>
+
+  
+    <h3>Software Engineer — Campaign Monitor (Marigold)</h3>
+<p class="meta">Apr 2021 – Present · Sydney</p>
+    <p class="meta">Global email-marketing SaaS; .NET monolith plus a gRPC/Kafka microservice mesh.</p>
+    <ul>
+      <li><strong>Led SMS onboarding (technical lead in practice)</strong>, one of Product's highest priorities: replaced a manual, support-run registration process with an in-app Twilio flow. Wrote the plan the PM adopted, staged the rollout because carrier registrations can't be undone, built an <strong>idempotent provisioning API</strong> so retries never buy a duplicate number, and merged three provisioning code paths into one. Dev-complete in 2 months; testing with real customers since Nov 2026. ⟨N customers registered⟩</li>
+      <li><strong>Owned the builder canvas and launch readiness for Drip Campaigns</strong> (branching email sequences), shipped to <strong>every plan</strong> in Oct 2026. Defended the send-pipeline schema change with an impact audit (7 files vs ~20–30) and wrote the launch runbook the outgoing tech lead named as the template. ⟨N accounts / M campaigns⟩</li>
+      <li><strong>Feature tech lead, CRM Lite (single customer view):</strong> took the design through architecture review, settled schema and GDPR-deletion decisions with DBAs and the platform team, and delivered a SQS→Kafka backfill pipeline sized for 20-million-contact lists.</li>
+      <li><strong>Also shipped:</strong> Brand Hub V2 colour editing (sole frontend owner; the most common customer request), and earlier SMS sending (React → gRPC → Kafka), Shopify migration tooling, Journeys automation steps, and a .NET Core gRPC service extracted from the monolith under production load.</li>
+      <li><strong>Production and platform:</strong> resolved four production incidents end-to-end in 2026, including a customer's broken RSS campaign (root cause in under 2 hours, automation paused, fixed send verified) and a cross-team dead-letter-queue regression. Initiated the Docker migration of frontend CI (<strong>~70% less compute per pull request</strong>, deploy package build ~40% faster); earlier modernised the frontend toolchain (Vite/esbuild, TypeScript 5, React 18).</li>
+      <li><strong>Multiplier:</strong> authored ~590 and reviewed ~620 pull requests across 120+ engineers; mentor and technical interviewer. Ran the build phase of an AI-assisted service migration whose evidence led leadership <em>not</em> to adopt it (~2× the code, ~3× the maintenance).</li>
+    </ul>
+    Tech: C#/.NET (Framework → .NET 9), TypeScript/React 18, React Query, gRPC + protobuf, Kafka, SQS, MSSQL, Redis, DynamoDB, Docker, Terraform, AWS, Datadog, TeamCity; AI-assisted development (Claude Code).
+  
+
+  
+    <h3>Associate Software Developer — WiseTech Global</h3>
+<p class="meta">May 2019 – Mar 2021 · Sydney</p>
+    <p class="meta">Global logistics-software platform (CargoWise).</p>
+    <ul>
+      <li><strong>Sole owner of the AIS ship-tracking system</strong> (React, TypeScript, Google Maps) delivering real-time vessel visibility to all CargoWise customers, a responsibility above my title.</li>
+      <li>Maintained and extended the <strong>MAWB air-cargo automation system</strong> ingesting airline/carrier data (C#, MSSQL); UI enhancements to the in-house PAVE task platform.</li>
+    </ul>
+  
+
+  
+    <h3>Software Engineer (Creative Licence Digital) — EdApp LMS</h3>
+<p class="meta">Feb 2018 – May 2019 · Sydney</p>
+    <ul>
+      <li>Built peer-authoring templates and mobile features (React Native, Backbone.js, Cordova); audit logging for push notifications; 24/7 on-call, CI/CD, automated testing.</li>
+    </ul>
+  
+
+  <h2>Engineering Leadership (Volunteer)</h2>
+
+  
+    <h3>Director of IT — SMASH! Inc.</h3>
+<p class="meta">Nov 2025 – Present</p>
+    <p class="meta">Sydney Manga and Anime Show, one of Australia's largest pop-culture conventions.</p>
+    <ul>
+      <li><strong>Lead IT across Engineering, Systems and Support: 25 volunteers, 3 leads.</strong> Set IT strategy with the Board and Executive; own a multi-year roadmap (cost, infrastructure scaling, internal systems, volunteer engineering operations).</li>
+      <li>Accountable for <strong>ticketing, access control, networking and on-site incident response for 45,000+ attendees</strong>.</li>
+    </ul>
+  
+
+  
+    <h3>Assistant IT Director · Software Developer — SMASH! Inc.</h3>
+<p class="meta">Nov 2018 – Nov 2025</p>
+    <ul>
+      <li><strong>Founding engineer (team of 5):</strong> designed and built the integrated ticketing and mobile-scanning system for 40,000+ attendees and vendors.</li>
+      <li>Grew the team from 5 engineers; planned, delegated and reviewed work; <strong>delivered 5 consecutive conventions with zero critical IT failures</strong>.</li>
+    </ul>
+  
+
+  <h2>Education · Speaking · Skills</h2>
+  <p><strong>B.Sc. Computer Science</strong>, University of New South Wales (2014–2017)</p>
+  <p><strong>Talk:</strong> “Preparing IT Infrastructure for an Anime Convention”, Campaign Monitor engineering-wide retreat, Jun 2025 · <a href="https://www.youtube.com/watch?v=bBZFJ9uXrbU">youtube.com/watch?v=bBZFJ9uXrbU</a></p>
+  <ul><li><strong>Languages:</strong> TypeScript, JavaScript, C#, Java, SQL</li><li><strong>Frontend:</strong> React, React Query, Vite, Webpack, Jest</li><li><strong>Backend &amp; data:</strong> .NET, gRPC, Kafka, SQS, MSSQL, PostgreSQL, Redis, DynamoDB</li><li><strong>Infra &amp; delivery:</strong> AWS, Docker, Terraform, TeamCity, GitHub Actions, Datadog, feature-flagged staged rollouts</li></ul>
+
+</body>
+</html>

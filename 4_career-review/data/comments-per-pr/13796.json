@@ -1,0 +1,99 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 13796,
+  "pr_author": "david-connell",
+  "pr_title": "Sms 241 b frontend changes for toggles, updating saving toggle info to database",
+  "pr_created_at": "2022-10-06T02:00:19Z",
+  "comments": [
+    {
+      "created_at": "2022-10-13T00:40:19Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsComplianceToggles/SmsComplianceToggles.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109225",
+      "body": "_nudge_"
+    },
+    {
+      "created_at": "2022-10-12T00:36:58Z",
+      "path": "srcfrontend/app/cm-api/models/CmSMSClient.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109175",
+      "body": "`defaultMessagePrefix` is a nullable column in the db. \r\n```suggestion\r\n    defaultMessagePrefix: string | null;\r\n```\r\n"
+    },
+    {
+      "created_at": "2022-10-12T00:39:39Z",
+      "path": "srcfrontend/app/cm-api/models/CmSMSMailing.ts",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109176",
+      "body": "`messagePrefixAtSend` is also a nullable column in the db. \r\nThis means c# server will return `null` and not `undefined`. \r\n\r\nA more correct typing would be \r\n```suggestion\r\n    messagePrefixAtSend: string | null;\r\n```\r\nOr you can op to transform the null to undefined at where you do the fetch call. "
+    },
+    {
+      "created_at": "2022-10-12T00:42:29Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/SmsDataProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109177",
+      "body": "Prefer \r\n```suggestion\r\n                        hasOrganizationPrefixEnabled: Boolean(smsMailing.messagePrefixAtSend),\r\n```\r\n\r\nor \r\n```\r\nimport {isNullOrEmpty} from '@cm-utils/is-null-or-empty';\r\n\r\n                        hasOrganizationPrefixEnabled: !isNullOrEmpty(smsMailing.messagePrefixAtSend),\r\n```"
+    },
+    {
+      "created_at": "2022-10-12T00:43:30Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsComplianceToggles/SmsComplianceToggles.scss",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109178",
+      "body": "Probably need to use `rem()`. \r\nAlso include html-css-crew for review for any css changes "
+    },
+    {
+      "created_at": "2022-10-12T00:51:47Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsComplianceToggles/SmsComplianceToggles.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109180",
+      "body": "Optional. \r\nConsider splitting this off into individual files for each tooltip component. "
+    },
+    {
+      "created_at": "2022-10-12T03:45:17Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsComplianceToggles/SmsMessageToggles.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109195",
+      "body": "File name should match the component name please. "
+    },
+    {
+      "created_at": "2022-10-13T00:26:31Z",
+      "path": "app.tests/CampMon.CmAPI.Test/Endpoints/Sms/SmsServiceTests.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109219",
+      "body": "[nit] space after comma please"
+    },
+    {
+      "created_at": "2022-10-13T00:26:52Z",
+      "path": "app/CampMon.Data.NetStandard/Sms/SmsMailingRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109220",
+      "body": "[nit] space after comma please. "
+    },
+    {
+      "created_at": "2022-10-13T00:41:31Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsComplianceToggles/SmsComplianceToggles.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109226",
+      "body": "```suggestion\r\n        if (!event) {\r\n```"
+    },
+    {
+      "created_at": "2022-10-13T00:50:41Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsComplianceToggles/SmsComplianceToggles.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109227",
+      "body": "Pretty sure you don't need `preventDefault()` in any of these. "
+    },
+    {
+      "created_at": "2022-10-13T00:56:19Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsMessageStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109228",
+      "body": "```suggestion\r\n        hasOrganizationPrefixEnabled: Boolean(messagePrefixAtSend),\r\n```"
+    },
+    {
+      "created_at": "2022-10-13T02:38:31Z",
+      "path": "app/CampMon.CmAPI/Endpoints/Sms/SmsService.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109232",
+      "body": "These should go through c-sharp crew too"
+    },
+    {
+      "created_at": "2022-10-13T02:38:48Z",
+      "path": "app/CampMon.Data.NetStandard/Sms/SmsMailingRepository.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109233",
+      "body": "These should go through sql crew review "
+    },
+    {
+      "created_at": "2022-10-13T02:42:14Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsComplianceToggles/SmsComplianceToggles.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/13796#discussion_r109235",
+      "body": "This is a no-op event handler. \r\nRecommend getting rid of this, and modify the Toggle component to optionally take in handlers instead. "
+    }
+  ]
+}

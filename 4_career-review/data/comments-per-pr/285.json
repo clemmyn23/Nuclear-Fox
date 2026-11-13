@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Engineering/workflowbuildercontext.uiservice.core",
+  "pr_number": 285,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-564 - Add send a test to Plain Text and HTML imported",
+  "pr_created_at": "2025-02-03T05:33:57Z",
+  "comments": [
+    {
+      "created_at": "2025-02-03T23:27:43Z",
+      "path": "WorkflowBuilderContext.UIService/ui/components/SendTestDialog/SendTestDialog.tsx",
+      "html_url": "https://git.campmon.com/Engineering/workflowbuildercontext.uiservice.core/pull/285#discussion_r141292",
+      "body": "Can you move this import above the css import line please. "
+    }
+  ]
+}

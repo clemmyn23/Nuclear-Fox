@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 21001,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-880 - Subscriber notes tracking implementation",
+  "pr_created_at": "2025-10-15T05:06:26Z",
+  "comments": [
+    {
+      "created_at": "2025-10-16T00:55:48Z",
+      "path": "srcfrontend/app/audience/components/SubscriberProfile/SubscriberActivity.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/21001#discussion_r152519",
+      "body": "Can you move this to SubscriberNotes component on-mount? \r\nHere https://git.campmon.com/Freshview/createsend.com/pull/20990/files#diff-cb5f0c673ac142e17de9884a33aca835eeb9604c06c9b7b7a4869fc9b1a96775R52-R54\r\n\r\nThat way it's cleaner and easier to reason. "
+    }
+  ]
+}

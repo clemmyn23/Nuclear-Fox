@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Ng — Résumé</title>
+<style>
+  /* ===== A4 by default; for US Letter change `size: A4` to `size: letter` and sheet width to 8.5in/11in. ===== */
+  @page { size: A4; margin: 0; }
+  :root{
+    --side:#1e2a3a;          /* sidebar bg (deep slate). try #232a33 charcoal or #2a1d16 forge-dark */
+    --side-ink:#e9eef5; --side-muted:#9fb0c4; --side-acc:#d9a441;  /* warm gold accent in sidebar */
+    --ink:#16202c; --body:#2b3543; --muted:#6b7787; --line:#dfe4ea; --acc:#1f3a5f; /* navy accent in main */
+    --sidew:34%;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:#e7e9ec; font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:10pt; line-height:1.4; color:var(--body); -webkit-font-smoothing:antialiased}
+  .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif}
+  /* the sheet paints BOTH columns via a gradient, so the sidebar colour continues across page breaks when printing */
+  .sheet{max-width:210mm; min-height:297mm; margin:18px auto;
+    background:linear-gradient(90deg, var(--side) 0 var(--sidew), #fff var(--sidew));
+    box-shadow:0 10px 44px rgba(20,30,50,.20);
+    display:grid; grid-template-columns:var(--sidew) 1fr; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+  .hint{max-width:210mm;margin:14px auto 0;font:600 12px system-ui;color:#55606e;background:#fff;
+    border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+  .hint b{color:var(--acc)}
+
+  /* ---------- sidebar ---------- */
+  .side{color:var(--side-ink); padding:15mm 8mm}
+  .side h1{font-size:21pt;line-height:1.05;margin:0;color:#fff;letter-spacing:.3px}
+  .side .role{color:var(--side-acc);font-weight:700;font-size:10pt;margin-top:6px;letter-spacing:.3px}
+  .side h2{font-size:8.6pt;text-transform:uppercase;letter-spacing:2.5px;color:var(--side-acc);
+    margin:18px 0 7px;border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:4px}
+  .side a{color:var(--side-ink);text-decoration:none;word-break:break-word}
+  .side .contact div{margin:3px 0;color:var(--side-muted);font-size:9pt}
+  .side .contact div span{color:var(--side-ink)}
+  .hl{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+  .hl .s{border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:7px 9px}
+  .hl .s b{display:block;color:#fff;font-size:14pt;line-height:1}
+  .hl .s span{color:var(--side-muted);font-size:7.8pt;text-transform:uppercase;letter-spacing:.6px}
+  .skill-grp{margin:6px 0}
+  .skill-grp .k{color:#fff;font-weight:700;font-size:8.7pt}
+  .skill-grp .v{color:var(--side-muted);font-size:8.7pt}
+  .side .small{font-size:8.6pt;color:var(--side-muted)}
+  .side .small b{color:var(--side-ink)}
+
+  /* ---------- main ---------- */
+  .main{padding:15mm 13mm 15mm 12mm}
+  .main h2{font-size:10.5pt;text-transform:uppercase;letter-spacing:2px;color:var(--acc);
+    margin:0 0 9px;padding-bottom:3px;border-bottom:1px solid var(--line)}
+  .main section + section{margin-top:15px}
+  .summary{margin:0 0 2px} .summary strong{color:var(--ink)}
+  .job{margin-bottom:10px;break-inside:avoid;page-break-inside:avoid}
+  .job .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .job .title{font-weight:700;color:var(--ink);font-size:10.4pt}
+  .job .title .co{color:var(--acc)}
+  .job .when{color:var(--muted);font-size:8.6pt;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .job .desc{color:var(--muted);font-style:italic;margin:2px 0 3px;font-size:9pt}
+  ul{margin:3px 0 0;padding-left:15px} li{margin:2.5px 0}
+  li strong{color:var(--ink)}
+  .tech{font-style:italic;color:var(--muted);font-size:8.8pt;margin-top:4px}
+
+  @media print{
+    html,body{background:#fff}
+    .sheet{margin:0;box-shadow:none;max-width:none}
+    .hint{display:none}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="hint">📄 Export: <b>⌘/Ctrl + P → Save as PDF</b>, turn ON “Background graphics” (so the sidebar prints). A4 by default — for US roles switch <code>size: A4</code> → <code>letter</code>. ⚠️ This designed layout is for sending to <b>humans</b>; use <b>resume-ats-plain.html</b> for online application portals.</div>
+
+<div class="sheet">
+  <aside class="side">
+    <h1 class="serif">Clement<br>Ng</h1>
+    <div class="role">Senior Software Engineer · Director of IT</div>
+
+    <h2>Contact</h2>
+    <div class="contact">
+      <div>📍 <span>Sydney, Australia</span></div>
+      <div>✆ <span>+61 413-424-888</span></div>
+      <div>✉ <span>clementng23@gmail.com</span></div>
+      <div>in <a href="https://www.linkedin.com/in/clemchowder/">linkedin.com/in/clemchowder</a></div>
+    </div>
+
+    <h2>Highlights</h2>
+    <div class="hl">
+      <div class="s"><b>8+ yrs</b><span>building software</span></div>
+      <div class="s"><b>45,000+</b><span>attendees kept online</span></div>
+      <div class="s"><b>5 / 5</b><span>events · zero critical failures</span></div>
+      <div class="s"><b>5 → 25</b><span>founding engineers → team led</span></div>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <div class="skill-grp"><div class="k">Languages</div><div class="v">JavaScript, TypeScript, C#, Java</div></div>
+    <div class="skill-grp"><div class="k">Frameworks</div><div class="v">React, .NET, Express.js, Jest, NUnit</div></div>
+    <div class="skill-grp"><div class="k">Data</div><div class="v">MSSQL, MySQL, PostgreSQL, Redis, DynamoDB</div></div>
+    <div class="skill-grp"><div class="k">Messaging / Infra</div><div class="v">gRPC, Kafka, AWS, Azure, Terraform</div></div>
+    <div class="skill-grp"><div class="k">CI/CD &amp; Tooling</div><div class="v">TeamCity, GitHub Actions, Git, Jira, Vite, Webpack</div></div>
+
+    <h2>Education</h2>
+    <div class="small"><b>B.Sc. Computer Science</b><br>University of New South Wales<br>2014 – 2017</div>
+
+    <h2>Speaking</h2>
+    <div class="small"><b>“Preparing IT Infrastructure for an Anime Convention”</b> — Campaign Monitor eng-wide retreat, Jun 2025. <a href="https://www.youtube.com/watch?v=bBZFJ9uXrbU">youtube.com/watch?v=bBZFJ9uXrbU</a></div>
+  </aside>
+
+  <main class="main">
+    <section>
+      <h2>Profile</h2>
+      <p class="summary">Full-stack software engineer with <strong>8+ years</strong> across SaaS platforms, real-time systems, and event-scale IT infrastructure. Owns features end-to-end through React/TypeScript front ends, .NET/C# services, and gRPC/Kafka messaging — and the design docs that get them through architecture review. For 7+ years has helped build and now leads the IT function for one of Australia's largest pop-culture conventions — founding engineer to Director of IT. Translates messy real-world constraints into reliable systems; the engineer teams defer to across a large codebase.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="row"><span class="title"><span class="co">Campaign Monitor (Marigold)</span> — Software Engineer</span><span class="when">Apr 2021 – Present</span></div>
+        <div class="desc">Email-marketing SaaS · createsend.com monolith + microservice mesh · six product domains.</div>
+        <ul>
+          <li><strong>Feature tech lead for CRM Lite (single-customer-view)</strong> — authored the architecture-reviewed design, brokered DBA schema + platform privacy decisions, and delivered end-to-end: protobuf contracts, a paged SQS/Kafka backfill pipeline sized for 20-million-contact lists, the subscriber-profile UI, and the prod rollout.</li>
+          <li><strong>Built the SMS product as a full vertical slice</strong> — React UI → CmAPI → gRPC services → link-tracking taxonomy across protobuf, Kafka ACLs, and shared messaging libs; geo expansion, hosted sign-up forms, preference-center consent.</li>
+          <li><strong>Led front-end build/toolchain modernisation (JavaScript Crew)</strong> — yarn workspaces, Vite/esbuild, Node LTS, TypeScript 4→5, React 18, Webpack 5; reviewed JS merges and owned shared libraries org-wide.</li>
+          <li><strong>Drove multi-repo, contract-first changes</strong> — permission/failure-handling features across 3–4 repos (monolith + protobuf + microservices + datastores) in coordinated sets.</li>
+          <li><strong>Migrated a workflow-lookup service from the .NET-Framework monolith to a standalone .NET Core gRPC service</strong>, landed cleanly after multiple production-load iterations.</li>
+          <li><strong>Delivered the Journeys/Automation step library</strong> — advanced custom-field expressions, a Wait-Until step (schema, persistence, cross-DB clone, GDPR-audited logging), send-a-test, condition-path swapping; all feature-flag-gated.</li>
+          <li><strong>Shipped Commerce / Shopify</strong> — migration assistant, Commerce Management pages, automation recipes, coordinating contracts across monolith, protobuf, importer service, and admin tool.</li>
+          <li>Authored <strong>20+ architecture/reference docs</strong>; ran bug-bash sessions; <strong>screened engineering candidates</strong>; mentored juniors. <strong>Authored 530+ and reviewed 550+ PRs across the entire engineering department.</strong></li>
+        </ul>
+        <div class="tech">C#/.NET (Framework→Core→9), TypeScript/React (16→18), gRPC + protobuf, Kafka, MSSQL, DynamoDB, Terraform, AWS.</div>
+      </div>
+
+      <div class="job">
+        <div class="row"><span class="title"><span class="co">WiseTech Global</span> — Associate Software Developer</span><span class="when">May 2019 – Mar 2021</span></div>
+        <div class="desc">Global logistics-software platform (CargoWise).</div>
+        <ul>
+          <li><strong>Sole owner of the AIS ship-tracking system</strong> (React, TypeScript, Google Maps) — real-time cargo visibility to all CargoWise customers; responsibility above the title.</li>
+          <li>Maintained the <strong>MAWB air-cargo automation system</strong>, ingesting airline/carrier data for near-real-time visibility (C#, MSSQL).</li>
+          <li>Delivered UI enhancements to <strong>PAVE</strong>, WiseTech's in-house task-management platform.</li>
+        </ul>
+        <div class="tech">C#, MSSQL, React, JavaScript/TypeScript.</div>
+      </div>
+
+      <div class="job">
+        <div class="row"><span class="title"><span class="co">EdApp LMS</span> — Software Engineer</span><span class="when">Feb 2018 – May 2019</span></div>
+        <div class="desc">Mobile-first learning-management platform (formerly Creative Licence Digital).</div>
+        <ul>
+          <li>Built peer-authoring templates and mobile features across React Native, Backbone.js, and Cordova.</li>
+          <li>Implemented logging and audit trails for the push-notification system.</li>
+          <li>Participated in 24/7 on-call support, CI/CD pipelines, and automated testing.</li>
+        </ul>
+        <div class="tech">CoffeeScript/JavaScript, MongoDB, React, C#, PostgreSQL, Jenkins, React Native.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Engineering Leadership — SMASH! Inc. (Volunteer)</h2>
+      <div class="job">
+        <div class="row"><span class="title">Director of IT</span><span class="when">Nov 2025 – Present</span></div>
+        <ul>
+          <li><strong>Lead IT across Engineering, Systems, and Support — 25 volunteers and 3 leads</strong> for one of Australia's largest pop-culture conventions.</li>
+          <li>Partner with the Board and Executive to <strong>set IT strategy</strong>; own a <strong>multi-year IT roadmap</strong> (cost, infra scaling, internal systems).</li>
+          <li>Accountable for <strong>ticketing, access control, networking, and on-site incident response for 45,000+ attendees</strong>.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="row"><span class="title">Assistant IT Director</span><span class="when">Jan 2020 – Nov 2025</span></div>
+        <ul>
+          <li>Coordinated cross-team delivery across IT, Ticketing, and Operations; <strong>grew the team from 5 engineers</strong>.</li>
+          <li><strong>Delivered 5 consecutive conventions with zero critical IT failures</strong>; ran live operations under peak load.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="row"><span class="title">Software Developer</span><span class="when">Nov 2018 – Jan 2020</span></div>
+        <ul>
+          <li><strong>Designed and built an integrated ticketing and mobile-scanning system</strong> for 40,000+ attendees and vendors, as one of a founding team of 5 engineers.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

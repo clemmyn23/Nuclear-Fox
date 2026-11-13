@@ -1,0 +1,39 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 15789,
+  "pr_author": "jbustamante",
+  "pr_title": "CL-63 Implement new social share link customisation feature for customer sent ca",
+  "pr_created_at": "2023-07-26T00:57:38Z",
+  "comments": [
+    {
+      "created_at": "2023-08-08T07:05:38Z",
+      "path": "srcfrontend/app/campaignreport/components/ShareDialog/ShareDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15789#discussion_r123795",
+      "body": "bump. (see Tommy's comment in this thread) "
+    },
+    {
+      "created_at": "2023-08-08T06:46:55Z",
+      "path": "srcfrontend/app/campaignreport/components/ShareDialog/ShareDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15789#discussion_r123791",
+      "body": "🙈"
+    },
+    {
+      "created_at": "2023-08-08T07:04:42Z",
+      "path": "srcfrontend/app/campaignreport/components/ShareDialog/ShareDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15789#discussion_r123794",
+      "body": "This hack will stop working when we update to React 18. \r\nDo you have something more reliable that can be set, such as image last modified date or image hash? "
+    },
+    {
+      "created_at": "2023-08-08T06:56:11Z",
+      "path": "srcfrontend/app/campaignreport/components/ShareDialog/ShareDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15789#discussion_r123792",
+      "body": "Nit: Sort imports please. "
+    },
+    {
+      "created_at": "2023-08-08T06:57:11Z",
+      "path": "srcfrontend/app/campaignreport/components/ShareDialog/ShareDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/15789#discussion_r123793",
+      "body": "Nit: this does not need to be a function"
+    }
+  ]
+}

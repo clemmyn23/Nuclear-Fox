@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clement Ng — ADMIT ONE</title>
+<meta name="description" content="Clement Ng — senior software engineer & convention IT director. Scan to enter.">
+<style>
+  :root{
+    --bg:#101826; --bg2:#0b1018; --ink:#eaf0fb; --muted:#94a3bd; --line:#26344a;
+    --pass:#34d39a; --accent:#ff5c8a; --accent2:#5cc8ff; --gold:#ffd166; --card:#16203200;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;color:var(--ink);
+    font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.6;
+    background:
+     radial-gradient(800px 500px at 80% -10%, rgba(92,200,255,.16), transparent 60%),
+     radial-gradient(700px 460px at 0% 110%, rgba(255,92,138,.14), transparent 60%),
+     var(--bg);}
+  .wrap{max-width:760px;margin:0 auto;padding:clamp(20px,5vw,56px)}
+  a{color:var(--accent2);text-decoration:none}a:hover{text-decoration:underline}
+  h2{font-size:1.3rem;margin:2.4em 0 .6em;letter-spacing:.4px}
+  .muted{color:var(--muted)}
+
+  /* lanyard */
+  .lanyard{display:flex;justify-content:center;margin-bottom:6px}
+  .strap{width:60px;height:60px;border:6px solid var(--line);border-bottom:0;border-radius:30px 30px 0 0}
+  .clip{width:14px;height:18px;background:var(--line);border-radius:3px;margin:-2px auto 0}
+
+  /* badge card */
+  .badge{max-width:430px;margin:0 auto;background:linear-gradient(180deg,#1b2740,#121a2b);
+    border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.5);overflow:hidden}
+  .badge .top{display:flex;justify-content:space-between;align-items:center;
+    padding:12px 18px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b1018;font-weight:800;letter-spacing:1px}
+  .badge .top small{font-weight:700;opacity:.8}
+  .badge .body{padding:22px;display:flex;gap:18px;align-items:center}
+  .avatar{width:84px;height:84px;border-radius:16px;display:grid;place-items:center;font-size:42px;
+    background:#0e1626;border:1px solid var(--line);flex:0 0 auto}
+  .who h1{margin:0;font-size:1.7rem;letter-spacing:.3px}
+  .who .role{color:var(--accent2);font-weight:700;margin-top:2px}
+  .who .sub{color:var(--muted);font-size:.9rem;margin-top:4px}
+  .tier{display:inline-block;margin-top:8px;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:3px 10px}
+  /* perforation + barcode stub */
+  .perf{border-top:2px dashed var(--line);position:relative}
+  .perf::before,.perf::after{content:"";position:absolute;top:-11px;width:20px;height:20px;border-radius:50%;background:var(--bg)}
+  .perf::before{left:-10px}.perf::after{right:-10px}
+  .stub{padding:14px 22px 20px;text-align:center}
+  .barcode{height:46px;margin:6px auto 8px;max-width:300px;
+    background:repeating-linear-gradient(90deg,#dfe7f5 0 2px,transparent 2px 4px,#dfe7f5 4px 7px,transparent 7px 9px,#dfe7f5 9px 12px,transparent 12px 16px);
+    border-radius:3px}
+  .stub .no{color:var(--muted);font-size:.78rem;letter-spacing:2px;font-family:ui-monospace,Menlo,monospace}
+
+  /* scanner */
+  .scan{max-width:430px;margin:18px auto 0;text-align:center}
+  .scanbtn{cursor:pointer;border:0;border-radius:14px;padding:13px 22px;font-weight:800;letter-spacing:.5px;
+    background:var(--pass);color:#04261a;box-shadow:0 10px 30px rgba(52,211,154,.25)}
+  .scanbtn:active{transform:translateY(1px)}
+  #scanResult{margin-top:12px;min-height:1.5em;font-weight:800;letter-spacing:2px}
+  .ok{color:var(--pass)}
+
+  /* info stubs */
+  .stubs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1em}
+  @media(max-width:560px){.stubs{grid-template-columns:1fr}.badge .body{flex-direction:column;text-align:center}}
+  .ticket{background:linear-gradient(180deg,#16203200,#0e1626);border:1px solid var(--line);border-radius:14px;padding:16px 18px;position:relative}
+  .ticket h3{margin:.1em 0 .4em;font-size:1rem;color:var(--gold)}
+  .ticket p{margin:0;color:var(--muted);font-size:.92rem}
+  .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:1em}
+  @media(max-width:560px){.nums{grid-template-columns:repeat(2,1fr)}}
+  .n{text-align:center;border:1px solid var(--line);border-radius:12px;padding:14px 6px;background:#0e162680}
+  .n b{display:block;font-size:clamp(1.2rem,5vw,1.8rem);color:var(--accent2)}
+  .n span{font-size:.74rem;color:var(--muted)}
+  .links a{display:inline-block;margin:0 14px 8px 0;font-weight:700}
+  footer{margin-top:3em;padding-top:1.2em;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;text-align:center}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="lanyard"><div class="strap"></div></div>
+  <div class="clip"></div>
+
+  <div class="badge">
+    <div class="top"><span>★ STAFF ACCESS</span><small>SMASH! · ALL AREAS</small></div>
+    <div class="body">
+      <div class="avatar">🔨</div>
+      <div class="who">
+        <h1>Clement Ng</h1>
+        <div class="role">Senior Software Engineer &amp; Director of IT</div>
+        <div class="sub">Sydney · a.k.a. <b>blacksmith</b> 🐱</div>
+        <span class="tier">Clearance: builds-things-that-survive-45k-people</span>
+      </div>
+    </div>
+    <div class="perf"></div>
+    <div class="stub">
+      <div class="barcode" aria-hidden="true"></div>
+      <div class="no">ADMIT ONE · NO. CN-2018-∞ · ZERO CRITICAL FAILURES</div>
+    </div>
+  </div>
+
+  <div class="scan">
+    <button class="scanbtn" id="scanBtn">📷 SCAN TO ENTER</button>
+    <div id="scanResult" aria-live="polite"></div>
+  </div>
+
+  <section>
+    <h2>🎟️ The stubs</h2>
+    <div class="stubs">
+      <div class="ticket"><h3>Day job</h3><p>Senior full-stack engineer at Campaign Monitor (Marigold) — C#/.NET, TypeScript/React, gRPC, Kafka, MSSQL. 8+ years. Led CRM Lite end-to-end (backfill for 20M-contact lists); 530+ PRs authored, 550+ reviewed.</p></div>
+      <div class="ticket"><h3>The con</h3><p>Director of IT at SMASH! — one of Australia's largest anime conventions. Founding engineer (2018) → leading a 25-person team for 45,000+ attendees.</p></div>
+      <div class="ticket"><h3>What I'm good at</h3><p>Reliability under chaos, offline-first systems, multi-repo / event-driven backends, and design docs that actually pass review.</p></div>
+      <div class="ticket"><h3>Off the clock</h3><p>Fantasy novels, coffee, cycling, and an unreasonable number of cat emojis. 加油 🐱</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📊 The numbers</h2>
+    <div class="nums">
+      <div class="n"><b>8</b><span>years shipping</span></div>
+      <div class="n"><b>45,000+</b><span>attendees online</span></div>
+      <div class="n"><b>5/5</b><span>events · 0 failures</span></div>
+      <div class="n"><b>5→25</b><span>founders → team</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎤 Feature presentation</h2>
+    <p>“Preparing IT Infrastructure for an Anime Convention” — keeping tech alive for 45,000 people. <a href="https://www.youtube.com/watch?v=bBZFJ9uXrbU" target="_blank" rel="noopener">Watch ▶</a></p>
+  </section>
+
+  <section>
+    <h2>📮 At the box office</h2>
+    <p class="links">
+      <a href="mailto:clementng23@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/clemchowder/" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- TODO: replace with your real GitHub -->
+      <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+    </p>
+    <p class="muted">Open to: senior / staff / lead roles · fantasy recs · ride buddies.</p>
+  </section>
+
+  <footer>
+    Built with HTML, spite, and an enchanted coffee mug. No critical failures were harmed in the making of this site. · 加油 🐱
+  </footer>
+</div>
+
+<script>
+/* ticket scanner demo */
+(function(){
+  const btn=document.getElementById('scanBtn'), res=document.getElementById('scanResult');
+  let n=0;
+  const lines=['✅ ENTRY GRANTED','🎟️ WELCOME TO THE FORGE','🐱 VIP: CAT-TIER ACCESS','🔨 BLACKSMITH VERIFIED'];
+  btn.addEventListener('click',()=>{
+    res.className='ok'; res.textContent='⏳ SCANNING…';
+    setTimeout(()=>{ res.textContent=lines[n++ % lines.length];
+      if(!matchMedia('(prefers-reduced-motion: reduce)').matches) confetti();
+    }, 500);
+  });
+  function confetti(){
+    const e=['🎉','🎊','✨','🐱','🔨'];
+    for(let i=0;i<28;i++){const c=document.createElement('div');
+      c.textContent=e[Math.floor(Math.random()*e.length)];
+      c.style.cssText='position:fixed;left:50%;top:60%;z-index:99;pointer-events:none;font-size:'+(14+Math.random()*16)+'px';
+      document.body.appendChild(c);
+      const dx=(Math.random()*2-1)*window.innerWidth*.4, dy=-(150+Math.random()*350);
+      c.animate([{transform:'translate(0,0)',opacity:1},{transform:`translate(${dx}px,${dy}px) rotate(${(Math.random()*2-1)*540}deg)`,opacity:0}],
+        {duration:1100+Math.random()*700,easing:'cubic-bezier(.2,.7,.3,1)'}).onfinish=()=>c.remove();
+    }
+  }
+})();
+
+/* konami → free entry for everyone */
+(function(){const s=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];let i=0;
+addEventListener('keydown',e=>{i=(e.key===s[i])?i+1:0;if(i===s.length){i=0;document.getElementById('scanResult').className='ok';document.getElementById('scanResult').textContent='🎟️ ALL-ACCESS UNLOCKED — the whole con is yours';}});})();
+
+/* console */
+console.log("%c🎟️ ADMIT ONE — you scanned the console. nice.","font-size:15px;font-weight:bold;color:#34d39a");
+console.log("%clet's talk → clementng23@gmail.com","color:#5cc8ff");
+</script>
+</body>
+</html>

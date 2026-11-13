@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 20061,
+  "pr_author": "genevieve-bruno",
+  "pr_title": "AJ-655 - Campaign Success - Add compare campaigns option",
+  "pr_created_at": "2025-06-13T07:07:45Z",
+  "comments": [
+    {
+      "created_at": "2025-06-16T05:39:47Z",
+      "path": "srcfrontend/app/components/CompareCampaignsDialog/CompareCampaignsDialog.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/20061#discussion_r146030",
+      "body": "Is it possible to pull this out and put it here too?"
+    }
+  ]
+}

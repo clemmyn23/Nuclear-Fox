@@ -1,0 +1,27 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 12825,
+  "pr_author": "michael-yin",
+  "pr_title": "SMS-125-c show SMS credits in checklist below preview",
+  "pr_created_at": "2022-05-06T05:59:53Z",
+  "comments": [
+    {
+      "created_at": "2022-05-09T03:51:47Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsMessageStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12825#discussion_r101013",
+      "body": "Can the `creditsToSend === 0` case actually happen in practice? \r\nI can think of when user selects a list with 0 subscribers but this guarded by the incompleteSteps check (entry `\"To\"` inside the `incompleteSteps` array) "
+    },
+    {
+      "created_at": "2022-05-09T03:53:05Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/SmsDataProvider.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12825#discussion_r101014",
+      "body": "Personal preference is to have the initial default to `isLoading: true` because it makes writing tests easier, and can simplify some data-is-ready checks later on. \r\nHappy with either way. Up to you. "
+    },
+    {
+      "created_at": "2022-05-09T03:55:19Z",
+      "path": "srcfrontend/app/smscampaigncreationchecklist/components/SmsMessageStep/SmsMessageStep.tsx",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/12825#discussion_r101015",
+      "body": "super minor feel free to ignore nit: Perhaps `hasRecipients`? "
+    }
+  ]
+}

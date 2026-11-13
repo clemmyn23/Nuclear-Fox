@@ -1,0 +1,21 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 14586,
+  "pr_author": "david-connell",
+  "pr_title": "Sms 513 Fix cursor skipping to end of line when editing the mobile number",
+  "pr_created_at": "2023-02-01T03:02:55Z",
+  "comments": [
+    {
+      "created_at": "2023-02-01T03:08:50Z",
+      "path": "app/js/src/app/contacts/copypastesubscribeform/copypastesubscribeform.logic.js",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14586#discussion_r114250",
+      "body": "Please keep these inside the sms `(function () {})` context below so these variables are not exposed globally. "
+    },
+    {
+      "created_at": "2023-02-01T03:12:28Z",
+      "path": "app/js/src/app/contacts/copypastesubscribeform/copypastesubscribeform.logic.js",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/14586#discussion_r114254",
+      "body": "`??` nullish colleasing operator is not available in ie11. \r\nhttps://caniuse.com/mdn-javascript_operators_nullish_coalescing\r\n\r\n`?.` optional chaining operator is also not available in ie11. \r\nhttps://caniuse.com/mdn-javascript_operators_optional_chaining\r\n\r\n\r\nI would suggest just dumping the entire code into the online babel transpiler set to ie11.\r\nhttps://babeljs.io/repl#?browsers=ie%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env&prettier=false&targets=&version=7.20.14&externalPlugins=&assumptions=%7B%7D"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pr_repo": "Freshview/createsend.com",
+  "pr_number": 22961,
+  "pr_author": "sherry-lotfi",
+  "pr_title": "AJ- 1116 : Attach conditions to campaigns: API",
+  "pr_created_at": "2026-04-22T01:11:20Z",
+  "comments": [
+    {
+      "created_at": "2026-04-28T04:53:15Z",
+      "path": "app/CampMon.Core/Sequences/Models/SequenceConditionType.cs",
+      "html_url": "https://git.campmon.com/Freshview/createsend.com/pull/22961#discussion_r165516",
+      "body": "I had this mapped in  app/CampMon.CmAPI/Endpoints/Sequence/Models/CmSequenceRuleCondition.cs\n\nMaybe we'll migrate to use yours"
+    }
+  ]
+}
